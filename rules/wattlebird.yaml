@@ -1,0 +1,110 @@
+# Validation rules for Wattlebird Freight (fictional demo customer) - v2.
+# v1 (rules/wattlebird_v1.yaml) was agreed in the requirements workshop. v2 adds the rules marked
+# "v2:" after the baseline UAT run showed 6 documents passing validation with errors in them.
+# See docs/findings_memo.md.
+# Change rules here, not in code. Severity: error = blocks export, warning = human review.
+
+customer: Wattlebird Freight (fictional)
+document_type: Bill of Lading
+
+fields:
+  billOfLadingNumber:
+    required: true
+    pattern: '[A-Z0-9][A-Z0-9\-/]{4,24}'
+    pattern_hint: 5-25 letters, digits, - or /
+
+  date:
+    required: true
+    type: date
+    not_future: true
+    max_age_days: 180        # older than this is usually a re-sent or wrong document
+    age_severity: warning
+
+  sidNumber:
+    required: false
+
+  proNumber:
+    required: false          # only some shippers' BOLs carry a Pro number
+
+  shipper:
+    required: true
+    max_length: 160
+
+  origin:
+    required: true
+
+  consignee:
+    required: true
+    max_length: 160
+
+  destination:
+    required: true
+
+  carrier:
+    required: true
+
+  trailerNumber:
+    required: false
+    severity: warning
+    # v2 option, deliberately OFF: ISO 6346 check digits catch OCR misreads (UAT doc C02S), but the
+    # real sample BOL carries container numbers with invalid check digits. Switch on only once the
+    # customer confirms their documents use genuine container numbers.
+    # check_digit: iso6346
+    # trailer IDs (TRL-1234), ISO container numbers (EXGU3024389-2) or plain fleet numbers
+    token_pattern: '\b[A-Z]{3}U\d{6,7}(?:-\d)?\b|\bTRL-?\d{3,5}\b|\b\d{4,6}\b'
+    max_tokens: 1
+
+  sealNumber:
+    required: false
+    token_pattern: '\b[A-Z]{0,3}\d{5,8}\b'
+    max_tokens: 1
+
+  grossWeight:
+    required: true
+    type: number
+    min: 1
+    max: 45000               # kg; above a loaded B-double payload is not plausible for one BOL
+
+  quantity:
+    required: true
+    type: number
+    integer: true
+    min: 1
+    max: 5000
+
+  descriptionOfGoods:
+    required: true
+    min_items: 1
+
+  freightTerms:
+    required: true
+    # v2: a phone photo of the Collect box was read as Prepaid (UAT doc B01S). Freight terms drive
+    # billing, so checkbox values from scans always get a human look.
+    review_if_scanned: true
+    scan_reason: tick boxes are easy to misread on photos and this field drives billing
+    allowed_values: [Prepaid, Collect, Third Party]
+    synonyms:
+      Prepaid: [PP, PPD, PRE-PAID, FREIGHT PREPAID]
+      Collect: [CC, COL, FREIGHT COLLECT]
+      Third Party: [3RD PARTY, THIRD-PARTY, 3P]
+
+  specialInstructions:
+    required: false
+    # v2: the carrier's printed disclaimer was returned as a special instruction (UAT doc C01).
+    boilerplate:
+      - CARRIER HAS NOT VERIFIED
+      - SUBJECT TO THE TERMS AND CONDITIONS
+      - RECEIVED IN APPARENT GOOD ORDER
+
+cross_field:
+  # v2: on multi-container BOLs the package count was taken from the first container only
+  # (UAT doc C02: 153 returned, 166 on the document). Totals on these documents get reviewed.
+  - type: review_if_multiple
+    field: trailerNumber
+    token_pattern: '\b[A-Z]{3}U\d{6,7}(?:-\d)?\b|\bTRL-?\d{3,5}\b'
+    noun: containers/trailers
+    review: [quantity, grossWeight]
+  - type: different
+    fields: [shipper, consignee]
+  - type: different
+    fields: [origin, destination]

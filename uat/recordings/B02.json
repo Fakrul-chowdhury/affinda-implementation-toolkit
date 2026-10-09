@@ -1,0 +1,632 @@
+{
+ "data": {
+  "proNumber": {
+   "id": 2619495925,
+   "rectangle": {
+    "x0": 386.864013671875,
+    "y0": 138.02447509765625,
+    "x1": 414.53997802734375,
+    "y1": 144.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 386.864013671875,
+     "y0": 138.02447509765625,
+     "x1": 414.53997802734375,
+     "y1": 144.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "834905",
+   "parsed": "834905",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xvxyzNTx",
+   "contentType": "text",
+   "parent": null
+  },
+  "shipper": {
+   "id": 2619495928,
+   "rectangle": {
+    "x0": 42.62900161743164,
+    "y0": 97.7354736328125,
+    "x1": 136.47747802734375,
+    "y1": 104.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.62900161743164,
+     "y0": 97.7354736328125,
+     "x1": 136.47747802734375,
+     "y1": 104.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "Blue Mesa Outdoor Gear",
+   "parsed": "Blue Mesa Outdoor Gear",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619495924,
+   "rectangle": {
+    "x0": 42.22100067138672,
+    "y0": 108.7354736328125,
+    "x1": 180.62648010253906,
+    "y1": 116.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.22100067138672,
+     "y0": 108.7354736328125,
+     "x1": 180.62648010253906,
+     "y1": 116.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "2200 Canyon Dr, Phoenix, AZ 85034",
+   "parsed": "2200 Canyon Dr, Phoenix, AZ 85034",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619495915,
+   "rectangle": {
+    "x0": 427.2690124511719,
+    "y0": 54.6729736328125,
+    "x1": 474.77099609375,
+    "y1": 61.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 427.2690124511719,
+     "y0": 54.6729736328125,
+     "x1": 474.77099609375,
+     "y1": 61.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "2026-58844",
+   "parsed": "2026-58844",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619495918,
+   "rectangle": {
+    "x0": 360.4530029296875,
+    "y0": 43.36700439453125,
+    "x1": 441.218994140625,
+    "y1": 51.85400390625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 360.4530029296875,
+     "y0": 43.36700439453125,
+     "x1": 441.218994140625,
+     "y1": 51.85400390625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "September 19, 2026",
+   "parsed": "2026-09-19",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": {
+   "id": 2619495929,
+   "rectangle": {
+    "x0": 66.03799438476562,
+    "y0": 119.7354736328125,
+    "x1": 110.65449523925781,
+    "y1": 126.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 66.03799438476562,
+     "y0": 119.7354736328125,
+     "x1": 110.65449523925781,
+     "y1": 126.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "SID-643480",
+   "parsed": "SID-643480",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "hHioMYFI",
+   "contentType": "text",
+   "parent": null
+  },
+  "consignee": {
+   "id": 2619495917,
+   "rectangle": {
+    "x0": 42.416500091552734,
+    "y0": 187.7354736328125,
+    "x1": 129.55850219726562,
+    "y1": 195.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.416500091552734,
+     "y0": 187.7354736328125,
+     "x1": 129.55850219726562,
+     "y1": 195.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "Southerly Home Stores",
+   "parsed": "Southerly Home Stores",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619495921,
+   "rectangle": {
+    "x0": 42.11899948120117,
+    "y0": 198.7354736328125,
+    "x1": 163.583984375,
+    "y1": 217.7509765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.11899948120117,
+     "y0": 198.7354736328125,
+     "x1": 163.583984375,
+     "y1": 217.7509765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane)",
+   "parsed": "2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane)",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619495916,
+   "rectangle": {
+    "x0": 392.1424865722656,
+    "y0": 97.7354736328125,
+    "x1": 469.34796142578125,
+    "y1": 104.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 392.1424865722656,
+     "y0": 97.7354736328125,
+     "x1": 469.34796142578125,
+     "y1": 104.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "Silver Creek Haulers",
+   "parsed": "Silver Creek Haulers",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619495931,
+   "rectangle": {
+    "x0": 397.6675109863281,
+    "y0": 108.02447509765625,
+    "x1": 415.97650146484375,
+    "y1": 114.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 397.6675109863281,
+     "y0": 108.02447509765625,
+     "x1": 415.97650146484375,
+     "y1": 114.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "5626",
+   "parsed": "5626",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619495927,
+   "rectangle": {
+    "x0": 400.5065002441406,
+    "y0": 118.02447509765625,
+    "x1": 423.5329895019531,
+    "y1": 124.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 400.5065002441406,
+     "y0": 118.02447509765625,
+     "x1": 423.5329895019531,
+     "y1": 124.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "57088",
+   "parsed": "57088",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619495923,
+   "rectangle": {
+    "x0": 180.23399353027344,
+    "y0": 385.5379943847656,
+    "x1": 207.2519989013672,
+    "y1": 393.50299072265625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 180.23399353027344,
+     "y0": 385.5379943847656,
+     "x1": 207.2519989013672,
+     "y1": 393.50299072265625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "25,504",
+   "parsed": 25504.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619495926,
+   "rectangle": {
+    "x0": 42.62099838256836,
+    "y0": 385.6099853515625,
+    "x1": 56.60700225830078,
+    "y1": 392.0,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.62099838256836,
+     "y0": 385.6099853515625,
+     "x1": 56.60700225830078,
+     "y1": 392.0,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "142",
+   "parsed": 142.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619495919,
+    "rectangle": {
+     "x0": 260.6570129394531,
+     "y0": 341.5379943847656,
+     "x1": 337.5169982910156,
+     "y1": 349.97100830078125,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 260.6570129394531,
+      "y0": 341.5379943847656,
+      "x1": 337.5169982910156,
+      "y1": 349.97100830078125,
+      "pageIndex": 0
+     }
+    ],
+    "document": "ztUVfOSX",
+    "pageIndex": 0,
+    "raw": "Malting barley 25kg",
+    "parsed": "Malting barley 25 kg",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619495920,
+    "rectangle": {
+     "x0": 260.39599609375,
+     "y0": 356.36700439453125,
+     "x1": 331.68499755859375,
+     "y1": 363.1619873046875,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 260.39599609375,
+      "y0": 356.36700439453125,
+      "x1": 331.68499755859375,
+      "y1": 363.1619873046875,
+      "pageIndex": 0
+     }
+    ],
+    "document": "ztUVfOSX",
+    "pageIndex": 0,
+    "raw": "Ceramic floor tiles",
+    "parsed": "Ceramic floor tiles",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619495922,
+   "rectangle": {
+    "x0": 490.2720031738281,
+    "y0": 198.2559814453125,
+    "x1": 522.3679809570312,
+    "y1": 205.7039794921875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 490.2720031738281,
+     "y0": 198.2559814453125,
+     "x1": 522.3679809570312,
+     "y1": 205.7039794921875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "3rd Party",
+   "parsed": "3rd Party",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619495930,
+   "rectangle": {
+    "x0": 42.645999908447266,
+    "y0": 277.89697265625,
+    "x1": 177.7874755859375,
+    "y1": 285.86151123046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.645999908447266,
+     "y0": 277.89697265625,
+     "x1": 177.7874755859375,
+     "y1": 285.86151123046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "ztUVfOSX",
+   "pageIndex": 0,
+   "raw": "Keep dry. Fragile - handle with care.",
+   "parsed": "Keep dry. Fragile - handle with care.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "Bill of Lading Straight Bill of Lading - Short Form - Not Negotiable Date: September 19, 2026 Bill of Lading Number: 2026-58844 SHIP FROM Blue Mesa Outdoor Gear 2200 Canyon Dr, Phoenix, AZ 85034 SID#: SID-643480 CARRIER Carrier Name: Silver Creek Haulers Trailer Number: 5626 Seal Number(s): 57088 SCAC: DEMO Pro Number: 834905 SHIP TO Southerly Home Stores 2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane) FREIGHT CHARGE TERMS (prepaid unless marked otherwise) Prepaid Collect X 3rd Party SPECIAL INSTRUCTIONS Keep dry. Fragile - handle with care. HANDLING UNIT QTY TYPE WEIGHT (LBS) COMMODITY DESCRIPTION 133 BAG 7,448 Malting barley 25kg 9 PLT 18,056 Ceramic floor tiles 142 25,504 GRAND TOTAL RECEIVED, subject to individually determined rates or contracts agreed in writing between the carrier and shipper. Shipper Signature: ________________ Carrier Signature: ________________"
+ },
+ "meta": {
+  "identifier": "ztUVfOSX",
+  "customIdentifier": "uat-baseline-B02",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:47.106862Z",
+  "fileName": "B02_vics.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:41:40.621832Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

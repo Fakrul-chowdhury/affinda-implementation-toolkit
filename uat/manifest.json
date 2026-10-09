@@ -1,0 +1,135 @@
+[
+  {
+    "doc_id": "A01",
+    "file": "A01_domestic.pdf",
+    "layout": "domestic",
+    "scenario": "clean",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "A01S",
+    "file": "A01S_domestic_scan.jpg",
+    "layout": "domestic",
+    "scenario": "clean phone-scan",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "A02",
+    "file": "A02_domestic.pdf",
+    "layout": "domestic",
+    "scenario": "clean",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "A03",
+    "file": "A03_domestic.pdf",
+    "layout": "domestic",
+    "scenario": "collect",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "A04",
+    "file": "A04_domestic.pdf",
+    "layout": "domestic",
+    "scenario": "bdouble",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "A04S",
+    "file": "A04S_domestic_scan.jpg",
+    "layout": "domestic",
+    "scenario": "bdouble phone-scan",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "A05",
+    "file": "A05_domestic.pdf",
+    "layout": "domestic",
+    "scenario": "bdouble collect",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "B01",
+    "file": "B01_vics.pdf",
+    "layout": "vics",
+    "scenario": "clean lbs",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "B01S",
+    "file": "B01S_vics_scan.jpg",
+    "layout": "vics",
+    "scenario": "clean lbs phone-scan",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "B02",
+    "file": "B02_vics.pdf",
+    "layout": "vics",
+    "scenario": "lbs thirdparty",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "B03",
+    "file": "B03_vics.pdf",
+    "layout": "vics",
+    "scenario": "lbs nopro",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "B04",
+    "file": "B04_vics.pdf",
+    "layout": "vics",
+    "scenario": "lbs",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "C01",
+    "file": "C01_ocean.pdf",
+    "layout": "ocean",
+    "scenario": "words",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "C02",
+    "file": "C02_ocean.pdf",
+    "layout": "ocean",
+    "scenario": "multi words",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "C02S",
+    "file": "C02S_ocean_scan.jpg",
+    "layout": "ocean",
+    "scenario": "multi words phone-scan",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "C03",
+    "file": "C03_ocean.pdf",
+    "layout": "ocean",
+    "scenario": "multi words",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "C04",
+    "file": "C04_ocean.pdf",
+    "layout": "ocean",
+    "scenario": "words",
+    "source": "synthetic"
+  },
+  {
+    "doc_id": "R01",
+    "file": "samples/BillOfLading.pdf",
+    "layout": "ocean",
+    "scenario": "ocean (real sample, 2 pages)",
+    "source": "real sample"
+  },
+  {
+    "doc_id": "R02",
+    "file": "samples/Bill_of_Lading_final_sample.pdf",
+    "layout": "vics",
+    "scenario": "vics (real sample)",
+    "source": "real sample"
+  }
+]

@@ -1,0 +1,599 @@
+{
+ "data": {
+  "proNumber": null,
+  "shipper": {
+   "id": 2619496086,
+   "rectangle": {
+    "x0": 42.73099899291992,
+    "y0": 97.89697265625,
+    "x1": 150.833984375,
+    "y1": 104.1190185546875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.73099899291992,
+     "y0": 97.89697265625,
+     "x1": 150.833984375,
+     "y1": 104.1190185546875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "Prairie Hollow Toolworks Inc.",
+   "parsed": "Prairie Hollow Toolworks Inc.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619496083,
+   "rectangle": {
+    "x0": 42.212501525878906,
+    "y0": 108.7354736328125,
+    "x1": 190.99649047851562,
+    "y1": 116.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.212501525878906,
+     "y0": 108.7354736328125,
+     "x1": 190.99649047851562,
+     "y1": 116.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "410 Commerce Pkwy, Tulsa, OK 74107",
+   "parsed": "410 Commerce Pkwy, Tulsa, OK 74107",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619496074,
+   "rectangle": {
+    "x0": 427.2690124511719,
+    "y0": 54.6729736328125,
+    "x1": 474.62701416015625,
+    "y1": 61.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 427.2690124511719,
+     "y0": 54.6729736328125,
+     "x1": 474.62701416015625,
+     "y1": 61.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "2026-69882",
+   "parsed": "2026-69882",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619496077,
+   "rectangle": {
+    "x0": 360.3630065917969,
+    "y0": 43.36700439453125,
+    "x1": 429.2130126953125,
+    "y1": 51.31402587890625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 360.3630065917969,
+     "y0": 43.36700439453125,
+     "x1": 429.2130126953125,
+     "y1": 51.31402587890625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "October 02, 2026",
+   "parsed": "2026-10-02",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": {
+   "id": 2619496087,
+   "rectangle": {
+    "x0": 66.03799438476562,
+    "y0": 119.7354736328125,
+    "x1": 110.64599609375,
+    "y1": 126.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 66.03799438476562,
+     "y0": 119.7354736328125,
+     "x1": 110.64599609375,
+     "y1": 126.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "SID-378288",
+   "parsed": "SID-378288",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "hHioMYFI",
+   "contentType": "text",
+   "parent": null
+  },
+  "consignee": {
+   "id": 2619496076,
+   "rectangle": {
+    "x0": 42.416500091552734,
+    "y0": 187.7354736328125,
+    "x1": 129.55850219726562,
+    "y1": 195.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.416500091552734,
+     "y0": 187.7354736328125,
+     "x1": 129.55850219726562,
+     "y1": 195.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "Southerly Home Stores",
+   "parsed": "Southerly Home Stores",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619496080,
+   "rectangle": {
+    "x0": 42.11899948120117,
+    "y0": 198.7354736328125,
+    "x1": 163.583984375,
+    "y1": 217.7509765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.11899948120117,
+     "y0": 198.7354736328125,
+     "x1": 163.583984375,
+     "y1": 217.7509765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane)",
+   "parsed": "2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane)",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619496075,
+   "rectangle": {
+    "x0": 392.1424865722656,
+    "y0": 97.7354736328125,
+    "x1": 469.34796142578125,
+    "y1": 104.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 392.1424865722656,
+     "y0": 97.7354736328125,
+     "x1": 469.34796142578125,
+     "y1": 104.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "Silver Creek Haulers",
+   "parsed": "Silver Creek Haulers",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619496089,
+   "rectangle": {
+    "x0": 398.2539978027344,
+    "y0": 108.02447509765625,
+    "x1": 416.010498046875,
+    "y1": 114.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 398.2539978027344,
+     "y0": 108.02447509765625,
+     "x1": 416.010498046875,
+     "y1": 114.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "1153",
+   "parsed": "1153",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619496085,
+   "rectangle": {
+    "x0": 400.5574951171875,
+    "y0": 118.02447509765625,
+    "x1": 423.583984375,
+    "y1": 124.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 400.5574951171875,
+     "y0": 118.02447509765625,
+     "x1": 423.583984375,
+     "y1": 124.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "69357",
+   "parsed": "69357",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619496082,
+   "rectangle": {
+    "x0": 180.23399353027344,
+    "y0": 385.6099853515625,
+    "x1": 207.11700439453125,
+    "y1": 393.50299072265625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 180.23399353027344,
+     "y0": 385.6099853515625,
+     "x1": 207.11700439453125,
+     "y1": 393.50299072265625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "21,232",
+   "parsed": 21232.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619496084,
+   "rectangle": {
+    "x0": 42.62099838256836,
+    "y0": 385.6099853515625,
+    "x1": 56.652000427246094,
+    "y1": 392.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.62099838256836,
+     "y0": 385.6099853515625,
+     "x1": 56.652000427246094,
+     "y1": 392.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "113",
+   "parsed": 113.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619496078,
+    "rectangle": {
+     "x0": 260.6659851074219,
+     "y0": 341.5379943847656,
+     "x1": 351.0260009765625,
+     "y1": 349.97100830078125,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 260.6659851074219,
+      "y0": 341.5379943847656,
+      "x1": 351.0260009765625,
+      "y1": 349.97100830078125,
+      "pageIndex": 0
+     }
+    ],
+    "document": "eHGqfXLH",
+    "pageIndex": 0,
+    "raw": "Bottled sparkling water",
+    "parsed": "Bottled sparkling water",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619496079,
+    "rectangle": {
+     "x0": 260.6570129394531,
+     "y0": 356.5379943847656,
+     "x1": 337.5169982910156,
+     "y1": 364.97100830078125,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 260.6570129394531,
+      "y0": 356.5379943847656,
+      "x1": 337.5169982910156,
+      "y1": 364.97100830078125,
+      "pageIndex": 0
+     }
+    ],
+    "document": "eHGqfXLH",
+    "pageIndex": 0,
+    "raw": "Malting barley 25kg",
+    "parsed": "Malting barley 25 kg",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619496081,
+   "rectangle": {
+    "x0": 420.35198974609375,
+    "y0": 198.10400390625,
+    "x1": 444.2799987792969,
+    "y1": 204.14398193359375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 420.35198974609375,
+     "y0": 198.10400390625,
+     "x1": 444.2799987792969,
+     "y1": 204.14398193359375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "Collect",
+   "parsed": "Collect",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619496088,
+   "rectangle": {
+    "x0": 42.11899948120117,
+    "y0": 277.81201171875,
+    "x1": 143.28598022460938,
+    "y1": 285.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.11899948120117,
+     "y0": 277.81201171875,
+     "x1": 143.28598022460938,
+     "y1": 285.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "eHGqfXLH",
+   "pageIndex": 0,
+   "raw": "Tail-lift required at delivery.",
+   "parsed": "Tail-lift required at delivery.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "Bill of Lading Straight Bill of Lading - Short Form - Not Negotiable Date: October 02, 2026 Bill of Lading Number: 2026-69882 SHIP FROM Prairie Hollow Toolworks Inc. 410 Commerce Pkwy, Tulsa, OK 74107 SID#: SID-378288 CARRIER Carrier Name: Silver Creek Haulers Trailer Number: 1153 Seal Number(s): 69357 SCAC: DEMO SHIP TO Southerly Home Stores 2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane) FREIGHT CHARGE TERMS (prepaid unless marked otherwise) Prepaid X Collect 3rd Party SPECIAL INSTRUCTIONS Tail-lift required at delivery. HANDLING UNIT QTY TYPE WEIGHT (LBS) COMMODITY DESCRIPTION 11 PLT 15,520 Bottled sparkling water 102 BAG 5,712 Malting barley 25kg 113 21,232 GRAND TOTAL RECEIVED, subject to individually determined rates or contracts agreed in writing between the carrier and shipper. Shipper Signature: ________________ Carrier Signature: ________________"
+ },
+ "meta": {
+  "identifier": "eHGqfXLH",
+  "customIdentifier": "uat-baseline-B03",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:53.374680Z",
+  "fileName": "B03_vics.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:41:46.939599Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

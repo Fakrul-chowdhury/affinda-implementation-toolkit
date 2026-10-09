@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Support{% endblock %}
+{% block content %}
+{% set colors = ['var(--c1)', 'var(--c2)', 'var(--c3)', 'var(--c4)', 'var(--c5)', 'var(--c6)', 'var(--c7)'] %}
+{% set t = a.tagger %}
+<h1>Support queue insights</h1>
+<p class="lede">{{ a.tickets }} synthetic tickets across five fictional customers, {{ a.weeks[0] }} to {{ a.weeks[-1] }}.
+The issues are modelled on what broke in the live UAT run. Tickets are auto-triaged by transparent keyword rules
+(<code>support/triage.py</code>), and the rules are measured against hand labels.</p>
+
+<div class="kpis">
+  <div class="kpi"><b>{{ a.tickets }}</b><span>tickets ({{ a.open }} open)</span></div>
+  <div class="kpi"><b>{{ '%.0f'|format(t.unseen.coverage * 100) }}%</b><span>auto-tag coverage on unseen wording ({{ '%.0f'|format(t.seen.coverage * 100) }}% on seen)</span></div>
+  <div class="kpi"><b>{{ '%.0f'|format(t.unseen.precision * 100) }}%</b><span>precision when the tagger does tag unseen wording</span></div>
+  <div class="kpi"><b>{{ a.manual_triage_needed }}</b><span>tickets falling to manual triage</span></div>
+  <div class="kpi"><b>{{ '%.0f'|format(a.deflection.share * 100) }}%</b><span>how-to tickets (help-article candidates)</span></div>
+</div>
+
+<h2>Volume by week</h2>
+<div class="legend">{% for c in categories %}<span><i style="background:{{ colors[loop.index0 % 7] }}"></i>{{ c|replace('_', ' ') }}</span>{% endfor %}</div>
+<div class="card">
+  {% for w, counts in a.by_week.items() %}
+  {% set total = counts.values()|sum %}
+  <div style="display:flex;align-items:center;gap:10px;margin:4px 0">
+    <span class="small mono" style="width:70px">{{ w }}</span>
+    <div style="flex:1"><div class="stack" style="width:{{ (total / peak * 100)|round }}%">
+      {% for c in categories %}{% if counts.get(c) %}<i title="{{ c }}: {{ counts[c] }}" style="width:{{ counts[c] / total * 100 }}%;background:{{ colors[loop.index0 % 7] }}"></i>{% endif %}{% endfor %}
+    </div></div>
+    <span class="small" style="width:28px;text-align:right">{{ total }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>Ranked product feedback</h2>
+<p class="muted small">Score = tickets × customers affected × worst severity (P1=4 … P4=1). Ticket volumes are synthetic, but the evidence column points at real observations from the live Affinda runs.</p>
+<div class="wrap"><table>
+  <tr><th>#</th><th>Issue</th><th>Tickets</th><th>Customers</th><th>Score</th><th>Ask of the product team</th><th>Evidence</th></tr>
+  {% for f in a.feedback %}
+  <tr><td>{{ loop.index }}</td><td><b>{{ f.problem }}</b></td><td>{{ f.tickets }}</td><td>{{ f.customers }}</td><td>{{ f.score }}</td>
+      <td class="small">{{ f.ask }}</td><td class="small">{{ f.evidence }}</td></tr>
+  {% endfor %}
+</table></div>
+
+<div class="grid g2" style="margin-top:12px">
+  <div>
+    <h2>First-response SLA</h2>
+    <table>
+      <tr><th>Priority</th><th>Tickets</th><th>SLA</th><th>Met</th><th>Median resolution</th></tr>
+      {% for p, s in a.sla.items() %}
+      <tr><td>{{ p }}</td><td>{{ s.tickets }}</td><td>{{ s.sla_hours }}h</td>
+          <td><span class="pill {{ 'ok' if s.first_response_met >= 0.9 else 'warning' if s.first_response_met >= 0.75 else 'error' }}">{{ '%.0f'|format(s.first_response_met * 100) }}%</span></td>
+          <td>{{ s.median_resolution_h }}h</td></tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div>
+    <h2>Auto-triage accuracy</h2>
+    <table>
+      <tr><th>Wording</th><th>n</th><th>Category</th><th>Issue</th><th>Priority</th><th>Coverage</th></tr>
+      {% for k in ['seen', 'unseen'] %}
+      <tr><td>{{ k }}</td><td>{{ t[k].n }}</td><td>{{ '%.0f'|format(t[k].category * 100) }}%</td><td>{{ '%.0f'|format(t[k].issue * 100) }}%</td>
+          <td>{{ '%.0f'|format(t[k].priority * 100) }}%</td><td>{{ '%.0f'|format(t[k].coverage * 100) }}%</td></tr>
+      {% endfor %}
+    </table>
+    <p class="small muted">"Seen" wording is what the rules were written against, so 100% there proves nothing. "Unseen" wording was written afterwards and never used for tuning. The rules mostly fail safe: unmatched tickets go to a person rather than getting a wrong tag.</p>
+  </div>
+</div>
+
+<h2>Tickets by category</h2>
+<div class="wrap"><table>
+  <tr><th>Category</th><th>Tickets</th><th></th></tr>
+  {% for c, n in a.by_category.items() %}
+  <tr><td>{{ c|replace('_', ' ') }}</td><td>{{ n }}</td><td style="width:60%"><div class="bar"><i style="width:{{ (n / a.tickets * 100)|round }}%;background:{{ colors[loop.index0 % 7] }}"></i></div></td></tr>
+  {% endfor %}
+</table></div>
+{% endblock %}

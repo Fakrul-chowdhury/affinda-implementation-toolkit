@@ -1,0 +1,632 @@
+{
+ "data": {
+  "proNumber": {
+   "id": 2619495908,
+   "rectangle": {
+    "x0": 386.8299865722656,
+    "y0": 138.02447509765625,
+    "x1": 414.60797119140625,
+    "y1": 144.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 386.8299865722656,
+     "y0": 138.02447509765625,
+     "x1": 414.60797119140625,
+     "y1": 144.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "352713",
+   "parsed": "352713",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xvxyzNTx",
+   "contentType": "text",
+   "parent": null
+  },
+  "shipper": {
+   "id": 2619495911,
+   "rectangle": {
+    "x0": 42.73099899291992,
+    "y0": 97.89697265625,
+    "x1": 150.833984375,
+    "y1": 104.1190185546875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.73099899291992,
+     "y0": 97.89697265625,
+     "x1": 150.833984375,
+     "y1": 104.1190185546875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "Prairie Hollow Toolworks Inc.",
+   "parsed": "Prairie Hollow Toolworks Inc.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619495907,
+   "rectangle": {
+    "x0": 42.212501525878906,
+    "y0": 108.7354736328125,
+    "x1": 190.99649047851562,
+    "y1": 116.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.212501525878906,
+     "y0": 108.7354736328125,
+     "x1": 190.99649047851562,
+     "y1": 116.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "410 Commerce Pkwy, Tulsa, OK 74107",
+   "parsed": "410 Commerce Pkwy, Tulsa, OK 74107",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619495898,
+   "rectangle": {
+    "x0": 427.2690124511719,
+    "y0": 54.6729736328125,
+    "x1": 474.7619934082031,
+    "y1": 61.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 427.2690124511719,
+     "y0": 54.6729736328125,
+     "x1": 474.7619934082031,
+     "y1": 61.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "2026-66193",
+   "parsed": "2026-66193",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619495901,
+   "rectangle": {
+    "x0": 360.4530029296875,
+    "y0": 43.36700439453125,
+    "x1": 441.218994140625,
+    "y1": 51.85400390625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 360.4530029296875,
+     "y0": 43.36700439453125,
+     "x1": 441.218994140625,
+     "y1": 51.85400390625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "September 27, 2026",
+   "parsed": "2026-09-27",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": {
+   "id": 2619495912,
+   "rectangle": {
+    "x0": 66.03799438476562,
+    "y0": 119.7354736328125,
+    "x1": 110.6969985961914,
+    "y1": 126.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 66.03799438476562,
+     "y0": 119.7354736328125,
+     "x1": 110.6969985961914,
+     "y1": 126.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "SID-556264",
+   "parsed": "SID-556264",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "hHioMYFI",
+   "contentType": "text",
+   "parent": null
+  },
+  "consignee": {
+   "id": 2619495900,
+   "rectangle": {
+    "x0": 42.74800109863281,
+    "y0": 187.7354736328125,
+    "x1": 130.93548583984375,
+    "y1": 195.7509765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.74800109863281,
+     "y0": 187.7354736328125,
+     "x1": 130.93548583984375,
+     "y1": 195.7509765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "Red Gum Co-Operative",
+   "parsed": "Red Gum Co-Operative",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619495904,
+   "rectangle": {
+    "x0": 42.11899948120117,
+    "y0": 198.7354736328125,
+    "x1": 183.39747619628906,
+    "y1": 217.7509765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.11899948120117,
+     "y0": 198.7354736328125,
+     "x1": 183.39747619628906,
+     "y1": 217.7509765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "31 Railway Parade, Mildura VIC 3500 Australia (via Port of Brisbane)",
+   "parsed": "31 Railway Parade, Mildura VIC 3500 Australia (via Port of Brisbane)",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619495899,
+   "rectangle": {
+    "x0": 392.4570007324219,
+    "y0": 97.7354736328125,
+    "x1": 487.2659912109375,
+    "y1": 105.86151123046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 392.4570007324219,
+     "y0": 97.7354736328125,
+     "x1": 487.2659912109375,
+     "y1": 105.86151123046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "Prairie Line Trucking LLC",
+   "parsed": "Prairie Line Trucking LLC",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619495914,
+   "rectangle": {
+    "x0": 397.6675109863281,
+    "y0": 108.02447509765625,
+    "x1": 414.625,
+    "y1": 114.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 397.6675109863281,
+     "y0": 108.02447509765625,
+     "x1": 414.625,
+     "y1": 114.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "5101",
+   "parsed": "5101",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619495910,
+   "rectangle": {
+    "x0": 400.5574951171875,
+    "y0": 118.02447509765625,
+    "x1": 423.583984375,
+    "y1": 124.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 400.5574951171875,
+     "y0": 118.02447509765625,
+     "x1": 423.583984375,
+     "y1": 124.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "80157",
+   "parsed": "80157",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619495906,
+   "rectangle": {
+    "x0": 180.62100219726562,
+    "y0": 385.6099853515625,
+    "x1": 207.23399353027344,
+    "y1": 393.50299072265625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 180.62100219726562,
+     "y0": 385.6099853515625,
+     "x1": 207.23399353027344,
+     "y1": 393.50299072265625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "10,440",
+   "parsed": 10440.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619495909,
+   "rectangle": {
+    "x0": 42.62099838256836,
+    "y0": 385.6099853515625,
+    "x1": 56.7239990234375,
+    "y1": 392.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.62099838256836,
+     "y0": 385.6099853515625,
+     "x1": 56.7239990234375,
+     "y1": 392.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "168",
+   "parsed": 168.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619495902,
+    "rectangle": {
+     "x0": 260.77398681640625,
+     "y0": 341.5379943847656,
+     "x1": 349.2080078125,
+     "y1": 349.85400390625,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 260.77398681640625,
+      "y0": 341.5379943847656,
+      "x1": 349.2080078125,
+      "y1": 349.85400390625,
+      "pageIndex": 0
+     }
+    ],
+    "document": "WHlangQO",
+    "pageIndex": 0,
+    "raw": "Flat-pack bookshelves",
+    "parsed": "Flat-pack bookshelves",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619495903,
+    "rectangle": {
+     "x0": 260.72900390625,
+     "y0": 356.447998046875,
+     "x1": 330.52398681640625,
+     "y1": 364.97100830078125,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 260.72900390625,
+      "y0": 356.447998046875,
+      "x1": 330.52398681640625,
+      "y1": 364.97100830078125,
+      "pageIndex": 0
+     }
+    ],
+    "document": "WHlangQO",
+    "pageIndex": 0,
+    "raw": "Dry pet food 15kg",
+    "parsed": "Dry pet food 15 kg",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619495905,
+   "rectangle": {
+    "x0": 420.35198974609375,
+    "y0": 198.10400390625,
+    "x1": 444.2799987792969,
+    "y1": 204.14398193359375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 420.35198974609375,
+     "y0": 198.10400390625,
+     "x1": 444.2799987792969,
+     "y1": 204.14398193359375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "Collect",
+   "parsed": "Collect",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619495913,
+   "rectangle": {
+    "x0": 42.11899948120117,
+    "y0": 277.81201171875,
+    "x1": 143.28598022460938,
+    "y1": 285.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.11899948120117,
+     "y0": 277.81201171875,
+     "x1": 143.28598022460938,
+     "y1": 285.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "WHlangQO",
+   "pageIndex": 0,
+   "raw": "Tail-lift required at delivery.",
+   "parsed": "Tail-lift required at delivery.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "Bill of Lading Straight Bill of Lading - Short Form - Not Negotiable Date: September 27, 2026 Bill of Lading Number: 2026-66193 SHIP FROM Prairie Hollow Toolworks Inc. 410 Commerce Pkwy, Tulsa, OK 74107 SID#: SID-556264 CARRIER Carrier Name: Prairie Line Trucking LLC Trailer Number: 5101 Seal Number(s): 80157 SCAC: DEMO Pro Number: 352713 SHIP TO Red Gum Co-Operative 31 Railway Parade, Mildura VIC 3500 Australia (via Port of Brisbane) FREIGHT CHARGE TERMS (prepaid unless marked otherwise) Prepaid X Collect 3rd Party SPECIAL INSTRUCTIONS Tail-lift required at delivery. HANDLING UNIT QTY TYPE WEIGHT (LBS) COMMODITY DESCRIPTION 133 CTN 9,236 Flat-pack bookshelves 35 CTN 1,204 Dry pet food 15kg 168 10,440 GRAND TOTAL RECEIVED, subject to individually determined rates or contracts agreed in writing between the carrier and shipper. Shipper Signature: ________________ Carrier Signature: ________________"
+ },
+ "meta": {
+  "identifier": "WHlangQO",
+  "customIdentifier": "uat-baseline-B01",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:46.806212Z",
+  "fileName": "B01_vics.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:41:40.412805Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

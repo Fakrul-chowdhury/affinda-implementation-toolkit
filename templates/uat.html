@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}UAT{% endblock %}
+{% block content %}
+<h1>User acceptance testing</h1>
+<p class="lede">Each run extracts the test documents, compares every field with the known correct answer, and checks whether the
+validation rules would have caught each mistake. The key go-live number is <b>documents auto-approved with an error</b>: it must be zero.</p>
+
+{% if not runs %}<div class="banner warning">No UAT runs yet. Run <code>python -m uat.run_uat --label baseline</code>.</div>{% endif %}
+
+<div class="wrap"><table>
+  <tr><th>Run</th><th>Source</th><th>Docs</th><th>Field accuracy</th><th>Docs 100% correct</th>
+      <th>Errors flagged</th><th>Auto-approved<br>with error</th><th>PASS / REVIEW<br>/ FAIL</th><th>Credits</th><th></th></tr>
+  {% for s in runs %}
+  <tr>
+    <td><b>{{ s.label }}</b><div class="muted small">rules: <code>{{ s.rules }}</code></div></td>
+    <td>{% if s.is_real_affinda_result %}<span class="pill ok">live Affinda</span>{% else %}<span class="pill warning">simulated</span>{% endif %}</td>
+    <td>{{ s.documents }}</td>
+    <td>{{ '%.1f'|format(s.field_accuracy * 100) }}%</td>
+    <td>{{ s.docs_fully_correct }}/{{ s.documents }}</td>
+    <td>{{ s.errors_caught_by_validation }}/{{ s.fields_wrong }}</td>
+    <td><span class="pill {{ 'ok' if s.passed_with_errors == 0 else 'error' }}">{{ s.passed_with_errors }}</span></td>
+    <td>{{ s.status_counts.get('PASS', 0) }} / {{ s.status_counts.get('REVIEW', 0) }} / {{ s.status_counts.get('FAIL', 0) }}</td>
+    <td>{{ s.credits_used if s.credits_used is not none else '-' }}</td>
+    <td><a class="btn secondary small" href="{{ url_for('uat_report', label=s.label) }}">Report</a></td>
+  </tr>
+  {% endfor %}
+</table></div>
+
+{% if runs %}
+{% set s = runs[-1] %}
+<h2>Accuracy by field: {{ s.label }}</h2>
+<div class="wrap"><table>
+  <tr><th>Field</th><th>Accuracy</th><th></th><th>Wrong</th><th>Missed</th><th>Spurious</th></tr>
+  {% for key, f in s.per_field.items() if f.n %}
+  <tr><td>{{ f.label }}</td><td>{{ '%.0f'|format(f.accuracy * 100) }}%</td>
+      <td style="width:35%"><div class="bar"><i style="width:{{ (f.accuracy * 100)|round }}%"></i></div></td>
+      <td>{{ f.get('wrong', 0) }}</td><td>{{ f.get('missed', 0) }}</td><td>{{ f.get('spurious', 0) }}</td></tr>
+  {% endfor %}
+</table></div>
+<h2>Accuracy by source format</h2>
+<div class="wrap"><table>
+  <tr><th>Layout</th><th>Field accuracy</th><th></th></tr>
+  {% for layout, acc in s.per_layout.items() %}
+  <tr><td>{{ layout }}</td><td>{{ '%.0f'|format(acc * 100) }}%</td><td style="width:50%"><div class="bar"><i style="width:{{ (acc * 100)|round }}%"></i></div></td></tr>
+  {% endfor %}
+</table></div>
+{% endif %}
+<p class="muted small">Re-score saved responses with new rules at no credit cost:
+<code>python -m uat.run_uat --rescore baseline --label my_rules --rules rules/wattlebird.yaml</code></p>
+{% endblock %}

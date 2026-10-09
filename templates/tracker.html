@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block title %}Implementation{% endblock %}
+{% block content %}
+{% set p = st.project %}
+<h1>{{ p.project }}</h1>
+<p class="lede">{{ p.scope }}</p>
+
+<div class="kpis">
+  <div class="kpi"><b><span class="pill {{ st.overall }}" style="font-size:18px">{{ st.overall|upper }}</span></b><span>overall status, {{ st.today.strftime('%d %b %Y') }}</span></div>
+  <div class="kpi"><b>{{ st.gates|selectattr('status', 'equalto', 'done')|list|length }}/{{ st.gates|length }}</b><span>gates complete</span></div>
+  <div class="kpi"><b>{{ st.days_to_go_live }}</b><span>days to go-live ({{ p.target_go_live.strftime('%d %b') }})</span></div>
+  <div class="kpi"><b>{{ st.open_risks|selectattr('status', 'equalto', 'open')|list|length }}</b><span>open risks</span></div>
+  <div class="kpi"><b>{{ st.decisions_needed|length }}</b><span>customer decision(s) needed</span></div>
+</div>
+
+<h2>Gates</h2>
+<div class="timeline">
+  {% for g in st.gates %}
+  <div class="gate {{ g.rag }}">
+    <b>{{ g.id }} · {{ g.name }}</b>
+    <span>due {{ g.due.strftime('%d %b') }}{% if g.completed %} · done {{ g.completed.strftime('%d %b') }}{% endif %}</span><br>
+    <span class="pill {{ g.status }}">{{ g.status|replace('_', ' ') }}</span>
+  </div>
+  {% endfor %}
+</div>
+
+{% set cur = st.current %}
+{% if cur %}
+<h2>Current gate: {{ cur.id }} {{ cur.name }} <span class="pill {{ cur.rag }}">{{ cur.rag|upper }}</span></h2>
+{% for r in cur.reasons %}<p class="muted">{{ r }}</p>{% endfor %}
+<div class="grid g2">
+  <div class="card">
+    <h3>Exit criteria</h3>
+    <ul class="tight">{% for c in cur.exit_criteria %}<li>{{ c }}</li>{% endfor %}</ul>
+    {% if cur.uat and cur.uat.available %}
+    <h3 style="margin-top:14px">Live check against UAT run <code>{{ cur.uat.label }}</code>
+      {% if cur.uat.real %}<span class="pill ok">live Affinda</span>{% else %}<span class="pill warning">simulated</span>{% endif %}</h3>
+    <table>
+      <tr><th>Criterion</th><th>Actual</th><th>Target</th><th></th></tr>
+      {% for c in cur.uat.checks %}
+      <tr><td>{{ c.name }}</td><td>{{ c.actual }}</td><td>{{ c.target }}</td>
+          <td><span class="pill {{ 'met' if c.met else 'unmet' }}">{{ 'met' if c.met else 'not met' }}</span></td></tr>
+      {% endfor %}
+    </table>
+    {% endif %}
+  </div>
+  <div class="card">
+    <h3>Tasks</h3>
+    <table>
+      <tr><th>Task</th><th>Owner</th><th>Due</th><th></th></tr>
+      {% for t in cur.tasks %}
+      <tr><td>{{ t.task }}</td><td class="small">{{ t.owner }}</td><td class="small">{{ t.due.strftime('%d %b') if t.due else '' }}</td>
+          <td><span class="pill {{ t.status }}">{{ t.status }}</span></td></tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endif %}
+
+<h2>Risks</h2>
+<div class="wrap"><table>
+  <tr><th>ID</th><th>Risk</th><th>Impact</th><th>Likelihood</th><th>Mitigation</th><th>Owner</th><th>Status</th></tr>
+  {% for r in p.risks %}
+  <tr><td>{{ r.id }}</td><td>{{ r.risk }}</td><td>{{ r.impact }}</td><td>{{ r.likelihood }}</td><td class="small">{{ r.mitigation }}</td>
+      <td class="small">{{ r.owner }}</td><td><span class="pill {{ 'ok' if r.status != 'open' else 'warning' }}">{{ r.status }}</span></td></tr>
+  {% endfor %}
+</table></div>
+
+<h2>Decisions</h2>
+<div class="wrap"><table>
+  <tr><th>ID</th><th>Decision</th><th>Date</th><th>Status</th></tr>
+  {% for d in p.decisions %}
+  <tr><td>{{ d.id }}</td><td>{{ d.decision }}</td><td>{{ d.date.strftime('%d %b') }}</td>
+      <td><span class="pill {{ 'warning' if d.status == 'needed' else 'ok' }}">{{ d.status }}</span></td></tr>
+  {% endfor %}
+</table></div>
+
+<h2>Weekly status update (generated)</h2>
+<p class="muted small">Generated from <code>tracker/wattlebird_project.yaml</code> and the latest UAT results. Copy into an email or Slack.</p>
+<textarea class="email" id="email" readonly>{{ email }}</textarea>
+<p><button class="btn secondary" onclick="navigator.clipboard.writeText(document.getElementById('email').value);this.textContent='Copied'">Copy</button></p>
+{% endblock %}

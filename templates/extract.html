@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}Extract{% endblock %}
+{% block content %}
+<h1>Extract &amp; validate a Bill of Lading</h1>
+<p class="lede">Affinda extracts 16 fields. Wattlebird's validation rules (<code>rules/wattlebird.yaml</code>) then decide whether the document can go straight into the TMS (<b>PASS</b>), needs a quick look (<b>REVIEW</b>) or has a definite problem (<b>FAIL</b>).</p>
+
+<div class="grid g2">
+  <form class="card" method="post" enctype="multipart/form-data" onsubmit="this.classList.add('busy')">
+    <h3>Upload a document</h3>
+    <div class="drop">
+      <input type="file" name="file" accept=".pdf,.png,.jpg,.jpeg,.docx" required>
+      <p class="muted small">PDF, PNG, JPG or DOCX, up to 16 MB.
+      {% if mode == 'live' %}Each page uses one Affinda credit.{% else %}Mock mode only recognises the UAT documents, so try one on the right.{% endif %}</p>
+    </div>
+    <p><button class="btn" type="submit">Extract</button></p>
+    <div class="spinner">Processing. Affinda usually takes 10-30 seconds...</div>
+  </form>
+  <form class="card" method="post" onsubmit="this.classList.add('busy')">
+    <h3>Or run a UAT document</h3>
+    <p class="muted small">Synthetic test documents (three layouts, phone-photo scans) and the two real samples, with known correct answers.</p>
+    <div class="samples">
+      {% for d in docs %}
+      <button class="btn secondary small" name="doc_id" value="{{ d.doc_id }}" title="{{ d.layout }}: {{ d.scenario }}">{{ d.doc_id }}</button>
+      {% endfor %}
+    </div>
+    <div class="spinner">Processing...</div>
+  </form>
+</div>
+
+{% if error %}<div class="banner error" style="margin-top:16px">{{ error }}</div>{% endif %}
+
+{% if result %}
+<h2>{{ result.file_name }}</h2>
+<div class="banner {{ result.status }}">
+  {{ result.status }}:
+  {% if result.status == 'PASS' %}no issues, ready for straight-through processing.
+  {% elif result.status == 'REVIEW' %}{{ result.findings|length }} warning(s). A person should check the highlighted fields.
+  {% else %}{{ result.findings|selectattr('severity', 'equalto', 'error')|list|length }} error(s) must be fixed before export.{% endif %}
+  <span class="small" style="font-weight:400">· source: {{ result.source }}{% if result.doc.scanned %} · scanned/photo (OCR confidence {{ '%.2f'|format(result.doc.ocr_confidence) }}){% endif %}</span>
+</div>
+<div class="wrap"><table>
+  <tr><th>Field</th><th>Value</th><th>Check</th><th>Why</th></tr>
+  {% for key, f in result.fields.items() %}
+  <tr>
+    <td>{{ f.label }}</td>
+    <td>
+      {% if f.is_list %}{% for v in f.value %}<div>{{ v }}</div>{% endfor %}
+      {% else %}{{ f.value if f.value is not none else '' }}{% endif %}
+      {% if f.raw and f.raw != (f.value|string) and not f.is_list %}<div class="muted small">raw: {{ f.raw }}</div>{% endif %}
+    </td>
+    <td><span class="pill {{ result.per_field[key] }}">{{ result.per_field[key] }}</span></td>
+    <td class="small">{% for x in result.by_field.get(key, []) %}<div>{{ x.message }}</div>{% endfor %}</td>
+  </tr>
+  {% endfor %}
+</table></div>
+<details style="margin-top:12px"><summary>Raw Affinda field data (JSON)</summary>
+<pre class="mono card" style="white-space:pre-wrap;max-height:360px;overflow:auto">{{ result.raw|tojson(indent=1) }}</pre></details>
+{% endif %}
+{% endblock %}

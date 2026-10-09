@@ -1,0 +1,640 @@
+{
+ "data": {
+  "proNumber": null,
+  "shipper": {
+   "id": 2619497914,
+   "rectangle": {
+    "x0": 41.86800003051758,
+    "y0": 131.30670166015625,
+    "x1": 140.62799072265625,
+    "y1": 136.53070068359375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 41.86800003051758,
+     "y0": 131.30670166015625,
+     "x1": 140.62799072265625,
+     "y1": 136.53070068359375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "WILD HEALTH FOODS PTY LTD",
+   "parsed": "WILD HEALTH FOODS PTY LTD",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619497911,
+   "rectangle": {
+    "x0": 169.4219970703125,
+    "y0": 397.022705078125,
+    "x1": 225.9980010986328,
+    "y1": 402.2146911621094,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 169.4219970703125,
+     "y0": 397.022705078125,
+     "x1": 225.9980010986328,
+     "y1": 402.2146911621094,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "FREMANTLE 6162",
+   "parsed": "FREMANTLE 6162",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619497901,
+   "rectangle": {
+    "x0": 412.6419982910156,
+    "y0": 68.2137451171875,
+    "x1": 485.6319885253906,
+    "y1": 74.09075927734375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 412.6419982910156,
+     "y0": 68.2137451171875,
+     "x1": 485.6319885253906,
+     "y1": 74.09075927734375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "EG00055802323028",
+   "parsed": "EG00055802323028",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619497904,
+   "rectangle": {
+    "x0": 400.7979736328125,
+    "y0": 150.82269287109375,
+    "x1": 443.6699523925781,
+    "y1": 156.01470947265625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 400.7979736328125,
+     "y0": 150.82269287109375,
+     "x1": 443.6699523925781,
+     "y1": 156.01470947265625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "10-AUG-2021",
+   "parsed": "2021-08-10",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": {
+   "id": 2619497915,
+   "rectangle": {
+    "x0": 319.8459777832031,
+    "y0": 141.07275390625,
+    "x1": 351.08599853515625,
+    "y1": 146.2647705078125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 319.8459777832031,
+     "y0": 141.07275390625,
+     "x1": 351.08599853515625,
+     "y1": 146.2647705078125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "10002345",
+   "parsed": "10002345",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "hHioMYFI",
+   "contentType": "text",
+   "parent": null
+  },
+  "consignee": {
+   "id": 2619497903,
+   "rectangle": {
+    "x0": 42.25199890136719,
+    "y0": 210.70672607421875,
+    "x1": 164.6599884033203,
+    "y1": 215.93072509765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.25199890136719,
+     "y0": 210.70672607421875,
+     "x1": 164.6599884033203,
+     "y1": 215.93072509765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "LAIHEE KUNG SUPERMARKET GROUP",
+   "parsed": "LAIHEE KUNG SUPERMARKET GROUP",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619497908,
+   "rectangle": {
+    "x0": 304.22998046875,
+    "y0": 453.72271728515625,
+    "x1": 341.70196533203125,
+    "y1": 458.9147033691406,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 304.22998046875,
+     "y0": 453.72271728515625,
+     "x1": 341.70196533203125,
+     "y1": 458.9147033691406,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "SINGAPORE",
+   "parsed": "SINGAPORE",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619497902,
+   "rectangle": {
+    "x0": 336.7419738769531,
+    "y0": 737.356689453125,
+    "x1": 402.7419738769531,
+    "y1": 742.5806884765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 336.7419738769531,
+     "y0": 737.356689453125,
+     "x1": 402.7419738769531,
+     "y1": 742.5806884765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "ZESTADO LOGISTICS",
+   "parsed": "ZESTADO LOGISTICS",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619497917,
+   "rectangle": {
+    "x0": 42.37200164794922,
+    "y0": 540.8727416992188,
+    "x1": 94.31600952148438,
+    "y1": 607.4146728515625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.37200164794922,
+     "y0": 540.8727416992188,
+     "x1": 94.31600952148438,
+     "y1": 546.064697265625,
+     "pageIndex": 0
+    },
+    {
+     "x0": 42.37200164794922,
+     "y0": 602.2227172851562,
+     "x1": 94.29200744628906,
+     "y1": 607.4146728515625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "EXGU3024389-2 EXGU3024111-5",
+   "parsed": "EXGU3024389-2 EXGU3024111-5",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619497913,
+   "rectangle": {
+    "x0": 73.86000061035156,
+    "y0": 550.6226806640625,
+    "x1": 97.43600463867188,
+    "y1": 617.1646728515625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 73.86000061035156,
+     "y0": 550.6226806640625,
+     "x1": 97.43600463867188,
+     "y1": 617.1646728515625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "555728 555111",
+   "parsed": "555728 555111",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619497910,
+   "rectangle": {
+    "x0": 415.9839782714844,
+    "y0": 531.1226806640625,
+    "x1": 454.5279846191406,
+    "y1": 598.7286987304688,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 415.9839782714844,
+     "y0": 531.1226806640625,
+     "x1": 454.5279846191406,
+     "y1": 598.7286987304688,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "4,425.00 KG 1,880.50 KG",
+   "parsed": 4425001880.5,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619497912,
+   "rectangle": {
+    "x0": 312.77099609375,
+    "y0": 679.2136840820312,
+    "x1": 416.9909973144531,
+    "y1": 685.0906982421875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 312.77099609375,
+     "y0": 679.2136840820312,
+     "x1": 416.9909973144531,
+     "y1": 685.0906982421875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "FIVE HUNDRED AND EIGHTY",
+   "parsed": null,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619497905,
+    "rectangle": {
+     "x0": 171.8400115966797,
+     "y0": 531.1226806640625,
+     "x1": 349.1679992675781,
+     "y1": 576.378662109375,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 171.8400115966797,
+      "y0": 531.1226806640625,
+      "x1": 349.1679992675781,
+      "y1": 576.378662109375,
+      "pageIndex": 0
+     }
+    ],
+    "document": "tKjWzIdt",
+    "pageIndex": 0,
+    "raw": "20 X 1KG BXS ORGANIC MUESLI PER CARTON WILD HEALTH BRAND \u2013 BUBBLE WRAPPED AND TAPED 100 CTNS; FRUIT-FREE, CODE 1002034 100 CTNS; NUT-FREE, CODE 1002055 20 CTNS; GOURMET, CODE 1002221",
+    "parsed": "20 X 1 KG BXS ORGANIC MUESLI PER CARTON WILD HEALTH BRAND \u2013 BUBBLE WRAPPED AND TAPED 100 CTNS; FRUIT-FREE, CODE 1002034 100 CTNS; NUT-FREE, CODE 1002055 20 CTNS; GOURMET, CODE 1002221",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619497906,
+    "rectangle": {
+     "x0": 171.8400115966797,
+     "y0": 592.4727172851562,
+     "x1": 335.63995361328125,
+     "y1": 627.9786987304688,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 171.8400115966797,
+      "y0": 592.4727172851562,
+      "x1": 335.63995361328125,
+      "y1": 627.9786987304688,
+      "pageIndex": 0
+     }
+    ],
+    "document": "tKjWzIdt",
+    "pageIndex": 0,
+    "raw": "25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON WILD & FIT BRAND 75 CTNS; VANILLA, CODE 1009001 75 CTNS; CHOCOLATE, CODE 1009020",
+    "parsed": "25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON WILD & FIT BRAND 75 CTNS; VANILLA, CODE 1009001 75 CTNS; CHOCOLATE, CODE 1009020",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619497907,
+    "rectangle": {
+     "x0": 183.22000122070312,
+     "y0": 456.501708984375,
+     "x1": 383.4249267578125,
+     "y1": 507.7197265625,
+     "pageIndex": 1
+    },
+    "rectangles": [
+     {
+      "x0": 183.22000122070312,
+      "y0": 456.501708984375,
+      "x1": 383.4249267578125,
+      "y1": 507.7197265625,
+      "pageIndex": 1
+     }
+    ],
+    "document": "tKjWzIdt",
+    "pageIndex": 1,
+    "raw": "CRTNS WITH ASSORTED MIX OF PKTS OF BARS & BALLS WILD HEALTH BRAND \u2013 BUBBLE WRAPPED 70 CTNS; OAT SNACK BARS 1,000 X 100G \u2013 100435 70 CTNS; LUPIN CRUNCHIES 2,000 X 50G \u2013 100215 70 CTNS; HEMP BLISS BALLS 2,000 X 50G - 100435",
+    "parsed": "CRTNS WITH ASSORTED MIX OF PKTS OF BARS & BALLS WILD HEALTH BRAND \u2013 BUBBLE WRAPPED 70 CTNS; OAT SNACK BARS 1,000 X 100G \u2013 100435 70 CTNS; LUPIN CRUNCHIES 2,000 X 50G \u2013 100215 70 CTNS; HEMP BLISS BALLS 2,000 X 50G - 100435",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619497909,
+   "rectangle": {
+    "x0": 226.552001953125,
+    "y0": 699.8707275390625,
+    "x1": 254.62399291992188,
+    "y1": 704.9667358398438,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 226.552001953125,
+     "y0": 699.8707275390625,
+     "x1": 254.62399291992188,
+     "y1": 704.9667358398438,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "PREPAID",
+   "parsed": "PREPAID",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619497916,
+   "rectangle": {
+    "x0": 42.37200164794922,
+    "y0": 369.1727294921875,
+    "x1": 242.54795837402344,
+    "y1": 374.3647155761719,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.37200164794922,
+     "y0": 369.1727294921875,
+     "x1": 242.54795837402344,
+     "y1": 374.3647155761719,
+     "pageIndex": 0
+    }
+   ],
+   "document": "tKjWzIdt",
+   "pageIndex": 0,
+   "raw": "FREIGHT COUNTED BY SHIPPER. CUSTOM CHECK ON ARRIVAL.",
+   "parsed": "FREIGHT COUNTED BY SHIPPER. CUSTOM CHECK ON ARRIVAL.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "ZESTADO LOG I ST I C S BILL OF LADING: PORT TO PORT BOL NO: EG00055802323028 SHIPPER: WILD HEALTH FOODS PTY LTD 10 GOURMET COURT SOUTH FREMANTLE WA 6162 AUSTRALIA PHONE: 618-9335-3101 EXPORT REFERENCES: BOOKING NO: 21118034-1 PO# 10002345 INV. NO: WHF/001234 DATE: 10-AUG-2021 NEW CUSTOMER \u2013 LAIHEE KUNG GROUP L/C NO: CITIBANK/CB005965A0 10-JUL-2021 QUOTE NO: 001234 MORE\u2026 CONSIGNEE: LAIHEE KUNG SUPERMARKET GROUP 10 JURONG MAIN ROAD ORCHARD PARK ORCHARD SG 238872 SINGAPORE PHONE: 65-6265-4010 CONTACT FOR CARGO RELEASE: ZESTADO AGENT: KVG FREIGHT PICKUP PHONE: 65-6265-4040 NOTIFY PARTY: LAIHEE KUNG SUPERMARKET GROUP 10 JURONG MAIN ROAD ORCHARD PARK ORCHARD SG 238872 SINGAPORE PHONE: 65-6265-4010 TERMS AND CONDITIONS: IN ACCEPTING THIS BILL OF LADING, THE MERCHANT AGREES TO ALL THE TERMS AND CONDITIONS OF THE CARRIER. IN WITNESS, THE SIGNATORIES HAVE SIGNED THE NUMBER OF ORIGINAL BILLS OF LADING STATED HEREIN. IT IS AGREED THAT THIS BILL OF LADING MUST BE DULY SURRENDERED IN EXCHANGE FOR THE GOODS. SPECIAL INSTRUCTIONS: FREIGHT COUNTED BY SHIPPER. CUSTOM CHECK ON ARRIVAL. A COMPLETE LISTING OF TERMS AND CONDITIONS CAN BE FOUND ON THE ZESTADO WEBSITE PRE-CARRIAGE BY: TRUCK PLACE OF RECEIPT: FREMANTLE 6162 TYPE OF MOVE: MAIN LEG - PORT TO PORT VESSEL NAME: VM KINGU EXPRESS VOYAGE NO: 001714 PORT OF LOADING: FREMANTLE, AUSTRALIA PORT OF DISCHARGE: JURONG PORT / SINGAPORE PLACE OF DELIVERY: EAST JURONG / SINGAPORE FINAL DESTINATION SINGAPORE SCHEDULE: ETD: 13-AUG-2108:30 AWST ETA: 20-AUG-2111:15 SST CARRIER HAS NOT VERIFIED PARTICULARS FURNISHED BY MERCHANT MARKS & NUMBERS # PKGS DESCRIPTION OF GOODS GROSS WEIGHT (KGS) MEASUREMENT (CBM) 10' CONTAINER NO: EXGU3024389-2 SEAL NO: 555728 220 20 X 1KG BXS ORGANIC MUESLI PER CARTON WILD HEALTH BRAND \u2013 BUBBLE WRAPPED AND TAPED 100 CTNS; FRUIT-FREE, CODE 1002034 100 CTNS; NUT-FREE, CODE 1002055 20 CTNS; GOURMET, CODE 1002221 4,425.00 KG 10.5 M\u00b3 10' CONTAINER NO: EXGU3024111-5 SEAL NO: 555111 150 25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON WILD & FIT BRAND 75 CTNS; VANILLA, CODE 1009001 75 CTNS; CHOCOLATE, CODE 1009020 1,880.50 KG 7.5 M\u00b3 PAGE 1 OF 2 SEE ATTACHED SHEET FOR ALL ITEMS TOTAL NO. OF PKGS IN WORDS FIVE HUNDRED AND EIGHTY OCEAN FREIGHT PREPAID COLLECT NO. OF ORIGINAL BOLs: 3 AUD $2,500 SHIPPER - SIGNATURE / DATE: THIS CERTIFIES THAT THE GOODS HAVE BEEN PROPERLY CLASSIFIED AND PACKAGED ACCORDING TO THE REGULATIONS OF DOT. SHIPPER: _____________________________________________ CARRIER: ZESTADO LOGISTICS - SIGNATURE / DATE: THE CARRIER ACKNOWLEDGES THE RECEIPT OF CONTAINERS IN APPARENT GOOD ORDER. CARRIER: _____________________________________________ ATTACHED LISTING CARRIER ZESTADO LOGISTICS VESSEL NAME VM KINGU EXPRESS VOYAGE NO 001714 BOL NO EG00055802323028 SHIPPER WILD HEALTH FOODS PTY LTD CONSIGNEE LAIHEE KUNG SUPERMARKET GROUP EXPORT REFERENCES BOOKING NO: 21118034-1 PO# 10002345 INV. NO: WHF/001234 DATE: 10-AUG-2021 NEW CUSTOMER \u2013 LAIHEE KUNG GROUP L/C NO: CITIBANK/CB005965A0 10-JUL-2021 QUOTE NO: 001234 CARRIER REF: 432100-1 MARKS & NUMBERS # PKGS DESCRIPTION OF GOODS GROSS WEIGHT (KGS) MEASUREMENT (CBM) 10' CONTAINER NO: EXGU3024389-2 SEAL NO: 555728 220 20 X 1KG BXS ORGANIC MUESLI PER CARTON WILD HEALTH BRAND \u2013 BUBBLE WRAPPED AND TAPED 100 CTNS; FRUIT-FREE, CODE 1002034 100 CTNS; NUT-FREE, CODE 1002055 20 CTNS; GOURMET, CODE 1002221 4,425.00 KG 10.5 M\u00b3 10' CONTAINER NO: EXGU3024111-5 SEAL NO: 555111 150 25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON WILD & FIT BRAND 75 CTNS; VANILLA, CODE 1009001 75 CTNS; CHOCOLATE, CODE 1009020 1,880.50 KG 7.5 M\u00b3 10' CONTAINER NO: EXGU3024132-6 SEAL NO: 555423 210 CRTNS WITH ASSORTED MIX OF PKTS OF BARS & BALLS WILD HEALTH BRAND \u2013 BUBBLE WRAPPED 70 CTNS; OAT SNACK BARS 1,000 X 100G \u2013 100435 70 CTNS; LUPIN CRUNCHIES 2,000 X 50G \u2013 100215 70 CTNS; HEMP BLISS BALLS 2,000 X 50G - 100435 3,860.00 KG 8.4 M\u00b3 580"
+ },
+ "meta": {
+  "identifier": "tKjWzIdt",
+  "customIdentifier": "uat-baseline-R01",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:42:34.325832Z",
+  "fileName": "BillOfLading.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:42:22.310267Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

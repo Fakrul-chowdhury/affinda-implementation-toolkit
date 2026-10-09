@@ -1,0 +1,30 @@
+{
+  "billOfLadingNumber": "ZE917849405223",
+  "date": "2026-09-21",
+  "sidNumber": null,
+  "proNumber": null,
+  "shipper": "IRONBARK BUILDING SUPPLIES",
+  "origin": "LAEM CHABANG, THAILAND",
+  "consignee": "NORTHGATE DISTRIBUTION CENTRE",
+  "destination": "PORT OF BRISBANE",
+  "carrier": "ZEPHYR OCEAN LINES",
+  "trailerNumber": [
+    "TGHU399270-8",
+    "ZOLU390398-2"
+  ],
+  "sealNumber": [
+    "536409",
+    "356512"
+  ],
+  "grossWeight": 5076.6,
+  "quantity": 277,
+  "descriptionOfGoods": [
+    "Malting barley 25kg",
+    "Flat-pack bookshelves",
+    "Garden hose reels",
+    "Dry pet food 15kg"
+  ],
+  "freightTerms": "Collect",
+  "specialInstructions": null,
+  "_notes": "total packages only printed in words; weights printed per container, no total"
+}

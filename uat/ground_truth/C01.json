@@ -1,0 +1,26 @@
+{
+  "billOfLadingNumber": "SO319360675193",
+  "date": "2026-09-14",
+  "sidNumber": null,
+  "proNumber": null,
+  "shipper": "KOOKABURRA KITCHENWARE",
+  "origin": "BUSAN, KOREA",
+  "consignee": "INLAND RURAL SUPPLIES",
+  "destination": "PORT OF MELBOURNE",
+  "carrier": "SOUTHERN MERIDIAN SHIPPING",
+  "trailerNumber": [
+    "ZOLU670837-0"
+  ],
+  "sealNumber": [
+    "985233"
+  ],
+  "grossWeight": 1408.4,
+  "quantity": 158,
+  "descriptionOfGoods": [
+    "Garden hose reels",
+    "Stainless cookware sets"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": null,
+  "_notes": "total packages only printed in words; weights printed per container, no total"
+}

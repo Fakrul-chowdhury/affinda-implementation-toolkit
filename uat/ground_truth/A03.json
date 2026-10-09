@@ -1,0 +1,24 @@
+{
+  "billOfLadingNumber": "WBF790112",
+  "date": "2026-10-07",
+  "sidNumber": null,
+  "proNumber": "4138588",
+  "shipper": "IRONBARK BUILDING SUPPLIES",
+  "origin": "Dandenong",
+  "consignee": "NORTHGATE DISTRIBUTION CENTRE",
+  "destination": "Townsville",
+  "carrier": "Wattlebird Freight",
+  "trailerNumber": [
+    "TRL-1466"
+  ],
+  "sealNumber": [
+    "SL164075"
+  ],
+  "grossWeight": 1491.0,
+  "quantity": 105,
+  "descriptionOfGoods": [
+    "Canned tomatoes 24 x 400g"
+  ],
+  "freightTerms": "Collect",
+  "specialInstructions": "Keep dry. Fragile - handle with care."
+}

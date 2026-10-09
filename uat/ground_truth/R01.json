@@ -1,0 +1,31 @@
+{
+  "billOfLadingNumber": "EG00055802323028",
+  "date": "2021-08-10",
+  "sidNumber": null,
+  "proNumber": null,
+  "shipper": "WILD HEALTH FOODS PTY LTD",
+  "origin": "FREMANTLE",
+  "consignee": "LAIHEE KUNG SUPERMARKET GROUP",
+  "destination": "SINGAPORE",
+  "carrier": "ZESTADO LOGISTICS",
+  "trailerNumber": [
+    "EXGU3024389-2",
+    "EXGU3024111-5",
+    "EXGU3024132-6"
+  ],
+  "sealNumber": [
+    "555728",
+    "555111",
+    "555423"
+  ],
+  "grossWeight": 10165.5,
+  "quantity": 580,
+  "descriptionOfGoods": [
+    "20 X 1KG BXS ORGANIC MUESLI PER CARTON",
+    "25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON",
+    "CRTNS WITH ASSORTED MIX OF PKTS OF BARS & BALLS"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": "FREIGHT COUNTED BY SHIPPER. CUSTOM CHECK ON ARRIVAL.",
+  "_notes": "3rd container only on page 2; total weight not printed (sum of 3 lines); date is the invoice date"
+}

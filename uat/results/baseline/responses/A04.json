@@ -1,0 +1,599 @@
+{
+ "data": {
+  "proNumber": {
+   "id": 2619495831,
+   "rectangle": {
+    "x0": 465.0246276855469,
+    "y0": 83.6729736328125,
+    "x1": 499.4496154785156,
+    "y1": 90.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 465.0246276855469,
+     "y0": 83.6729736328125,
+     "x1": 499.4496154785156,
+     "y1": 90.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "4116155",
+   "parsed": "4116155",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xvxyzNTx",
+   "contentType": "text",
+   "parent": null
+  },
+  "shipper": {
+   "id": 2619495834,
+   "rectangle": {
+    "x0": 42.441001892089844,
+    "y0": 127.36700439453125,
+    "x1": 183.58798217773438,
+    "y1": 134.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.441001892089844,
+     "y0": 127.36700439453125,
+     "x1": 183.58798217773438,
+     "y1": 134.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "SALTBUSH HARDWARE PTY LTD",
+   "parsed": "SALTBUSH HARDWARE PTY LTD",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619495830,
+   "rectangle": {
+    "x0": 69.81199645996094,
+    "y0": 227.7354736328125,
+    "x1": 111.59799194335938,
+    "y1": 234.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 69.81199645996094,
+     "y0": 227.7354736328125,
+     "x1": 111.59799194335938,
+     "y1": 234.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "Seven Hills",
+   "parsed": "Seven Hills",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619495821,
+   "rectangle": {
+    "x0": 422.4366455078125,
+    "y0": 61.53802490234375,
+    "x1": 470.5416259765625,
+    "y1": 68.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 422.4366455078125,
+     "y0": 61.53802490234375,
+     "x1": 470.5416259765625,
+     "y1": 68.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "WBF652551",
+   "parsed": "WBF652551",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619495824,
+   "rectangle": {
+    "x0": 409.629638671875,
+    "y0": 72.36700439453125,
+    "x1": 453.98162841796875,
+    "y1": 79.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 409.629638671875,
+     "y0": 72.36700439453125,
+     "x1": 453.98162841796875,
+     "y1": 79.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "05/10/2026",
+   "parsed": "2026-10-05",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": null,
+  "consignee": {
+   "id": 2619495823,
+   "rectangle": {
+    "x0": 310.7919921875,
+    "y0": 127.36700439453125,
+    "x1": 422.25701904296875,
+    "y1": 134.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 310.7919921875,
+     "y0": 127.36700439453125,
+     "x1": 422.25701904296875,
+     "y1": 134.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "RED GUM CO-OPERATIVE",
+   "parsed": "RED GUM CO-OPERATIVE",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619495827,
+   "rectangle": {
+    "x0": 89.86349487304688,
+    "y0": 238.89697265625,
+    "x1": 116.88499450683594,
+    "y1": 245.1190185546875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 89.86349487304688,
+     "y0": 238.89697265625,
+     "x1": 116.88499450683594,
+     "y1": 245.1190185546875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "Mildura",
+   "parsed": "Mildura",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619495822,
+   "rectangle": {
+    "x0": 450.8294982910156,
+    "y0": 227.89697265625,
+    "x1": 517.5885009765625,
+    "y1": 235.86151123046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 450.8294982910156,
+     "y0": 227.89697265625,
+     "x1": 517.5885009765625,
+     "y1": 235.86151123046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "Wattlebird Freight",
+   "parsed": "Wattlebird Freight",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619495836,
+   "rectangle": {
+    "x0": 262.1514892578125,
+    "y0": 227.7354736328125,
+    "x1": 344.3804931640625,
+    "y1": 234.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 262.1514892578125,
+     "y0": 227.7354736328125,
+     "x1": 344.3804931640625,
+     "y1": 234.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "TRL-7336 / TRL-3650",
+   "parsed": "TRL-7336 / TRL-3650",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619495833,
+   "rectangle": {
+    "x0": 255.3769989013672,
+    "y0": 238.7354736328125,
+    "x1": 337.8779602050781,
+    "y1": 245.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 255.3769989013672,
+     "y0": 238.7354736328125,
+     "x1": 337.8779602050781,
+     "y1": 245.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "SL168439 / SL378671",
+   "parsed": "SL168439 / SL378671",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619495829,
+   "rectangle": {
+    "x0": 470.2699890136719,
+    "y0": 335.6099853515625,
+    "x1": 499.7359924316406,
+    "y1": 343.50299072265625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 470.2699890136719,
+     "y0": 335.6099853515625,
+     "x1": 499.7359924316406,
+     "y1": 343.50299072265625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "9,163.0",
+   "parsed": 9163.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619495832,
+   "rectangle": {
+    "x0": 42.23400115966797,
+    "y0": 335.6099853515625,
+    "x1": 51.720001220703125,
+    "y1": 342.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.23400115966797,
+     "y0": 335.6099853515625,
+     "x1": 51.720001220703125,
+     "y1": 342.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "20",
+   "parsed": 20.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619495825,
+    "rectangle": {
+     "x0": 120.39600372314453,
+     "y0": 291.36700439453125,
+     "x1": 191.68499755859375,
+     "y1": 298.1619873046875,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 120.39600372314453,
+      "y0": 291.36700439453125,
+      "x1": 191.68499755859375,
+      "y1": 298.1619873046875,
+      "pageIndex": 0
+     }
+    ],
+    "document": "IMhYbbSa",
+    "pageIndex": 0,
+    "raw": "Ceramic floor tiles",
+    "parsed": "Ceramic floor tiles",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619495826,
+    "rectangle": {
+     "x0": 120.43199920654297,
+     "y0": 306.36700439453125,
+     "x1": 193.7100067138672,
+     "y1": 313.1619873046875,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 120.43199920654297,
+      "y0": 306.36700439453125,
+      "x1": 193.7100067138672,
+      "y1": 313.1619873046875,
+      "pageIndex": 0
+     }
+    ],
+    "document": "IMhYbbSa",
+    "pageIndex": 0,
+    "raw": "Garden hose reels",
+    "parsed": "Garden hose reels",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619495828,
+   "rectangle": {
+    "x0": 56.6879997253418,
+    "y0": 385.2560119628906,
+    "x1": 83.11199951171875,
+    "y1": 392.64801025390625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 56.6879997253418,
+     "y0": 385.2560119628906,
+     "x1": 83.11199951171875,
+     "y1": 392.64801025390625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "Prepaid",
+   "parsed": "Prepaid",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619495835,
+   "rectangle": {
+    "x0": 310.1189880371094,
+    "y0": 379.81201171875,
+    "x1": 411.2859802246094,
+    "y1": 387.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 310.1189880371094,
+     "y0": 379.81201171875,
+     "x1": 411.2859802246094,
+     "y1": 387.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "IMhYbbSa",
+   "pageIndex": 0,
+   "raw": "Tail-lift required at delivery.",
+   "parsed": "Tail-lift required at delivery.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "WATTLEBIRD FREIGHT Road Transport | ABN 00 000 000 000 (demo) | Fictional company for testing BILL OF LADING BOL No: WBF652551 Date: 05/10/2026 Con Note (Pro) No: 4116155 SHIPPER (PICK UP FROM) SALTBUSH HARDWARE PTY LTD 88 Foundry Road Seven Hills NSW 2147 CONSIGNEE (DELIVER TO) RED GUM CO-OPERATIVE 31 Railway Parade Mildura VIC 3500 TRANSPORT DETAILS Origin: Seven Hills Destination: Mildura Trailer No: TRL-7336 / TRL-3650 Seal No: SL168439 / SL378671 Carrier: Wattlebird Freight Vehicle: B-DOUBLE QTY TYPE DESCRIPTION OF GOODS WEIGHT (KG) 10 PLT Ceramic floor tiles 9,100.0 10 CTN Garden hose reels 63.0 20 TOTALS 9,163.0 FREIGHT CHARGES X Prepaid Collect Third Party SPECIAL INSTRUCTIONS Tail-lift required at delivery. Received in apparent good order and condition. Shipper signature: ____________________ Driver signature: ____________________ Date: ____________"
+ },
+ "meta": {
+  "identifier": "IMhYbbSa",
+  "customIdentifier": "uat-baseline-A04",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:39.696598Z",
+  "fileName": "A04_domestic.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:41:33.521809Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

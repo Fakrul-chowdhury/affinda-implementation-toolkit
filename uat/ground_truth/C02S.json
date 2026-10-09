@@ -1,0 +1,29 @@
+{
+  "billOfLadingNumber": "SO650122140263",
+  "date": "2026-09-08",
+  "sidNumber": null,
+  "proNumber": null,
+  "shipper": "BLUEGUM PANTRY CO.",
+  "origin": "NINGBO, CHINA",
+  "consignee": "TIDEWATER CATERING",
+  "destination": "PORT BOTANY, SYDNEY",
+  "carrier": "SOUTHERN MERIDIAN SHIPPING",
+  "trailerNumber": [
+    "TGHU970256-7",
+    "ZOLU796454-0"
+  ],
+  "sealNumber": [
+    "473284",
+    "770043"
+  ],
+  "grossWeight": 16751.6,
+  "quantity": 166,
+  "descriptionOfGoods": [
+    "Stainless cookware sets",
+    "Bottled sparkling water",
+    "Bottled sparkling water"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": null,
+  "_notes": "total packages only printed in words; weights printed per container, no total"
+}

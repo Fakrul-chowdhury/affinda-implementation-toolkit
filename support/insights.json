@@ -1,0 +1,358 @@
+{
+  "tickets": 150,
+  "weeks": [
+    "2026-W34",
+    "2026-W35",
+    "2026-W36",
+    "2026-W37",
+    "2026-W38",
+    "2026-W39",
+    "2026-W40",
+    "2026-W41"
+  ],
+  "through_week": "2026-W41",
+  "by_category": {
+    "extraction_accuracy": 69,
+    "how_to": 22,
+    "integration_api": 22,
+    "billing_credits": 16,
+    "feature_request": 10,
+    "account_access": 6,
+    "bug": 5
+  },
+  "manual_triage_needed": 23,
+  "by_customer": {
+    "Bluewater Haulage": 60,
+    "Wattlebird Freight": 35,
+    "Copperline Mining Services": 22,
+    "Pinnacle Claims Co": 17,
+    "Greenleaf Accounting Partners": 16
+  },
+  "by_week": {
+    "2026-W34": {
+      "extraction_accuracy": 6,
+      "how_to": 1,
+      "integration_api": 1
+    },
+    "2026-W35": {
+      "extraction_accuracy": 2,
+      "how_to": 5,
+      "billing_credits": 3,
+      "feature_request": 2,
+      "account_access": 1
+    },
+    "2026-W36": {
+      "how_to": 3,
+      "extraction_accuracy": 4,
+      "billing_credits": 4,
+      "feature_request": 2
+    },
+    "2026-W37": {
+      "account_access": 1,
+      "extraction_accuracy": 11,
+      "integration_api": 6,
+      "feature_request": 1,
+      "how_to": 2,
+      "bug": 1
+    },
+    "2026-W38": {
+      "integration_api": 5,
+      "feature_request": 2,
+      "how_to": 3,
+      "extraction_accuracy": 8,
+      "account_access": 1,
+      "billing_credits": 2,
+      "bug": 1
+    },
+    "2026-W39": {
+      "how_to": 3,
+      "extraction_accuracy": 13,
+      "billing_credits": 3,
+      "integration_api": 5,
+      "account_access": 2,
+      "bug": 1
+    },
+    "2026-W40": {
+      "how_to": 5,
+      "bug": 1,
+      "extraction_accuracy": 13,
+      "billing_credits": 2,
+      "feature_request": 3,
+      "account_access": 1,
+      "integration_api": 1
+    },
+    "2026-W41": {
+      "integration_api": 4,
+      "extraction_accuracy": 12,
+      "billing_credits": 2,
+      "bug": 1
+    }
+  },
+  "open": 11,
+  "tagger": {
+    "seen": {
+      "n": 119,
+      "category": 1.0,
+      "issue": 1.0,
+      "priority": 0.815,
+      "coverage": 1.0,
+      "precision": 1.0
+    },
+    "unseen": {
+      "n": 31,
+      "category": 0.161,
+      "issue": 0.161,
+      "priority": 0.452,
+      "coverage": 0.258,
+      "precision": 0.625
+    },
+    "top_confusions": [
+      {
+        "true": "billing_credits",
+        "tagged": "other",
+        "n": 8
+      },
+      {
+        "true": "extraction_accuracy",
+        "tagged": "other",
+        "n": 8
+      },
+      {
+        "true": "integration_api",
+        "tagged": "other",
+        "n": 4
+      },
+      {
+        "true": "extraction_accuracy",
+        "tagged": "billing_credits",
+        "n": 3
+      },
+      {
+        "true": "account_access",
+        "tagged": "other",
+        "n": 2
+      }
+    ]
+  },
+  "sla": {
+    "P1": {
+      "tickets": 15,
+      "sla_hours": 1,
+      "first_response_met": 0.933,
+      "median_first_response_h": 0.8,
+      "median_resolution_h": 18.4
+    },
+    "P2": {
+      "tickets": 37,
+      "sla_hours": 4,
+      "first_response_met": 0.757,
+      "median_first_response_h": 1.9,
+      "median_resolution_h": 24.5
+    },
+    "P3": {
+      "tickets": 50,
+      "sla_hours": 8,
+      "first_response_met": 0.74,
+      "median_first_response_h": 3.3,
+      "median_resolution_h": 63.1
+    },
+    "P4": {
+      "tickets": 48,
+      "sla_hours": 24,
+      "first_response_met": 0.958,
+      "median_first_response_h": 8.6,
+      "median_resolution_h": 65.2
+    }
+  },
+  "feedback": [
+    {
+      "signature": "merged_weight",
+      "tickets": 20,
+      "customers": 2,
+      "customer_names": [
+        "Bluewater Haulage",
+        "Wattlebird Freight"
+      ],
+      "max_severity": 3,
+      "recent_2w": 6,
+      "score": 120,
+      "problem": "Number fields concatenate several values ('4,425.00 KG 1,880.50 KG' -> 4425001880.5)",
+      "ask": "Return null or a list when raw text holds several numbers, instead of joining digits; expose a 'sum of lines' option for totals",
+      "evidence": "UAT R01, C02, C02S"
+    },
+    {
+      "signature": "webhook_missing",
+      "tickets": 6,
+      "customers": 3,
+      "customer_names": [
+        "Copperline Mining Services",
+        "Greenleaf Accounting Partners",
+        "Wattlebird Freight"
+      ],
+      "max_severity": 4,
+      "recent_2w": 1,
+      "score": 72,
+      "problem": "Webhook delivery visibility",
+      "ask": "Delivery log + retry status in the UI",
+      "evidence": "Support tickets"
+    },
+    {
+      "signature": "checkbox_scan",
+      "tickets": 11,
+      "customers": 2,
+      "customer_names": [
+        "Bluewater Haulage",
+        "Wattlebird Freight"
+      ],
+      "max_severity": 3,
+      "recent_2w": 5,
+      "score": 66,
+      "problem": "Tick boxes misread on phone photos (Collect read as Prepaid)",
+      "ask": "Surface per-field confidence for checkbox-derived values so integrations can route them to review",
+      "evidence": "UAT B01S"
+    },
+    {
+      "signature": "polling_timeout",
+      "tickets": 5,
+      "customers": 5,
+      "customer_names": [
+        "Bluewater Haulage",
+        "Copperline Mining Services",
+        "Greenleaf Accounting Partners",
+        "Pinnacle Claims Co",
+        "Wattlebird Freight"
+      ],
+      "max_severity": 2,
+      "recent_2w": 0,
+      "score": 50,
+      "problem": "Integrations poll instead of using webhooks",
+      "ask": "Promote webhooks in onboarding docs",
+      "evidence": "Support tickets"
+    },
+    {
+      "signature": "quantity_words",
+      "tickets": 10,
+      "customers": 2,
+      "customer_names": [
+        "Bluewater Haulage",
+        "Wattlebird Freight"
+      ],
+      "max_severity": 2,
+      "recent_2w": 3,
+      "score": 40,
+      "problem": "Totals printed only in words aren't parsed into number fields",
+      "ask": "Parse number words ('FIVE HUNDRED AND EIGHTY') during number normalisation",
+      "evidence": "UAT R01"
+    },
+    {
+      "signature": "credits_per_page",
+      "tickets": 7,
+      "customers": 3,
+      "customer_names": [
+        "Bluewater Haulage",
+        "Copperline Mining Services",
+        "Pinnacle Claims Co"
+      ],
+      "max_severity": 1,
+      "recent_2w": 2,
+      "score": 21,
+      "problem": "Customers are surprised that credits are per page",
+      "ask": "Show pages and credits per document in the UI and API response; add to onboarding guide",
+      "evidence": "Live usage: 2-page sample used 2 credits"
+    },
+    {
+      "signature": "feature_units",
+      "tickets": 4,
+      "customers": 2,
+      "customer_names": [
+        "Bluewater Haulage",
+        "Wattlebird Freight"
+      ],
+      "max_severity": 1,
+      "recent_2w": 2,
+      "score": 8,
+      "problem": "Weights in lbs vs kg",
+      "ask": "Unit capture/normalisation for weight fields",
+      "evidence": "UAT B01-B03 (lbs)"
+    },
+    {
+      "signature": "feature_confidence",
+      "tickets": 3,
+      "customers": 2,
+      "customer_names": [
+        "Bluewater Haulage",
+        "Wattlebird Freight"
+      ],
+      "max_severity": 1,
+      "recent_2w": 0,
+      "score": 6,
+      "problem": "Per-field confidence is null on Extract document types",
+      "ask": "Return a confidence signal (or document it clearly) so customers can tune auto-approval",
+      "evidence": "Every live UAT response: confidence = null"
+    },
+    {
+      "signature": "multi_page_lines",
+      "tickets": 3,
+      "customers": 1,
+      "customer_names": [
+        "Bluewater Haulage"
+      ],
+      "max_severity": 2,
+      "recent_2w": 1,
+      "score": 6,
+      "problem": "Values on continuation pages are missed",
+      "ask": "Make single-value fields with several matches across pages visible as a warning",
+      "evidence": "UAT R01"
+    },
+    {
+      "signature": "id_confusion",
+      "tickets": 2,
+      "customers": 1,
+      "customer_names": [
+        "Wattlebird Freight"
+      ],
+      "max_severity": 2,
+      "recent_2w": 1,
+      "score": 4,
+      "problem": "Identifier fields pick up neighbouring references (PO# as SID)",
+      "ask": "Prompt guidance in field setup to describe what a field is NOT",
+      "evidence": "UAT R01"
+    },
+    {
+      "signature": "feature_repeating",
+      "tickets": 3,
+      "customers": 1,
+      "customer_names": [
+        "Bluewater Haulage"
+      ],
+      "max_severity": 1,
+      "recent_2w": 1,
+      "score": 3,
+      "problem": "Single-value fields can't hold B-double trailers/seals",
+      "ask": "Suggest 'multiple' when the sample document has several matches during field setup",
+      "evidence": "UAT A04, A05, R01"
+    }
+  ],
+  "deflection": {
+    "how_to_tickets": 22,
+    "share": 0.147,
+    "top": [
+      [
+        "howto_export",
+        9
+      ],
+      [
+        "howto_add_field",
+        5
+      ],
+      [
+        "howto_email_ingest",
+        5
+      ],
+      [
+        "howto_validation",
+        3
+      ]
+    ]
+  }
+}

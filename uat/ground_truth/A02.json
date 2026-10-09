@@ -1,0 +1,25 @@
+{
+  "billOfLadingNumber": "WBF496505",
+  "date": "2026-10-03",
+  "sidNumber": null,
+  "proNumber": "4225556",
+  "shipper": "CORAL BAY BEVERAGES",
+  "origin": "Yatala",
+  "consignee": "RED GUM CO-OPERATIVE",
+  "destination": "Mildura",
+  "carrier": "Wattlebird Freight",
+  "trailerNumber": [
+    "TRL-6896"
+  ],
+  "sealNumber": [
+    "SL684301"
+  ],
+  "grossWeight": 3584.4,
+  "quantity": 64,
+  "descriptionOfGoods": [
+    "Food-grade canola oil 200L",
+    "Dry pet food 15kg"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": "Do not double stack."
+}

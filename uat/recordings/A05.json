@@ -1,0 +1,633 @@
+{
+ "data": {
+  "proNumber": {
+   "id": 2619495815,
+   "rectangle": {
+    "x0": 465.0246276855469,
+    "y0": 83.6729736328125,
+    "x1": 499.4496154785156,
+    "y1": 90.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 465.0246276855469,
+     "y0": 83.6729736328125,
+     "x1": 499.4496154785156,
+     "y1": 90.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "4389965",
+   "parsed": "4389965",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xvxyzNTx",
+   "contentType": "text",
+   "parent": null
+  },
+  "shipper": {
+   "id": 2619495818,
+   "rectangle": {
+    "x0": 42.441001892089844,
+    "y0": 127.36700439453125,
+    "x1": 183.58798217773438,
+    "y1": 134.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.441001892089844,
+     "y0": 127.36700439453125,
+     "x1": 183.58798217773438,
+     "y1": 134.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "SALTBUSH HARDWARE PTY LTD",
+   "parsed": "SALTBUSH HARDWARE PTY LTD",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619495814,
+   "rectangle": {
+    "x0": 69.81199645996094,
+    "y0": 227.7354736328125,
+    "x1": 111.59799194335938,
+    "y1": 234.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 69.81199645996094,
+     "y0": 227.7354736328125,
+     "x1": 111.59799194335938,
+     "y1": 234.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "Seven Hills",
+   "parsed": "Seven Hills",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619495804,
+   "rectangle": {
+    "x0": 422.4366455078125,
+    "y0": 61.53802490234375,
+    "x1": 472.0086364746094,
+    "y1": 68.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 422.4366455078125,
+     "y0": 61.53802490234375,
+     "x1": 472.0086364746094,
+     "y1": 68.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "WBF867753",
+   "parsed": "WBF867753",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619495807,
+   "rectangle": {
+    "x0": 409.5936279296875,
+    "y0": 72.36700439453125,
+    "x1": 453.98162841796875,
+    "y1": 79.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 409.5936279296875,
+     "y0": 72.36700439453125,
+     "x1": 453.98162841796875,
+     "y1": 79.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "30/09/2026",
+   "parsed": "2026-09-30",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": null,
+  "consignee": {
+   "id": 2619495806,
+   "rectangle": {
+    "x0": 310.6929931640625,
+    "y0": 127.36700439453125,
+    "x1": 445.11700439453125,
+    "y1": 134.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 310.6929931640625,
+     "y0": 127.36700439453125,
+     "x1": 445.11700439453125,
+     "y1": 134.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "HARBOURSIDE RETAIL GROUP",
+   "parsed": "HARBOURSIDE RETAIL GROUP",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619495811,
+   "rectangle": {
+    "x0": 89.88899230957031,
+    "y0": 238.89697265625,
+    "x1": 128.10499572753906,
+    "y1": 245.1190185546875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 89.88899230957031,
+     "y0": 238.89697265625,
+     "x1": 128.10499572753906,
+     "y1": 245.1190185546875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "Newcastle",
+   "parsed": "Newcastle",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619495805,
+   "rectangle": {
+    "x0": 450.8294982910156,
+    "y0": 227.89697265625,
+    "x1": 517.5885009765625,
+    "y1": 235.86151123046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 450.8294982910156,
+     "y0": 227.89697265625,
+     "x1": 517.5885009765625,
+     "y1": 235.86151123046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "Wattlebird Freight",
+   "parsed": "Wattlebird Freight",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619495820,
+   "rectangle": {
+    "x0": 262.1514892578125,
+    "y0": 227.7354736328125,
+    "x1": 344.3804931640625,
+    "y1": 234.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 262.1514892578125,
+     "y0": 227.7354736328125,
+     "x1": 344.3804931640625,
+     "y1": 234.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "TRL-7016 / TRL-8786",
+   "parsed": "TRL-7016 / TRL-8786",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619495817,
+   "rectangle": {
+    "x0": 255.3769989013672,
+    "y0": 238.7354736328125,
+    "x1": 339.27197265625,
+    "y1": 245.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 255.3769989013672,
+     "y0": 238.7354736328125,
+     "x1": 339.27197265625,
+     "y1": 245.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "SL257960 / SL278214",
+   "parsed": "SL257960 / SL278214",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619495813,
+   "rectangle": {
+    "x0": 470.6210021972656,
+    "y0": 350.5379943847656,
+    "x1": 504.75799560546875,
+    "y1": 358.50299072265625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 470.6210021972656,
+     "y0": 350.5379943847656,
+     "x1": 504.75799560546875,
+     "y1": 358.50299072265625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "17,571.4",
+   "parsed": 17571.4,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619495816,
+   "rectangle": {
+    "x0": 42.62099838256836,
+    "y0": 350.6099853515625,
+    "x1": 56.652000427246094,
+    "y1": 357.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.62099838256836,
+     "y0": 350.6099853515625,
+     "x1": 56.652000427246094,
+     "y1": 357.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "103",
+   "parsed": 103.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619495808,
+    "rectangle": {
+     "x0": 120.39600372314453,
+     "y0": 291.36700439453125,
+     "x1": 191.68499755859375,
+     "y1": 298.1619873046875,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 120.39600372314453,
+      "y0": 291.36700439453125,
+      "x1": 191.68499755859375,
+      "y1": 298.1619873046875,
+      "pageIndex": 0
+     }
+    ],
+    "document": "rhCoSCpE",
+    "pageIndex": 0,
+    "raw": "Ceramic floor tiles",
+    "parsed": "Ceramic floor tiles",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619495809,
+    "rectangle": {
+     "x0": 120.77400207519531,
+     "y0": 306.53802490234375,
+     "x1": 209.2080078125,
+     "y1": 314.85400390625,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 120.77400207519531,
+      "y0": 306.53802490234375,
+      "x1": 209.2080078125,
+      "y1": 314.85400390625,
+      "pageIndex": 0
+     }
+    ],
+    "document": "rhCoSCpE",
+    "pageIndex": 0,
+    "raw": "Flat-pack bookshelves",
+    "parsed": "Flat-pack bookshelves",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619495810,
+    "rectangle": {
+     "x0": 120.44100189208984,
+     "y0": 321.36700439453125,
+     "x1": 216.20999145507812,
+     "y1": 328.1619873046875,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 120.44100189208984,
+      "y0": 321.36700439453125,
+      "x1": 216.20999145507812,
+      "y1": 328.1619873046875,
+      "pageIndex": 0
+     }
+    ],
+    "document": "rhCoSCpE",
+    "pageIndex": 0,
+    "raw": "Stainless cookware sets",
+    "parsed": "Stainless cookware sets",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619495812,
+   "rectangle": {
+    "x0": 132.3520050048828,
+    "y0": 400.10400390625,
+    "x1": 156.27999877929688,
+    "y1": 406.1440124511719,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 132.3520050048828,
+     "y0": 400.10400390625,
+     "x1": 156.27999877929688,
+     "y1": 406.1440124511719,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "Collect",
+   "parsed": "Collect",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619495819,
+   "rectangle": {
+    "x0": 310.6885070800781,
+    "y0": 394.8970031738281,
+    "x1": 486.8849792480469,
+    "y1": 402.81048583984375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 310.6885070800781,
+     "y0": 394.8970031738281,
+     "x1": 486.8849792480469,
+     "y1": 402.81048583984375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "rhCoSCpE",
+   "pageIndex": 0,
+   "raw": "Deliver between 7AM and 3PM weekdays only.",
+   "parsed": "Deliver between 7AM and 3PM weekdays only.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "WATTLEBIRD FREIGHT Road Transport | ABN 00 000 000 000 (demo) | Fictional company for testing BILL OF LADING BOL No: WBF867753 Date: 30/09/2026 Con Note (Pro) No: 4389965 SHIPPER (PICK UP FROM) SALTBUSH HARDWARE PTY LTD 88 Foundry Road Seven Hills NSW 2147 CONSIGNEE (DELIVER TO) HARBOURSIDE RETAIL GROUP 5 Pier Street Newcastle NSW 2300 TRANSPORT DETAILS Origin: Seven Hills Destination: Newcastle Trailer No: TRL-7016 / TRL-8786 Seal No: SL257960 / SL278214 Carrier: Wattlebird Freight Vehicle: B-DOUBLE QTY TYPE DESCRIPTION OF GOODS WEIGHT (KG) 17 PLT Ceramic floor tiles 15,470.0 58 CTN Flat-pack bookshelves 1,827.0 28 CTN Stainless cookware sets 274.4 103 TOTALS 17,571.4 FREIGHT CHARGES Prepaid X Collect Third Party SPECIAL INSTRUCTIONS Deliver between 7AM and 3PM weekdays only. Received in apparent good order and condition. Shipper signature: ____________________ Driver signature: ____________________ Date: ____________"
+ },
+ "meta": {
+  "identifier": "rhCoSCpE",
+  "customIdentifier": "uat-baseline-A05",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:39.696064Z",
+  "fileName": "A05_domestic.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:41:33.541085Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

@@ -1,0 +1,27 @@
+{
+  "billOfLadingNumber": "WBF652551",
+  "date": "2026-10-05",
+  "sidNumber": null,
+  "proNumber": "4116155",
+  "shipper": "SALTBUSH HARDWARE PTY LTD",
+  "origin": "Seven Hills",
+  "consignee": "RED GUM CO-OPERATIVE",
+  "destination": "Mildura",
+  "carrier": "Wattlebird Freight",
+  "trailerNumber": [
+    "TRL-7336",
+    "TRL-3650"
+  ],
+  "sealNumber": [
+    "SL168439",
+    "SL378671"
+  ],
+  "grossWeight": 9163.0,
+  "quantity": 20,
+  "descriptionOfGoods": [
+    "Ceramic floor tiles",
+    "Garden hose reels"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": "Tail-lift required at delivery."
+}

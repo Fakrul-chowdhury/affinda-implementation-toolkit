@@ -1,0 +1,26 @@
+{
+  "billOfLadingNumber": "WBF233145",
+  "date": "2026-10-06",
+  "sidNumber": null,
+  "proNumber": "4593434",
+  "shipper": "KOOKABURRA KITCHENWARE",
+  "origin": "Laverton North",
+  "consignee": "TIDEWATER CATERING",
+  "destination": "Cairns",
+  "carrier": "Wattlebird Freight",
+  "trailerNumber": [
+    "TRL-4688"
+  ],
+  "sealNumber": [
+    "SL198275"
+  ],
+  "grossWeight": 2546.4,
+  "quantity": 160,
+  "descriptionOfGoods": [
+    "Dry pet food 15kg",
+    "Malting barley 25kg",
+    "Canned tomatoes 24 x 400g"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": "Deliver between 7AM and 3PM weekdays only."
+}

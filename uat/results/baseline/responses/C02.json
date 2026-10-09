@@ -1,0 +1,581 @@
+{
+ "data": {
+  "proNumber": null,
+  "shipper": {
+   "id": 2619496103,
+   "rectangle": {
+    "x0": 42.62900161743164,
+    "y0": 97.7354736328125,
+    "x1": 137.60800170898438,
+    "y1": 104.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.62900161743164,
+     "y0": 97.7354736328125,
+     "x1": 137.60800170898438,
+     "y1": 104.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "BLUEGUM PANTRY CO.",
+   "parsed": "BLUEGUM PANTRY CO.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619496100,
+   "rectangle": {
+    "x0": 125.7760009765625,
+    "y0": 181.7354736328125,
+    "x1": 189.72149658203125,
+    "y1": 189.24102783203125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 125.7760009765625,
+     "y0": 181.7354736328125,
+     "x1": 189.72149658203125,
+     "y1": 189.24102783203125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "NINGBO, CHINA",
+   "parsed": "NINGBO, CHINA",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619496090,
+   "rectangle": {
+    "x0": 400.85101318359375,
+    "y0": 41.36700439453125,
+    "x1": 473.1929931640625,
+    "y1": 48.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 400.85101318359375,
+     "y0": 41.36700439453125,
+     "x1": 473.1929931640625,
+     "y1": 48.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "SO650122140263",
+   "parsed": "SO650122140263",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619496093,
+   "rectangle": {
+    "x0": 434.79901123046875,
+    "y0": 52.36700439453125,
+    "x1": 488.2139892578125,
+    "y1": 59.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 434.79901123046875,
+     "y0": 52.36700439453125,
+     "x1": 488.2139892578125,
+     "y1": 59.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "08-SEP-2026",
+   "parsed": "2026-09-08",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": null,
+  "consignee": {
+   "id": 2619496092,
+   "rectangle": {
+    "x0": 306.1189880371094,
+    "y0": 97.7354736328125,
+    "x1": 401.7099914550781,
+    "y1": 104.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 306.1189880371094,
+     "y0": 97.7354736328125,
+     "x1": 401.7099914550781,
+     "y1": 104.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "TIDEWATER CATERING",
+   "parsed": "TIDEWATER CATERING",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619496097,
+   "rectangle": {
+    "x0": 138.135009765625,
+    "y0": 192.7354736328125,
+    "x1": 237.89097595214844,
+    "y1": 200.24102783203125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 138.135009765625,
+     "y0": 192.7354736328125,
+     "x1": 237.89097595214844,
+     "y1": 200.24102783203125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "PORT BOTANY, SYDNEY",
+   "parsed": "PORT BOTANY, SYDNEY",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619496091,
+   "rectangle": {
+    "x0": 74.2874984741211,
+    "y0": 458.4725036621094,
+    "x1": 192.1275177001953,
+    "y1": 464.135009765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 74.2874984741211,
+     "y0": 458.4725036621094,
+     "x1": 192.1275177001953,
+     "y1": 464.135009765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "SOUTHERN MERIDIAN SHIPPING",
+   "parsed": "SOUTHERN MERIDIAN SHIPPING",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619496104,
+   "rectangle": {
+    "x0": 42.11199951171875,
+    "y0": 263.10400390625,
+    "x1": 98.19999694824219,
+    "y1": 319.14398193359375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.11199951171875,
+     "y0": 263.10400390625,
+     "x1": 98.19999694824219,
+     "y1": 269.14398193359375,
+     "pageIndex": 0
+    },
+    {
+     "x0": 42.183998107910156,
+     "y0": 313.10400390625,
+     "x1": 96.83200073242188,
+     "y1": 319.14398193359375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "TGHU970256-7 ZOLU796454-0",
+   "parsed": "TGHU970256-7 ZOLU796454-0",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619496102,
+   "rectangle": {
+    "x0": 81.3280029296875,
+    "y0": 274.3759765625,
+    "x1": 107.55198669433594,
+    "y1": 330.1440124511719,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 81.3280029296875,
+     "y0": 274.3759765625,
+     "x1": 107.55198669433594,
+     "y1": 330.1440124511719,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "473284 770043",
+   "parsed": "473284 770043",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619496099,
+   "rectangle": {
+    "x0": 470.322998046875,
+    "y0": 251.7354736328125,
+    "x1": 517.0985107421875,
+    "y1": 309.24102783203125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 470.322998046875,
+     "y0": 251.7354736328125,
+     "x1": 517.0985107421875,
+     "y1": 309.24102783203125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "8,431.60 KG 8,320.00 KG",
+   "parsed": 8431608320.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619496101,
+   "rectangle": {
+    "x0": 160.85850524902344,
+    "y0": 252.02447509765625,
+    "x1": 173.88900756835938,
+    "y1": 258.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 160.85850524902344,
+     "y0": 252.02447509765625,
+     "x1": 173.88900756835938,
+     "y1": 258.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "153",
+   "parsed": 153.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619496094,
+    "rectangle": {
+     "x0": 210.80799865722656,
+     "y0": 252.10400390625,
+     "x1": 366.11199951171875,
+     "y1": 258.14398193359375,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 210.80799865722656,
+      "y0": 252.10400390625,
+      "x1": 366.11199951171875,
+      "y1": 258.14398193359375,
+      "pageIndex": 0
+     }
+    ],
+    "document": "JUbwYmcz",
+    "pageIndex": 0,
+    "raw": "142 CTNS STAINLESS COOKWARE SETS",
+    "parsed": "142 CTNS STAINLESS COOKWARE SETS",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619496095,
+    "rectangle": {
+     "x0": 210.80799865722656,
+     "y0": 263.10400390625,
+     "x1": 359.0719909667969,
+     "y1": 269.14398193359375,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 210.80799865722656,
+      "y0": 263.10400390625,
+      "x1": 359.0719909667969,
+      "y1": 269.14398193359375,
+      "pageIndex": 0
+     }
+    ],
+    "document": "JUbwYmcz",
+    "pageIndex": 0,
+    "raw": "11 PLTS BOTTLED SPARKLING WATER",
+    "parsed": "11 PLTS BOTTLED SPARKLING WATER",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619496096,
+    "rectangle": {
+     "x0": 160.85850524902344,
+     "y0": 302.02447509765625,
+     "x1": 359.0719909667969,
+     "y1": 308.15301513671875,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 160.85850524902344,
+      "y0": 302.02447509765625,
+      "x1": 169.16299438476562,
+      "y1": 308.15301513671875,
+      "pageIndex": 0
+     },
+     {
+      "x0": 221.80799865722656,
+      "y0": 302.10400390625,
+      "x1": 359.0719909667969,
+      "y1": 308.14398193359375,
+      "pageIndex": 0
+     }
+    ],
+    "document": "JUbwYmcz",
+    "pageIndex": 0,
+    "raw": "13 PLTS BOTTLED SPARKLING WATER",
+    "parsed": "13 PLTS BOTTLED SPARKLING WATER",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619496098,
+   "rectangle": {
+    "x0": 200.64599609375,
+    "y0": 386.8970031738281,
+    "x1": 237.46800231933594,
+    "y1": 393.0,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 200.64599609375,
+     "y0": 386.8970031738281,
+     "x1": 237.46800231933594,
+     "y1": 393.0,
+     "pageIndex": 0
+    }
+   ],
+   "document": "JUbwYmcz",
+   "pageIndex": 0,
+   "raw": "PREPAID",
+   "parsed": "PREPAID",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": null,
+  "rawText": "SOUTHERN MERIDIAN SHIPPING BILL OF LADING: PORT TO PORT BOL NO: SO650122140263 DATE OF ISSUE: 08-SEP-2026 SHIPPER: BLUEGUM PANTRY CO. 14 TANNER STREET C/O EXPORT AGENT NINGBO, CHINA CONSIGNEE: TIDEWATER CATERING 77 MARINA DRIVE CAIRNS QLD 4870 AUSTRALIA PORT OF LOADING: NINGBO, CHINA PORT OF DISCHARGE: PORT BOTANY, SYDNEY VESSEL: MV SOUTHERN STAR VOYAGE NO: 765S MARKS & NUMBERS # PKGS DESCRIPTION OF GOODS GROSS WEIGHT (KGS) 40' CONTAINER NO: TGHU970256-7 SEAL NO: 473284 153 142 CTNS STAINLESS COOKWARE SETS 11 PLTS BOTTLED SPARKLING WATER 8,431.60 KG 40' CONTAINER NO: ZOLU796454-0 SEAL NO: 770043 13 13 PLTS BOTTLED SPARKLING WATER 8,320.00 KG TOTAL NO. OF PKGS IN WORDS: ONE HUNDRED AND SIXTY-SIX OCEAN FREIGHT PREPAID COLLECT AUD $5,600 ORIGINALS: 3 CARRIER HAS NOT VERIFIED PARTICULARS FURNISHED BY MERCHANT. CARRIER: SOUTHERN MERIDIAN SHIPPING - SIGNATURE / DATE: ______________________"
+ },
+ "meta": {
+  "identifier": "JUbwYmcz",
+  "customIdentifier": "uat-baseline-C02",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:54.450388Z",
+  "fileName": "C02_ocean.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:41:47.669464Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

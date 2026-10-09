@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}FreightRead{% endblock %} · FreightRead</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top"><div class="top-inner">
+  <a class="brand" href="{{ url_for('extract_page') }}">Freight<span>Read</span></a>
+  <nav>
+    {% set here = request.endpoint %}
+    <a href="{{ url_for('extract_page') }}" class="{{ 'active' if here == 'extract_page' }}">Extract</a>
+    <a href="{{ url_for('uat_page') }}" class="{{ 'active' if here == 'uat_page' }}">UAT</a>
+    <a href="{{ url_for('tracker_page') }}" class="{{ 'active' if here == 'tracker_page' }}">Implementation</a>
+    <a href="{{ url_for('support_page') }}" class="{{ 'active' if here == 'support_page' }}">Support</a>
+  </nav>
+  <span class="mode {{ mode }}" title="Set EXTRACTOR_MODE in .env">{{ 'LIVE · uses Affinda credits' if mode == 'live' else 'MOCK · recorded responses' }}</span>
+</div></header>
+<main>
+{% block content %}{% endblock %}
+<p class="muted small" style="margin-top:40px">Demo project. Wattlebird Freight and all other customers are fictional; documents and tickets are synthetic except the two sample BOLs. Built on the <a href="https://affinda.com">Affinda</a> API.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "billOfLadingNumber": "2026-42172",
+  "date": "2026-09-24",
+  "sidNumber": "SID-158638",
+  "proNumber": "236113",
+  "shipper": "PRAIRIE HOLLOW TOOLWORKS INC.",
+  "origin": "Tulsa, OK 74107",
+  "consignee": "NORTHGATE DISTRIBUTION CENTRE",
+  "destination": "Townsville",
+  "carrier": "Silver Creek Haulers",
+  "trailerNumber": [
+    "8002"
+  ],
+  "sealNumber": [
+    "85401"
+  ],
+  "grossWeight": 54440,
+  "quantity": 31,
+  "descriptionOfGoods": [
+    "Bagged cement 40 x 20kg",
+    "Food-grade canola oil 200L",
+    "Ceramic floor tiles"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": "Do not double stack.",
+  "_notes": "weights printed in LBS"
+}

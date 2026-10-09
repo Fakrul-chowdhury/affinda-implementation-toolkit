@@ -1,0 +1,136 @@
+{
+  "label": "baseline",
+  "run_at": "2026-10-09T21:54:16",
+  "mode": "live",
+  "rules": "wattlebird_v1.yaml",
+  "sources": {
+    "live": 13
+  },
+  "is_real_affinda_result": true,
+  "documents": 13,
+  "credits_used": 14,
+  "field_accuracy": 0.933,
+  "fields_scored": 194,
+  "fields_wrong": 13,
+  "docs_fully_correct": 7,
+  "status_counts": {
+    "PASS": 7,
+    "REVIEW": 3,
+    "FAIL": 3
+  },
+  "errors_caught_by_validation": 8,
+  "error_catch_rate": 0.615,
+  "false_alarms": 9,
+  "passed_with_errors": 3,
+  "per_field": {
+    "billOfLadingNumber": {
+      "label": "BOL number",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "date": {
+      "label": "Date",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "sidNumber": {
+      "label": "SID number",
+      "n": 6,
+      "correct": 5,
+      "spurious": 1,
+      "accuracy": 0.833
+    },
+    "proNumber": {
+      "label": "Pro number",
+      "n": 8,
+      "correct": 8,
+      "accuracy": 1.0
+    },
+    "shipper": {
+      "label": "Shipper",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "origin": {
+      "label": "Origin",
+      "n": 13,
+      "correct": 12,
+      "wrong": 1,
+      "accuracy": 0.923
+    },
+    "consignee": {
+      "label": "Consignee",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "destination": {
+      "label": "Destination",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "carrier": {
+      "label": "Carrier",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "trailerNumber": {
+      "label": "Trailer / container no.",
+      "n": 13,
+      "correct": 11,
+      "wrong": 2,
+      "accuracy": 0.846
+    },
+    "sealNumber": {
+      "label": "Seal number",
+      "n": 13,
+      "correct": 12,
+      "wrong": 1,
+      "accuracy": 0.923
+    },
+    "grossWeight": {
+      "label": "Gross weight",
+      "n": 13,
+      "correct": 10,
+      "wrong": 3,
+      "accuracy": 0.769
+    },
+    "quantity": {
+      "label": "Quantity (packages)",
+      "n": 13,
+      "correct": 10,
+      "wrong": 3,
+      "accuracy": 0.769
+    },
+    "descriptionOfGoods": {
+      "label": "Description of goods",
+      "n": 13,
+      "correct": 13,
+      "accuracy": 1.0
+    },
+    "freightTerms": {
+      "label": "Freight terms",
+      "n": 13,
+      "correct": 12,
+      "wrong": 1,
+      "accuracy": 0.923
+    },
+    "specialInstructions": {
+      "label": "Special instructions",
+      "n": 11,
+      "correct": 10,
+      "spurious": 1,
+      "accuracy": 0.909
+    }
+  },
+  "per_layout": {
+    "domestic": 0.983,
+    "ocean": 0.8,
+    "vics": 0.987
+  }
+}

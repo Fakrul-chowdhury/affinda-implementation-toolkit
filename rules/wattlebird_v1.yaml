@@ -1,0 +1,88 @@
+# v1 - rules as first agreed, BEFORE the baseline UAT run. Kept for the before/after comparison.
+# Agreed in the requirements workshop - see docs/implementation_plan.md, section 3.
+# Change rules here, not in code. Severity: error = blocks export, warning = human review.
+
+customer: Wattlebird Freight (fictional)
+document_type: Bill of Lading
+
+fields:
+  billOfLadingNumber:
+    required: true
+    pattern: '[A-Z0-9][A-Z0-9\-/]{4,24}'
+    pattern_hint: 5-25 letters, digits, - or /
+
+  date:
+    required: true
+    type: date
+    not_future: true
+    max_age_days: 180        # older than this is usually a re-sent or wrong document
+    age_severity: warning
+
+  sidNumber:
+    required: false
+
+  proNumber:
+    required: false          # only some shippers' BOLs carry a Pro number
+
+  shipper:
+    required: true
+    max_length: 160
+
+  origin:
+    required: true
+
+  consignee:
+    required: true
+    max_length: 160
+
+  destination:
+    required: true
+
+  carrier:
+    required: true
+
+  trailerNumber:
+    required: false
+    severity: warning
+    # trailer IDs (TRL-1234), ISO container numbers (EXGU3024389-2) or plain fleet numbers
+    token_pattern: '\b[A-Z]{3}U\d{6,7}(?:-\d)?\b|\bTRL-?\d{3,5}\b|\b\d{4,6}\b'
+    max_tokens: 1
+
+  sealNumber:
+    required: false
+    token_pattern: '\b[A-Z]{0,3}\d{5,8}\b'
+    max_tokens: 1
+
+  grossWeight:
+    required: true
+    type: number
+    min: 1
+    max: 45000               # kg; above a loaded B-double payload is not plausible for one BOL
+
+  quantity:
+    required: true
+    type: number
+    integer: true
+    min: 1
+    max: 5000
+
+  descriptionOfGoods:
+    required: true
+    min_items: 1
+
+  freightTerms:
+    required: true
+    allowed_values: [Prepaid, Collect, Third Party]
+    synonyms:
+      Prepaid: [PP, PPD, PRE-PAID, FREIGHT PREPAID]
+      Collect: [CC, COL, FREIGHT COLLECT]
+      Third Party: [3RD PARTY, THIRD-PARTY, 3P]
+
+  specialInstructions:
+    required: false
+
+cross_field:
+  - type: different
+    fields: [shipper, consignee]
+  - type: different
+    fields: [origin, destination]

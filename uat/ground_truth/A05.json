@@ -1,0 +1,28 @@
+{
+  "billOfLadingNumber": "WBF867753",
+  "date": "2026-09-30",
+  "sidNumber": null,
+  "proNumber": "4389965",
+  "shipper": "SALTBUSH HARDWARE PTY LTD",
+  "origin": "Seven Hills",
+  "consignee": "HARBOURSIDE RETAIL GROUP",
+  "destination": "Newcastle",
+  "carrier": "Wattlebird Freight",
+  "trailerNumber": [
+    "TRL-7016",
+    "TRL-8786"
+  ],
+  "sealNumber": [
+    "SL257960",
+    "SL278214"
+  ],
+  "grossWeight": 17571.4,
+  "quantity": 103,
+  "descriptionOfGoods": [
+    "Ceramic floor tiles",
+    "Flat-pack bookshelves",
+    "Stainless cookware sets"
+  ],
+  "freightTerms": "Collect",
+  "specialInstructions": "Deliver between 7AM and 3PM weekdays only."
+}

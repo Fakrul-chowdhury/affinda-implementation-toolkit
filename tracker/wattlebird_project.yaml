@@ -1,0 +1,148 @@
+# Implementation tracker: Wattlebird Freight (fictional customer) - Bill of Lading automation.
+# Single source of truth for gates, tasks, risks and decisions. Status reports are generated from this
+# file (python -m tracker.tracker), so update it rather than editing reports by hand.
+
+project: Wattlebird Freight - Bill of Lading automation
+customer: Wattlebird Freight (fictional)
+sponsor: Wattlebird Operations Manager
+affinda_lead: Implementation & Support Specialist
+start: 2026-09-07
+target_go_live: 2026-10-26
+scope: >
+  Automate data entry of ~400 Bills of Lading/week from three source formats (Wattlebird road BOL,
+  VICS straight BOL, ocean BOL for container cartage) into Wattlebird's TMS. 16 fields per document,
+  validation rules agreed with Operations, exceptions routed to a review queue.
+
+gates:
+  - id: G1
+    name: Kick-off & discovery
+    due: 2026-09-11
+    status: done
+    completed: 2026-09-10
+    exit_criteria:
+      - Stakeholders, roles and meeting cadence agreed
+      - 50 sample documents received across all source formats
+      - Volumes, peak periods and current manual-entry cost captured
+    tasks:
+      - {task: Kick-off workshop, owner: Affinda, status: done}
+      - {task: Collect sample BOLs per format, owner: Customer, status: done}
+
+  - id: G2
+    name: Requirements sign-off
+    due: 2026-09-18
+    status: done
+    completed: 2026-09-17
+    exit_criteria:
+      - Field list and definitions signed off (16 fields)
+      - Validation rules v1 agreed (rules/wattlebird_v1.yaml)
+      - UAT acceptance criteria agreed (see G5)
+    tasks:
+      - {task: Field definition workshop, owner: Affinda, status: done}
+      - {task: Sign requirements document, owner: Customer, status: done}
+
+  - id: G3
+    name: Solution design
+    due: 2026-09-25
+    status: done
+    completed: 2026-09-24
+    exit_criteria:
+      - Affinda document type + workspace design approved
+      - Integration approach agreed (API + webhook into TMS, exceptions to review queue)
+    tasks:
+      - {task: Document type & field configuration design, owner: Affinda, status: done}
+      - {task: Integration design with customer IT, owner: Affinda integration team, status: done}
+
+  - id: G4
+    name: Build check-in
+    due: 2026-10-02
+    status: done
+    completed: 2026-10-02
+    exit_criteria:
+      - Document type configured in Affinda; validation layer built
+      - TMS integration working end to end in test environment
+    tasks:
+      - {task: Configure Bill of Lading document type, owner: Affinda, status: done}
+      - {task: Build TMS webhook consumer, owner: Affinda integration team, status: done}
+      - {task: Provide TMS test environment, owner: Customer, status: done}
+
+  - id: G5
+    name: User acceptance testing
+    due: 2026-10-16
+    status: in_progress
+    uat_results: baseline_rules_v2     # pulls live metrics from uat/results/<label>/summary.json
+    acceptance:
+      field_accuracy_min: 0.95
+      passed_with_errors_max: 0
+      per_layout_min: 0.90
+    exit_criteria:
+      - Field accuracy >= 95% on the agreed test set
+      - Zero documents auto-approved while containing an error
+      - Every source format >= 90% field accuracy
+      - Customer signs off the findings memo
+    tasks:
+      - {task: "Baseline UAT run (13 docs, live)", owner: Affinda, status: done}
+      - {task: Validation rules v2 (catch rate 8/13 -> 11/13), owner: Affinda, status: done}
+      - {task: Tune Affinda field descriptions + repeating fields, owner: Affinda, status: todo, due: 2026-10-12}
+      - {task: "Re-test, plus 6 unseen holdout documents", owner: Affinda, status: todo, due: 2026-10-14}
+      - {task: Confirm weight unit handling for VICS (lbs) documents, owner: Customer, status: todo, due: 2026-10-13}
+      - {task: UAT sign-off meeting, owner: Customer, status: todo, due: 2026-10-16}
+
+  - id: G6
+    name: Go-live
+    due: 2026-10-26
+    status: not_started
+    exit_criteria:
+      - UAT signed off
+      - Review-queue runbook and support handover complete
+      - Rollback plan agreed (manual entry fallback)
+    tasks:
+      - {task: Production workspace + API keys, owner: Affinda, status: todo}
+      - {task: Train review-queue staff (30 min), owner: Affinda, status: todo}
+      - {task: Go/no-go meeting, owner: Customer, status: todo}
+
+  - id: G7
+    name: Hypercare (2 weeks)
+    due: 2026-11-09
+    status: not_started
+    exit_criteria:
+      - Daily check of exceptions and straight-through rate for week 1, then twice weekly
+      - Fewer than 3 support tickets per week by week 2
+      - Handover to standard support with known-issues list
+    tasks:
+      - {task: Daily hypercare check-in, owner: Affinda, status: todo}
+      - {task: Hypercare close-out report, owner: Affinda, status: todo}
+
+risks:
+  - id: R1
+    risk: Ocean BOLs (container cartage) at 80% field accuracy - totals are spread across container lines
+    impact: high
+    likelihood: high
+    mitigation: Field-description tuning + review_if_multiple rule; if still < 90%, go live with ocean BOLs routed to review
+    owner: Affinda
+    status: open
+  - id: R2
+    risk: VICS BOL weights are in lbs; TMS expects kg
+    impact: medium
+    likelihood: certain
+    mitigation: Add a weight-unit field and convert in the integration; decision needed from customer (D3)
+    owner: Customer
+    status: open
+  - id: R3
+    risk: Scanned/photographed BOLs - tick boxes misread (freight terms)
+    impact: high
+    likelihood: medium
+    mitigation: Rules v2 sends freight terms from scans to review; ask shippers for PDFs where possible
+    owner: Affinda
+    status: mitigated
+  - id: R4
+    risk: Rules v2 were tuned on the same documents they were tested on
+    impact: medium
+    likelihood: medium
+    mitigation: Run 6 unseen holdout documents before sign-off
+    owner: Affinda
+    status: open
+
+decisions:
+  - {id: D1, decision: Exceptions go to a review queue rather than blocking the whole batch, date: 2026-09-24, status: made}
+  - {id: D2, decision: ISO 6346 container check-digit rule stays OFF until real container numbers are confirmed, date: 2026-10-09, status: made}
+  - {id: D3, decision: "Convert lbs to kg in the integration, or store the unit alongside the weight?", date: 2026-10-13, status: needed}

@@ -1,0 +1,1301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UAT report - baseline_rules_v2</title>
+<style>
+  :root { --ink:#1d2330; --muted:#5d6678; --line:#dfe3ea; --bg:#f6f7f9; --card:#fff;
+          --ok:#1f7a4d; --okbg:#e3f4ea; --warn:#8a5a00; --warnbg:#fdf1d8; --bad:#b42318; --badbg:#fde7e4; --accent:#0e6e8c; }
+  * { box-sizing:border-box }
+  body { margin:0; font:14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg) }
+  main { max-width:1150px; margin:0 auto; padding:24px 16px 60px }
+  h1 { font-size:22px; margin:0 0 4px } h2 { font-size:16px; margin:28px 0 10px }
+  .sub { color:var(--muted); margin:0 0 16px }
+  .banner { padding:10px 14px; border-radius:8px; margin:12px 0 18px; font-weight:600 }
+  .banner.real { background:var(--okbg); color:var(--ok) } .banner.sim { background:var(--warnbg); color:var(--warn) }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px }
+  .kpi { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px }
+  .kpi b { display:block; font-size:24px } .kpi span { color:var(--muted); font-size:12.5px }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden }
+  th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); vertical-align:top; font-size:13px }
+  th { background:#eef1f5; font-weight:600 }
+  .bar { height:8px; background:#e8ebf0; border-radius:4px; min-width:90px } .bar i { display:block; height:100%; border-radius:4px; background:var(--accent) }
+  .pill { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; font-weight:600 }
+  .PASS,.correct,.empty_ok { background:var(--okbg); color:var(--ok) } .REVIEW { background:var(--warnbg); color:var(--warn) }
+  .FAIL,.wrong,.missed,.spurious { background:var(--badbg); color:var(--bad) }
+  details { background:var(--card); border:1px solid var(--line); border-radius:10px; margin:8px 0; padding:8px 12px }
+  summary { cursor:pointer; font-weight:600 } .muted { color:var(--muted) } code { font-size:12px }
+  .wrap { overflow-x:auto }
+</style>
+</head>
+<body><main>
+<h1>UAT report: Bill of Lading extraction</h1>
+<p class="sub">Run <b>baseline_rules_v2</b>, 2026-10-09T21:54:15. Customer: Wattlebird Freight (fictional). Mode: live.</p>
+
+
+<div class="banner real">Real Affinda results: every response came from the live Affinda API ({&#39;live&#39;: 13}).</div>
+
+
+<div class="kpis">
+  <div class="kpi"><b>93.3%</b><span>field accuracy (194 fields scored)</span></div>
+  <div class="kpi"><b>7/13</b><span>documents 100% correct</span></div>
+  <div class="kpi"><b>11/13</b><span>extraction errors flagged by validation</span></div>
+  <div class="kpi"><b>0</b><span>documents auto-approved with an error (target 0)</span></div>
+  <div class="kpi"><b>4 / 6 / 3</b><span>validation PASS / REVIEW / FAIL</span></div>
+  <div class="kpi"><b>14</b><span>Affinda credits used</span></div>
+</div>
+
+<h2>Accuracy by field</h2>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Accuracy</th><th></th><th>Correct</th><th>Wrong</th><th>Missed</th><th>Spurious</th></tr>
+
+<tr><td>BOL number</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>13</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>Date</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>13</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>SID number</td><td>83%</td>
+<td><div class="bar"><i style="width:83.0%"></i></div></td>
+<td>5</td><td>0</td><td>0</td><td>1</td></tr>
+
+<tr><td>Pro number</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>8</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>Shipper</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>13</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>Origin</td><td>92%</td>
+<td><div class="bar"><i style="width:92.0%"></i></div></td>
+<td>12</td><td>1</td><td>0</td><td>0</td></tr>
+
+<tr><td>Consignee</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>13</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>Destination</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>13</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>Carrier</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>13</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>Trailer / container no.</td><td>85%</td>
+<td><div class="bar"><i style="width:85.0%"></i></div></td>
+<td>11</td><td>2</td><td>0</td><td>0</td></tr>
+
+<tr><td>Seal number</td><td>92%</td>
+<td><div class="bar"><i style="width:92.0%"></i></div></td>
+<td>12</td><td>1</td><td>0</td><td>0</td></tr>
+
+<tr><td>Gross weight</td><td>77%</td>
+<td><div class="bar"><i style="width:77.0%"></i></div></td>
+<td>10</td><td>3</td><td>0</td><td>0</td></tr>
+
+<tr><td>Quantity (packages)</td><td>77%</td>
+<td><div class="bar"><i style="width:77.0%"></i></div></td>
+<td>10</td><td>3</td><td>0</td><td>0</td></tr>
+
+<tr><td>Description of goods</td><td>100%</td>
+<td><div class="bar"><i style="width:100.0%"></i></div></td>
+<td>13</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr><td>Freight terms</td><td>92%</td>
+<td><div class="bar"><i style="width:92.0%"></i></div></td>
+<td>12</td><td>1</td><td>0</td><td>0</td></tr>
+
+<tr><td>Special instructions</td><td>91%</td>
+<td><div class="bar"><i style="width:91.0%"></i></div></td>
+<td>10</td><td>0</td><td>0</td><td>1</td></tr>
+
+</table></div>
+
+<h2>Accuracy by document layout</h2>
+<div class="wrap"><table><tr><th>Layout</th><th>Field accuracy</th><th></th></tr>
+
+<tr><td>domestic</td><td>98%</td><td><div class="bar"><i style="width:98.0%"></i></div></td></tr>
+
+<tr><td>ocean</td><td>80%</td><td><div class="bar"><i style="width:80.0%"></i></div></td></tr>
+
+<tr><td>vics</td><td>99%</td><td><div class="bar"><i style="width:99.0%"></i></div></td></tr>
+</table></div>
+
+<h2>Documents</h2>
+
+<details>
+<summary><span class="pill PASS">PASS</span> A01: domestic, clean
+  <span class="muted">(0 field errors, source: live)</span></summary>
+
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>WBF233145</code></td>
+<td><code>WBF233145</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-10-06</code></td>
+<td><code>2026-10-06</code><br><span class="muted">raw: 06/10/2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>4593434</code></td>
+<td><code>4593434</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>KOOKABURRA KITCHENWARE</code></td>
+<td><code>KOOKABURRA KITCHENWARE</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Laverton North</code></td>
+<td><code>Laverton North</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Cairns</code></td>
+<td><code>Cairns</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Wattlebird Freight</code></td>
+<td><code>Wattlebird Freight</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;TRL-4688&#39;]</code></td>
+<td><code>TRL-4688</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;SL198275&#39;]</code></td>
+<td><code>SL198275</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>2546.4</code></td>
+<td><code>2546.4</code><br><span class="muted">raw: 2,546.4</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>160</code></td>
+<td><code>160.0</code><br><span class="muted">raw: 160</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Dry pet food 15kg&#39;, &#39;Malting barley 25kg&#39;, &#39;Canned tomatoes 24 x 400g&#39;]</code></td>
+<td><code>[&#39;Dry pet food 15 kg&#39;, &#39;Malting barley 25 kg&#39;, &#39;Canned tomatoes 24 x 400g&#39;]</code><br><span class="muted">raw: Dry pet food 15kg | Malting barley 25kg | Canned tomatoes 24 x 400g</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>Prepaid</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Deliver between 7AM and 3PM weekdays only.</code></td>
+<td><code>Deliver between 7AM and 3PM weekdays only.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill REVIEW">REVIEW</span> A01S: domestic, clean phone-scan
+  <span class="muted">(1 field error, source: live)</span></summary>
+
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>WBF233145</code></td>
+<td><code>WBF233145</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-10-06</code></td>
+<td><code>2026-10-06</code><br><span class="muted">raw: 06/10/2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>4593434</code></td>
+<td><code>4593434</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>KOOKABURRA KITCHENWARE</code></td>
+<td><code>KOOKABURRA KITCHENWARE</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill wrong">wrong</span></td>
+<td><code>Laverton North</code></td>
+<td><code>Laverton Nonh</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Cairns</code></td>
+<td><code>Cairns</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Wattlebird Freight</code></td>
+<td><code>Wattlebird Freight</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;TRL-4688&#39;]</code></td>
+<td><code>TRL-4688</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;SL198275&#39;]</code></td>
+<td><code>SL198275</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>2546.4</code></td>
+<td><code>2546.4</code><br><span class="muted">raw: 2,546.4</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>160</code></td>
+<td><code>160.0</code><br><span class="muted">raw: 160</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Dry pet food 15kg&#39;, &#39;Malting barley 25kg&#39;, &#39;Canned tomatoes 24 x 400g&#39;]</code></td>
+<td><code>[&#39;Dry pet food 15 kg&#39;, &#39;Malting barley 25 kg&#39;, &#39;Canned tomatoes 24 x 400g&#39;]</code><br><span class="muted">raw: Dry pet food 15kg | Malting barley 25kg | Canned tomatoes 24 x 400g</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>Prepaid</code></td>
+<td>Freight terms came from a scanned/photographed page - tick boxes are easy to misread on photos and this field drives billing.</td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Deliver between 7AM and 3PM weekdays only.</code></td>
+<td><code>Deliver between 7AM and 3PM weekdays only.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill REVIEW">REVIEW</span> A04: domestic, bdouble
+  <span class="muted">(0 field errors, source: live)</span></summary>
+
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>WBF652551</code></td>
+<td><code>WBF652551</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-10-05</code></td>
+<td><code>2026-10-05</code><br><span class="muted">raw: 05/10/2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>4116155</code></td>
+<td><code>4116155</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>SALTBUSH HARDWARE PTY LTD</code></td>
+<td><code>SALTBUSH HARDWARE PTY LTD</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Seven Hills</code></td>
+<td><code>Seven Hills</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>RED GUM CO-OPERATIVE</code></td>
+<td><code>RED GUM CO-OPERATIVE</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Mildura</code></td>
+<td><code>Mildura</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Wattlebird Freight</code></td>
+<td><code>Wattlebird Freight</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;TRL-7336&#39;, &#39;TRL-3650&#39;]</code></td>
+<td><code>TRL-7336 / TRL-3650</code></td>
+<td>Trailer / container no. contains 2 values (TRL-7336, TRL-3650) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;SL168439&#39;, &#39;SL378671&#39;]</code></td>
+<td><code>SL168439 / SL378671</code></td>
+<td>Seal number contains 2 values (SL168439, SL378671) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>9163.0</code></td>
+<td><code>9163.0</code><br><span class="muted">raw: 9,163.0</span></td>
+<td>Gross weight: document has 2 containers/trailers - confirm 9163.0 is the total, not a single line.</td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>20</code></td>
+<td><code>20.0</code><br><span class="muted">raw: 20</span></td>
+<td>Quantity (packages): document has 2 containers/trailers - confirm 20.0 is the total, not a single line.</td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Ceramic floor tiles&#39;, &#39;Garden hose reels&#39;]</code></td>
+<td><code>[&#39;Ceramic floor tiles&#39;, &#39;Garden hose reels&#39;]</code><br><span class="muted">raw: Ceramic floor tiles | Garden hose reels</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>Prepaid</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill REVIEW">REVIEW</span> A05: domestic, bdouble collect
+  <span class="muted">(0 field errors, source: live)</span></summary>
+
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>WBF867753</code></td>
+<td><code>WBF867753</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-09-30</code></td>
+<td><code>2026-09-30</code><br><span class="muted">raw: 30/09/2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>4389965</code></td>
+<td><code>4389965</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>SALTBUSH HARDWARE PTY LTD</code></td>
+<td><code>SALTBUSH HARDWARE PTY LTD</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Seven Hills</code></td>
+<td><code>Seven Hills</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>HARBOURSIDE RETAIL GROUP</code></td>
+<td><code>HARBOURSIDE RETAIL GROUP</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Newcastle</code></td>
+<td><code>Newcastle</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Wattlebird Freight</code></td>
+<td><code>Wattlebird Freight</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;TRL-7016&#39;, &#39;TRL-8786&#39;]</code></td>
+<td><code>TRL-7016 / TRL-8786</code></td>
+<td>Trailer / container no. contains 2 values (TRL-7016, TRL-8786) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;SL257960&#39;, &#39;SL278214&#39;]</code></td>
+<td><code>SL257960 / SL278214</code></td>
+<td>Seal number contains 2 values (SL257960, SL278214) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>17571.4</code></td>
+<td><code>17571.4</code><br><span class="muted">raw: 17,571.4</span></td>
+<td>Gross weight: document has 2 containers/trailers - confirm 17571.4 is the total, not a single line.</td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>103</code></td>
+<td><code>103.0</code><br><span class="muted">raw: 103</span></td>
+<td>Quantity (packages): document has 2 containers/trailers - confirm 103.0 is the total, not a single line.</td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Ceramic floor tiles&#39;, &#39;Flat-pack bookshelves&#39;, &#39;Stainless cookware sets&#39;]</code></td>
+<td><code>[&#39;Ceramic floor tiles&#39;, &#39;Flat-pack bookshelves&#39;, &#39;Stainless cookware sets&#39;]</code><br><span class="muted">raw: Ceramic floor tiles | Flat-pack bookshelves | Stainless cookware sets</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Collect</code></td>
+<td><code>Collect</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Deliver between 7AM and 3PM weekdays only.</code></td>
+<td><code>Deliver between 7AM and 3PM weekdays only.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill PASS">PASS</span> B01: vics, clean lbs
+  <span class="muted">(0 field errors, source: live)</span></summary>
+<p class="muted">Note: weights printed in LBS</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-66193</code></td>
+<td><code>2026-66193</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-09-27</code></td>
+<td><code>2026-09-27</code><br><span class="muted">raw: September 27, 2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill correct">correct</span></td>
+<td><code>SID-556264</code></td>
+<td><code>SID-556264</code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>352713</code></td>
+<td><code>352713</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>PRAIRIE HOLLOW TOOLWORKS INC.</code></td>
+<td><code>Prairie Hollow Toolworks Inc.</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Tulsa, OK 74107</code></td>
+<td><code>410 Commerce Pkwy, Tulsa, OK 74107</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>RED GUM CO-OPERATIVE</code></td>
+<td><code>Red Gum Co-Operative</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Mildura</code></td>
+<td><code>31 Railway Parade, Mildura VIC 3500 Australia (via Port of Brisbane)</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Prairie Line Trucking LLC</code></td>
+<td><code>Prairie Line Trucking LLC</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;5101&#39;]</code></td>
+<td><code>5101</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;80157&#39;]</code></td>
+<td><code>80157</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>10440</code></td>
+<td><code>10440.0</code><br><span class="muted">raw: 10,440</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>168</code></td>
+<td><code>168.0</code><br><span class="muted">raw: 168</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Flat-pack bookshelves&#39;, &#39;Dry pet food 15kg&#39;]</code></td>
+<td><code>[&#39;Flat-pack bookshelves&#39;, &#39;Dry pet food 15 kg&#39;]</code><br><span class="muted">raw: Flat-pack bookshelves | Dry pet food 15kg</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Collect</code></td>
+<td><code>Collect</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill REVIEW">REVIEW</span> B01S: vics, clean lbs phone-scan
+  <span class="muted">(1 field error, source: live)</span></summary>
+<p class="muted">Note: weights printed in LBS</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-66193</code></td>
+<td><code>2026-66193</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-09-27</code></td>
+<td><code>2026-09-27</code><br><span class="muted">raw: September 27, 2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill correct">correct</span></td>
+<td><code>SID-556264</code></td>
+<td><code>SID-556264</code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>352713</code></td>
+<td><code>352713</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>PRAIRIE HOLLOW TOOLWORKS INC.</code></td>
+<td><code>Prairie Hollow Toolworks Inc.</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Tulsa, OK 74107</code></td>
+<td><code>410 Commerce Pkwy, Tulsa, OK 74107</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>RED GUM CO-OPERATIVE</code></td>
+<td><code>Red Gum Co-Operative</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Mildura</code></td>
+<td><code>31 Railway Parade, Mildura VIC 3500 Australia (via Port of Brisbane)</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Prairie Line Trucking LLC</code></td>
+<td><code>Prairie Line Trucking LLC</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;5101&#39;]</code></td>
+<td><code>5101</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;80157&#39;]</code></td>
+<td><code>80157</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>10440</code></td>
+<td><code>10440.0</code><br><span class="muted">raw: 10,440</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>168</code></td>
+<td><code>168.0</code><br><span class="muted">raw: 168</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Flat-pack bookshelves&#39;, &#39;Dry pet food 15kg&#39;]</code></td>
+<td><code>[&#39;Flat-pack bookshelves&#39;, &#39;Dry pet food 15 kg&#39;]</code><br><span class="muted">raw: Flat-pack bookshelves | Dry pet food 15kg</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill wrong">wrong</span></td>
+<td><code>Collect</code></td>
+<td><code>Prepaid</code></td>
+<td>Freight terms came from a scanned/photographed page - tick boxes are easy to misread on photos and this field drives billing.</td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill PASS">PASS</span> B02: vics, lbs thirdparty
+  <span class="muted">(0 field errors, source: live)</span></summary>
+<p class="muted">Note: weights printed in LBS</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-58844</code></td>
+<td><code>2026-58844</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-09-19</code></td>
+<td><code>2026-09-19</code><br><span class="muted">raw: September 19, 2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill correct">correct</span></td>
+<td><code>SID-643480</code></td>
+<td><code>SID-643480</code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>834905</code></td>
+<td><code>834905</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>BLUE MESA OUTDOOR GEAR</code></td>
+<td><code>Blue Mesa Outdoor Gear</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Phoenix, AZ 85034</code></td>
+<td><code>2200 Canyon Dr, Phoenix, AZ 85034</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>SOUTHERLY HOME STORES</code></td>
+<td><code>Southerly Home Stores</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Geelong</code></td>
+<td><code>2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane)</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Silver Creek Haulers</code></td>
+<td><code>Silver Creek Haulers</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;5626&#39;]</code></td>
+<td><code>5626</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;57088&#39;]</code></td>
+<td><code>57088</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>25504</code></td>
+<td><code>25504.0</code><br><span class="muted">raw: 25,504</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>142</code></td>
+<td><code>142.0</code><br><span class="muted">raw: 142</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Malting barley 25kg&#39;, &#39;Ceramic floor tiles&#39;]</code></td>
+<td><code>[&#39;Malting barley 25 kg&#39;, &#39;Ceramic floor tiles&#39;]</code><br><span class="muted">raw: Malting barley 25kg | Ceramic floor tiles</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Third Party</code></td>
+<td><code>3rd Party</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Keep dry. Fragile - handle with care.</code></td>
+<td><code>Keep dry. Fragile - handle with care.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill PASS">PASS</span> B03: vics, lbs nopro
+  <span class="muted">(0 field errors, source: live)</span></summary>
+<p class="muted">Note: weights printed in LBS</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-69882</code></td>
+<td><code>2026-69882</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-10-02</code></td>
+<td><code>2026-10-02</code><br><span class="muted">raw: October 02, 2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill correct">correct</span></td>
+<td><code>SID-378288</code></td>
+<td><code>SID-378288</code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>PRAIRIE HOLLOW TOOLWORKS INC.</code></td>
+<td><code>Prairie Hollow Toolworks Inc.</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Tulsa, OK 74107</code></td>
+<td><code>410 Commerce Pkwy, Tulsa, OK 74107</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>SOUTHERLY HOME STORES</code></td>
+<td><code>Southerly Home Stores</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Geelong</code></td>
+<td><code>2 Esplanade, Geelong VIC 3220 Australia (via Port of Brisbane)</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>Silver Creek Haulers</code></td>
+<td><code>Silver Creek Haulers</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;1153&#39;]</code></td>
+<td><code>1153</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;69357&#39;]</code></td>
+<td><code>69357</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>21232</code></td>
+<td><code>21232.0</code><br><span class="muted">raw: 21,232</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>113</code></td>
+<td><code>113.0</code><br><span class="muted">raw: 113</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Bottled sparkling water&#39;, &#39;Malting barley 25kg&#39;]</code></td>
+<td><code>[&#39;Bottled sparkling water&#39;, &#39;Malting barley 25 kg&#39;]</code><br><span class="muted">raw: Bottled sparkling water | Malting barley 25kg</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Collect</code></td>
+<td><code>Collect</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td><code>Tail-lift required at delivery.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill REVIEW">REVIEW</span> C01: ocean, words
+  <span class="muted">(1 field error, source: live)</span></summary>
+<p class="muted">Note: total packages only printed in words; weights printed per container, no total</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>SO319360675193</code></td>
+<td><code>SO319360675193</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-09-14</code></td>
+<td><code>2026-09-14</code><br><span class="muted">raw: 14-SEP-2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>KOOKABURRA KITCHENWARE</code></td>
+<td><code>KOOKABURRA KITCHENWARE 17 ENTERPRISE WAY C/O EXPORT AGENT BUSAN, KOREA</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>BUSAN, KOREA</code></td>
+<td><code>BUSAN, KOREA</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>INLAND RURAL SUPPLIES</code></td>
+<td><code>INLAND RURAL SUPPLIES 120 STURT HIGHWAY WAGGA WAGGA NSW 2650 AUSTRALIA</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>PORT OF MELBOURNE</code></td>
+<td><code>PORT OF MELBOURNE</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>SOUTHERN MERIDIAN SHIPPING</code></td>
+<td><code>SOUTHERN MERIDIAN SHIPPING</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;ZOLU670837-0&#39;]</code></td>
+<td><code>ZOLU670837-0</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;985233&#39;]</code></td>
+<td><code>985233</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>1408.4</code></td>
+<td><code>1408.4</code><br><span class="muted">raw: 1,408.40 KG</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>158</code></td>
+<td><code>158.0</code><br><span class="muted">raw: 158</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Garden hose reels&#39;, &#39;Stainless cookware sets&#39;]</code></td>
+<td><code>[&#39;40 CTNS GARDEN HOSE REELS&#39;, &#39;118 CTNS STAINLESS COOKWARE SETS&#39;]</code><br><span class="muted">raw: 40 CTNS GARDEN HOSE REELS | 118 CTNS STAINLESS COOKWARE SETS</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>PREPAID</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill spurious">spurious</span></td>
+<td><code></code></td>
+<td><code>CARRIER HAS NOT VERIFIED PARTICULARS FURNISHED BY MERCHANT.</code></td>
+<td>Special instructions looks like standard printed terms, not a real instruction: &#39;CARRIER HAS NOT VERIFIED PARTICULARS FURNISHED BY MERCHANT.&#39;.</td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill FAIL">FAIL</span> C02: ocean, multi words
+  <span class="muted">(2 field errors, source: live)</span></summary>
+<p class="muted">Note: total packages only printed in words; weights printed per container, no total</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>SO650122140263</code></td>
+<td><code>SO650122140263</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-09-08</code></td>
+<td><code>2026-09-08</code><br><span class="muted">raw: 08-SEP-2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>BLUEGUM PANTRY CO.</code></td>
+<td><code>BLUEGUM PANTRY CO.</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>NINGBO, CHINA</code></td>
+<td><code>NINGBO, CHINA</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>PORT BOTANY, SYDNEY</code></td>
+<td><code>PORT BOTANY, SYDNEY</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>SOUTHERN MERIDIAN SHIPPING</code></td>
+<td><code>SOUTHERN MERIDIAN SHIPPING</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;TGHU970256-7&#39;, &#39;ZOLU796454-0&#39;]</code></td>
+<td><code>TGHU970256-7 ZOLU796454-0</code></td>
+<td>Trailer / container no. contains 2 values (TGHU970256-7, ZOLU796454-0) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;473284&#39;, &#39;770043&#39;]</code></td>
+<td><code>473284 770043</code></td>
+<td>Seal number contains 2 values (473284, 770043) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill wrong">wrong</span></td>
+<td><code>16751.6</code></td>
+<td><code>8431608320.0</code><br><span class="muted">raw: 8,431.60 KG 8,320.00 KG</span></td>
+<td>Gross weight: source text &#39;8,431.60 KG 8,320.00 KG&#39; holds 2 numbers but one value (8,431,608,320) was returned - likely merged. Expected a single total. / Gross weight 8,431,608,320 is above the plausible maximum of 45,000. / Gross weight: document has 2 containers/trailers - confirm 8431608320.0 is the total, not a single line.</td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill wrong">wrong</span></td>
+<td><code>166</code></td>
+<td><code>153.0</code><br><span class="muted">raw: 153</span></td>
+<td>Quantity (packages): document has 2 containers/trailers - confirm 153.0 is the total, not a single line.</td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Stainless cookware sets&#39;, &#39;Bottled sparkling water&#39;, &#39;Bottled sparkling water&#39;]</code></td>
+<td><code>[&#39;142 CTNS STAINLESS COOKWARE SETS&#39;, &#39;11 PLTS BOTTLED SPARKLING WATER&#39;, &#39;13 PLTS BOTTLED SPARKLING WATER&#39;]</code><br><span class="muted">raw: 142 CTNS STAINLESS COOKWARE SETS | 11 PLTS BOTTLED SPARKLING WATER | 13 PLTS BOTTLED SPARKLING WATER</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>PREPAID</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill FAIL">FAIL</span> C02S: ocean, multi words phone-scan
+  <span class="muted">(3 field errors, source: live)</span></summary>
+<p class="muted">Note: total packages only printed in words; weights printed per container, no total</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>SO650122140263</code></td>
+<td><code>SO650122140263</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-09-08</code></td>
+<td><code>2026-09-08</code><br><span class="muted">raw: 08-SEP-2026</span></td>
+<td></td></tr>
+
+<tr><td>SID number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>BLUEGUM PANTRY CO.</code></td>
+<td><code>BLUEGUM PANTRY CO.</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>NINGBO, CHINA</code></td>
+<td><code>NINGBO, CHINA</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td><code>TIDEWATER CATERING</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>PORT BOTANY, SYDNEY</code></td>
+<td><code>PORT BOTANY, SYDNEY</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>SOUTHERN MERIDIAN SHIPPING</code></td>
+<td><code>SOUTHERN MERIDIAN SHIPPING</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill wrong">wrong</span></td>
+<td><code>[&#39;TGHU970256-7&#39;, &#39;ZOLU796454-0&#39;]</code></td>
+<td><code>TGHU970258-7 ZOLU796454-0</code></td>
+<td>Trailer / container no. contains 2 values (TGHU970258-7, ZOLU796454-0) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;473284&#39;, &#39;770043&#39;]</code></td>
+<td><code>473284 770043</code></td>
+<td>Seal number contains 2 values (473284, 770043) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill wrong">wrong</span></td>
+<td><code>16751.6</code></td>
+<td><code>8431608320.0</code><br><span class="muted">raw: 8,431.60 KG 8.320.00 KG</span></td>
+<td>Gross weight: source text &#39;8,431.60 KG 8.320.00 KG&#39; holds 3 numbers but one value (8,431,608,320) was returned - likely merged. Expected a single total. / Gross weight 8,431,608,320 is above the plausible maximum of 45,000. / Gross weight: document has 2 containers/trailers - confirm 8431608320.0 is the total, not a single line.</td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill wrong">wrong</span></td>
+<td><code>166</code></td>
+<td><code>15313.0</code><br><span class="muted">raw: 153 13</span></td>
+<td>Quantity (packages): source text &#39;153 13&#39; holds 2 numbers but one value (15,313) was returned - likely merged. Expected a single total. / Quantity (packages) 15,313 is above the plausible maximum of 5,000. / Quantity (packages): document has 2 containers/trailers - confirm 15313.0 is the total, not a single line.</td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Stainless cookware sets&#39;, &#39;Bottled sparkling water&#39;, &#39;Bottled sparkling water&#39;]</code></td>
+<td><code>[&#39;142 CTNS STAINLESS COOKWARE SETS&#39;, &#39;11 PLTS BOTTLED SPARKLING WATER&#39;, &#39;13 PLTS BOTTLED SPARKLING WATER&#39;]</code><br><span class="muted">raw: 142 CTNS STAINLESS COOKWARE SETS | 11 PLTS BOTTLED SPARKLING WATER | 13 PLTS BOTTLED SPARKLING WATER</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>PREPAID</code></td>
+<td>Freight terms came from a scanned/photographed page - tick boxes are easy to misread on photos and this field drives billing.</td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill FAIL">FAIL</span> R01: ocean, ocean (real sample, 2 pages)
+  <span class="muted">(5 field errors, source: live)</span></summary>
+<p class="muted">Note: 3rd container only on page 2; total weight not printed (sum of 3 lines); date is the invoice date</p>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>EG00055802323028</code></td>
+<td><code>EG00055802323028</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2021-08-10</code></td>
+<td><code>2021-08-10</code><br><span class="muted">raw: 10-AUG-2021</span></td>
+<td>Date 2021-08-10 is more than 180 days old - stale or wrong document?</td></tr>
+
+<tr><td>SID number</td><td><span class="pill spurious">spurious</span></td>
+<td><code></code></td>
+<td><code>10002345</code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill empty_ok">empty_ok</span></td>
+<td><code></code></td>
+<td><code></code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>WILD HEALTH FOODS PTY LTD</code></td>
+<td><code>WILD HEALTH FOODS PTY LTD</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>FREMANTLE</code></td>
+<td><code>FREMANTLE 6162</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>LAIHEE KUNG SUPERMARKET GROUP</code></td>
+<td><code>LAIHEE KUNG SUPERMARKET GROUP</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>SINGAPORE</code></td>
+<td><code>SINGAPORE</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>ZESTADO LOGISTICS</code></td>
+<td><code>ZESTADO LOGISTICS</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill wrong">wrong</span></td>
+<td><code>[&#39;EXGU3024389-2&#39;, &#39;EXGU3024111-5&#39;, &#39;EXGU3024132-6&#39;]</code></td>
+<td><code>EXGU3024389-2 EXGU3024111-5</code></td>
+<td>Trailer / container no. contains 2 values (EXGU3024389-2, EXGU3024111-5) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Seal number</td><td><span class="pill wrong">wrong</span></td>
+<td><code>[&#39;555728&#39;, &#39;555111&#39;, &#39;555423&#39;]</code></td>
+<td><code>555728 555111</code></td>
+<td>Seal number contains 2 values (555728, 555111) in one field. Configure it as a repeating field or confirm with the customer which one is needed.</td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill wrong">wrong</span></td>
+<td><code>10165.5</code></td>
+<td><code>4425001880.5</code><br><span class="muted">raw: 4,425.00 KG 1,880.50 KG</span></td>
+<td>Gross weight: source text &#39;4,425.00 KG 1,880.50 KG&#39; holds 2 numbers but one value (4,425,001,880.5) was returned - likely merged. Expected a single total. / Gross weight 4,425,001,880.5 is above the plausible maximum of 45,000. / Gross weight: document has 2 containers/trailers - confirm 4425001880.5 is the total, not a single line.</td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill wrong">wrong</span></td>
+<td><code>580</code></td>
+<td><code>FIVE HUNDRED AND EIGHTY</code></td>
+<td>Quantity (packages): text &#39;FIVE HUNDRED AND EIGHTY&#39; was found but could not be converted to a number. / Quantity (packages): document has 2 containers/trailers - confirm FIVE HUNDRED AND EIGHTY is the total, not a single line.</td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;20 X 1KG BXS ORGANIC MUESLI PER CARTON&#39;, &#39;25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON&#39;, &#39;CRTNS WITH ASSORTED MIX OF PKTS OF BARS &amp; BALLS&#39;]</code></td>
+<td><code>[&#39;20 X 1 KG BXS ORGANIC MUESLI PER CARTON WILD HEALTH BRAND – BUBBLE WRAPPED AND TAPED 100 CTNS; FRUIT-FREE, CODE 1002034 100 CTNS; NUT-FREE, CODE 1002055 20 CTNS; GOURMET, CODE 1002221&#39;, &#39;25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON WILD &amp; FIT BRAND 75 CTNS; VANILLA, CODE 1009001 75 CTNS; CHOCOLATE, CODE 1009020&#39;, &#39;CRTNS WITH ASSORTED MIX OF PKTS OF BARS &amp; BALLS WILD HEALTH BRAND – BUBBLE WRAPPED 70 CTNS; OAT SNACK BARS 1,000 X 100G – 100435 70 CTNS; LUPIN CRUNCHIES 2,000 X 50G – 100215 70 CTNS; HEMP BLISS BALLS 2,000 X 50G - 100435&#39;]</code><br><span class="muted">raw: 20 X 1KG BXS ORGANIC MUESLI PER CARTON WILD HEALTH BRAND – BUBBLE WRAPPED AND TAPED 100 CTNS; FRUIT-FREE, CODE 1002034 100 CTNS; NUT-FREE, CODE 1002055 20 CTNS; GOURMET, CODE 1002221 | 25 CTRS OF 500G SUPERFOOD SHAKE PER CARTON WILD &amp; FIT BRAND 75 CTNS; VANILLA, CODE 1009001 75 CTNS; CHOCOLATE, CODE 1009020 | CRTNS WITH ASSORTED MIX OF PKTS OF BARS &amp; BALLS WILD HEALTH BRAND – BUBBLE WRAPPED 70 CTNS; OAT SNACK BARS 1,000 X 100G – 100435 70 CTNS; LUPIN CRUNCHIES 2,000 X 50G – 100215 70 CTNS; HEMP BLISS BALLS 2,000 X 50G - 100435</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>PREPAID</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>FREIGHT COUNTED BY SHIPPER. CUSTOM CHECK ON ARRIVAL.</code></td>
+<td><code>FREIGHT COUNTED BY SHIPPER. CUSTOM CHECK ON ARRIVAL.</code></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+<details>
+<summary><span class="pill REVIEW">REVIEW</span> R02: vics, vics (real sample)
+  <span class="muted">(0 field errors, source: live)</span></summary>
+
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+
+<tr><td>BOL number</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-00471</code></td>
+<td><code>2026-00471</code></td>
+<td></td></tr>
+
+<tr><td>Date</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-04-09</code></td>
+<td><code>2026-04-09</code><br><span class="muted">raw: 9-April-2026</span></td>
+<td>Date 2026-04-09 is more than 180 days old - stale or wrong document?</td></tr>
+
+<tr><td>SID number</td><td><span class="pill correct">correct</span></td>
+<td><code>2026-00471</code></td>
+<td><code>2026-00471</code></td>
+<td></td></tr>
+
+<tr><td>Pro number</td><td><span class="pill correct">correct</span></td>
+<td><code>994421</code></td>
+<td><code>994421</code></td>
+<td></td></tr>
+
+<tr><td>Shipper</td><td><span class="pill correct">correct</span></td>
+<td><code>Blue Ridge Auto Parts Co.</code></td>
+<td><code>Blue Ridge Auto Parts Co., 142 Industrial Ave, Dallas, TX 75201</code></td>
+<td></td></tr>
+
+<tr><td>Origin</td><td><span class="pill correct">correct</span></td>
+<td><code>Dallas, TX</code></td>
+<td><code>Blue Ridge Auto Parts Co., 142 Industrial Ave, Dallas, TX 75201</code></td>
+<td></td></tr>
+
+<tr><td>Consignee</td><td><span class="pill correct">correct</span></td>
+<td><code>Pacific Distribution Ltd.</code></td>
+<td><code>Pacific Distribution Ltd., 88 Harbor Blvd, Los Angeles, CA 90001</code></td>
+<td></td></tr>
+
+<tr><td>Destination</td><td><span class="pill correct">correct</span></td>
+<td><code>Los Angeles, CA</code></td>
+<td><code>Pacific Distribution Ltd., 88 Harbor Blvd, Los Angeles, CA 90001</code></td>
+<td></td></tr>
+
+<tr><td>Carrier</td><td><span class="pill correct">correct</span></td>
+<td><code>TransAmerica Trucking LLC</code></td>
+<td><code>TransAmerica Trucking LLC</code></td>
+<td></td></tr>
+
+<tr><td>Trailer / container no.</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;8842&#39;]</code></td>
+<td><code>8842</code></td>
+<td></td></tr>
+
+<tr><td>Seal number</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;44921&#39;]</code></td>
+<td><code>44921</code></td>
+<td></td></tr>
+
+<tr><td>Gross weight</td><td><span class="pill correct">correct</span></td>
+<td><code>1240.0</code></td>
+<td><code>1240.0</code><br><span class="muted">raw: 1240.00</span></td>
+<td></td></tr>
+
+<tr><td>Quantity (packages)</td><td><span class="pill correct">correct</span></td>
+<td><code>48</code></td>
+<td><code>48.0</code><br><span class="muted">raw: 48</span></td>
+<td></td></tr>
+
+<tr><td>Description of goods</td><td><span class="pill correct">correct</span></td>
+<td><code>[&#39;Auto engine components&#39;, &#39;Brake assembly units&#39;, &#39;Suspension parts&#39;]</code></td>
+<td><code>[&#39;Auto engine components, boxed&#39;, &#39;Brake assembly units, packaged&#39;, &#39;Suspension parts, wrapped&#39;]</code><br><span class="muted">raw: Auto engine components, boxed | Brake assembly units, packaged | Suspension parts, wrapped</span></td>
+<td></td></tr>
+
+<tr><td>Freight terms</td><td><span class="pill correct">correct</span></td>
+<td><code>Prepaid</code></td>
+<td><code>Prepaid</code></td>
+<td></td></tr>
+
+<tr><td>Special instructions</td><td><span class="pill correct">correct</span></td>
+<td><code>Handle with care. Deliver between 8AM-4PM weekdays only.</code></td>
+<td><code>Handle with care. Deliver between 8AM – 4PM weekdays only.</code><br><span class="muted">raw: Handle with care. Deliver between 8AM–4PM weekdays only.</span></td>
+<td></td></tr>
+
+</table></div>
+</details>
+
+</main></body></html>

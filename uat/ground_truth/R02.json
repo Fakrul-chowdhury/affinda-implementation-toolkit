@@ -1,0 +1,26 @@
+{
+  "billOfLadingNumber": "2026-00471",
+  "date": "2026-04-09",
+  "sidNumber": "2026-00471",
+  "proNumber": "994421",
+  "shipper": "Blue Ridge Auto Parts Co.",
+  "origin": "Dallas, TX",
+  "consignee": "Pacific Distribution Ltd.",
+  "destination": "Los Angeles, CA",
+  "carrier": "TransAmerica Trucking LLC",
+  "trailerNumber": [
+    "8842"
+  ],
+  "sealNumber": [
+    "44921"
+  ],
+  "grossWeight": 1240.0,
+  "quantity": 48,
+  "descriptionOfGoods": [
+    "Auto engine components",
+    "Brake assembly units",
+    "Suspension parts"
+  ],
+  "freightTerms": "Prepaid",
+  "specialInstructions": "Handle with care. Deliver between 8AM-4PM weekdays only."
+}

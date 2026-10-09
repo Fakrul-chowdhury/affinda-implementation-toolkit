@@ -1,0 +1,566 @@
+{
+ "data": {
+  "proNumber": null,
+  "shipper": {
+   "id": 2619496117,
+   "rectangle": {
+    "x0": 42.374000549316406,
+    "y0": 97.7354736328125,
+    "x1": 166.44000244140625,
+    "y1": 138.24102783203125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.374000549316406,
+     "y0": 97.7354736328125,
+     "x1": 166.44000244140625,
+     "y1": 138.24102783203125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "KOOKABURRA KITCHENWARE 17 ENTERPRISE WAY C/O EXPORT AGENT BUSAN, KOREA",
+   "parsed": "KOOKABURRA KITCHENWARE 17 ENTERPRISE WAY C/O EXPORT AGENT BUSAN, KOREA",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619496114,
+   "rectangle": {
+    "x0": 125.75899505615234,
+    "y0": 181.7354736328125,
+    "x1": 188.7864990234375,
+    "y1": 189.24102783203125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 125.75899505615234,
+     "y0": 181.7354736328125,
+     "x1": 188.7864990234375,
+     "y1": 189.24102783203125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "BUSAN, KOREA",
+   "parsed": "BUSAN, KOREA",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619496105,
+   "rectangle": {
+    "x0": 400.85101318359375,
+    "y0": 41.36700439453125,
+    "x1": 473.1929931640625,
+    "y1": 48.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 400.85101318359375,
+     "y0": 41.36700439453125,
+     "x1": 473.1929931640625,
+     "y1": 48.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "SO319360675193",
+   "parsed": "SO319360675193",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619496108,
+   "rectangle": {
+    "x0": 435.13201904296875,
+    "y0": 52.36700439453125,
+    "x1": 488.2139892578125,
+    "y1": 59.1619873046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 435.13201904296875,
+     "y0": 52.36700439453125,
+     "x1": 488.2139892578125,
+     "y1": 59.1619873046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "14-SEP-2026",
+   "parsed": "2026-09-14",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": null,
+  "consignee": {
+   "id": 2619496107,
+   "rectangle": {
+    "x0": 306.1189880371094,
+    "y0": 97.7354736328125,
+    "x1": 416.6784973144531,
+    "y1": 137.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 306.1189880371094,
+     "y0": 97.7354736328125,
+     "x1": 416.6784973144531,
+     "y1": 137.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "INLAND RURAL SUPPLIES 120 STURT HIGHWAY WAGGA WAGGA NSW 2650 AUSTRALIA",
+   "parsed": "INLAND RURAL SUPPLIES 120 STURT HIGHWAY WAGGA WAGGA NSW 2650 AUSTRALIA",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619496111,
+   "rectangle": {
+    "x0": 138.135009765625,
+    "y0": 192.7354736328125,
+    "x1": 230.6744842529297,
+    "y1": 199.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 138.135009765625,
+     "y0": 192.7354736328125,
+     "x1": 230.6744842529297,
+     "y1": 199.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "PORT OF MELBOURNE",
+   "parsed": "PORT OF MELBOURNE",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619496106,
+   "rectangle": {
+    "x0": 74.2874984741211,
+    "y0": 408.4725036621094,
+    "x1": 192.1275177001953,
+    "y1": 414.135009765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 74.2874984741211,
+     "y0": 408.4725036621094,
+     "x1": 192.1275177001953,
+     "y1": 414.135009765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "SOUTHERN MERIDIAN SHIPPING",
+   "parsed": "SOUTHERN MERIDIAN SHIPPING",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619496119,
+   "rectangle": {
+    "x0": 42.183998107910156,
+    "y0": 263.10400390625,
+    "x1": 96.83200073242188,
+    "y1": 269.14398193359375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 42.183998107910156,
+     "y0": 263.10400390625,
+     "x1": 96.83200073242188,
+     "y1": 269.14398193359375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "ZOLU670837-0",
+   "parsed": "ZOLU670837-0",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619496116,
+   "rectangle": {
+    "x0": 81.46399688720703,
+    "y0": 274.3759765625,
+    "x1": 107.54399108886719,
+    "y1": 280.14398193359375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 81.46399688720703,
+     "y0": 274.3759765625,
+     "x1": 107.54399108886719,
+     "y1": 280.14398193359375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "985233",
+   "parsed": "985233",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619496113,
+   "rectangle": {
+    "x0": 470.8584899902344,
+    "y0": 251.7354736328125,
+    "x1": 517.0985107421875,
+    "y1": 259.24102783203125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 470.8584899902344,
+     "y0": 251.7354736328125,
+     "x1": 517.0985107421875,
+     "y1": 259.24102783203125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "1,408.40 KG",
+   "parsed": 1408.4,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619496115,
+   "rectangle": {
+    "x0": 160.85850524902344,
+    "y0": 252.02447509765625,
+    "x1": 173.84649658203125,
+    "y1": 258.15301513671875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 160.85850524902344,
+     "y0": 252.02447509765625,
+     "x1": 173.84649658203125,
+     "y1": 258.15301513671875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "158",
+   "parsed": 158.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619496109,
+    "rectangle": {
+     "x0": 210.1999969482422,
+     "y0": 252.10400390625,
+     "x1": 332.3199768066406,
+     "y1": 258.14398193359375,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 210.1999969482422,
+      "y0": 252.10400390625,
+      "x1": 332.3199768066406,
+      "y1": 258.14398193359375,
+      "pageIndex": 0
+     }
+    ],
+    "document": "FeztlsnG",
+    "pageIndex": 0,
+    "raw": "40 CTNS GARDEN HOSE REELS",
+    "parsed": "40 CTNS GARDEN HOSE REELS",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619496110,
+    "rectangle": {
+     "x0": 210.80799865722656,
+     "y0": 263.10400390625,
+     "x1": 366.11199951171875,
+     "y1": 269.14398193359375,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 210.80799865722656,
+      "y0": 263.10400390625,
+      "x1": 366.11199951171875,
+      "y1": 269.14398193359375,
+      "pageIndex": 0
+     }
+    ],
+    "document": "FeztlsnG",
+    "pageIndex": 0,
+    "raw": "118 CTNS STAINLESS COOKWARE SETS",
+    "parsed": "118 CTNS STAINLESS COOKWARE SETS",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619496112,
+   "rectangle": {
+    "x0": 200.64599609375,
+    "y0": 336.8970031738281,
+    "x1": 237.46800231933594,
+    "y1": 343.0,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 200.64599609375,
+     "y0": 336.8970031738281,
+     "x1": 237.46800231933594,
+     "y1": 343.0,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "PREPAID",
+   "parsed": "PREPAID",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619496118,
+   "rectangle": {
+    "x0": 36.33000183105469,
+    "y0": 397.4725036621094,
+    "x1": 300.3749694824219,
+    "y1": 403.135009765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 36.33000183105469,
+     "y0": 397.4725036621094,
+     "x1": 300.3749694824219,
+     "y1": 403.135009765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "FeztlsnG",
+   "pageIndex": 0,
+   "raw": "CARRIER HAS NOT VERIFIED PARTICULARS FURNISHED BY MERCHANT.",
+   "parsed": "CARRIER HAS NOT VERIFIED PARTICULARS FURNISHED BY MERCHANT.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "SOUTHERN MERIDIAN SHIPPING BILL OF LADING: PORT TO PORT BOL NO: SO319360675193 DATE OF ISSUE: 14-SEP-2026 SHIPPER: KOOKABURRA KITCHENWARE 17 ENTERPRISE WAY C/O EXPORT AGENT BUSAN, KOREA CONSIGNEE: INLAND RURAL SUPPLIES 120 STURT HIGHWAY WAGGA WAGGA NSW 2650 AUSTRALIA PORT OF LOADING: BUSAN, KOREA PORT OF DISCHARGE: PORT OF MELBOURNE VESSEL: MV SOUTHERN STAR VOYAGE NO: 858S MARKS & NUMBERS # PKGS DESCRIPTION OF GOODS GROSS WEIGHT (KGS) 40' CONTAINER NO: ZOLU670837-0 SEAL NO: 985233 158 40 CTNS GARDEN HOSE REELS 118 CTNS STAINLESS COOKWARE SETS 1,408.40 KG TOTAL NO. OF PKGS IN WORDS: ONE HUNDRED AND FIFTY-EIGHT OCEAN FREIGHT PREPAID COLLECT AUD $2,600 ORIGINALS: 3 CARRIER HAS NOT VERIFIED PARTICULARS FURNISHED BY MERCHANT. CARRIER: SOUTHERN MERIDIAN SHIPPING - SIGNATURE / DATE: ______________________"
+ },
+ "meta": {
+  "identifier": "FeztlsnG",
+  "customIdentifier": "uat-baseline-C01",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:54.699617Z",
+  "fileName": "C01_ocean.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:41:47.515381Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

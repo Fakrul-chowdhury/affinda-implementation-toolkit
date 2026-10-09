@@ -1,0 +1,633 @@
+{
+ "data": {
+  "proNumber": {
+   "id": 2619495865,
+   "rectangle": {
+    "x0": 779.2712938059992,
+    "y0": 137.0964728343672,
+    "x1": 841.6423347949074,
+    "y1": 158.09497859905332,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 779.2712938059992,
+     "y0": 137.0964728343672,
+     "x1": 841.6423347949074,
+     "y1": 158.09497859905332,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "4593434",
+   "parsed": "4593434",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.996,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xvxyzNTx",
+   "contentType": "text",
+   "parent": null
+  },
+  "shipper": {
+   "id": 2619495868,
+   "rectangle": {
+    "x0": 71.87919418715342,
+    "y0": 213.11294181579285,
+    "x1": 299.1084511679289,
+    "y1": 233.76972110878717,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 71.87919418715342,
+     "y0": 213.11294181579285,
+     "x1": 299.1084511679289,
+     "y1": 233.76972110878717,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "KOOKABURRA KITCHENWARE",
+   "parsed": "KOOKABURRA KITCHENWARE",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.987,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619495864,
+   "rectangle": {
+    "x0": 118.62545020954832,
+    "y0": 381.07172109905133,
+    "x1": 220.23382699616042,
+    "y1": 400.9600455546259,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 118.62545020954832,
+     "y0": 381.07172109905133,
+     "x1": 220.23382699616042,
+     "y1": 400.9600455546259,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "Laverton Nonh",
+   "parsed": "Laverton Nonh",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.853,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619495854,
+   "rectangle": {
+    "x0": 707.6414483152532,
+    "y0": 100.5488280775304,
+    "x1": 794.5484335396205,
+    "y1": 120.85703770957639,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 707.6414483152532,
+     "y0": 100.5488280775304,
+     "x1": 794.5484335396205,
+     "y1": 120.85703770957639,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "WBF233145",
+   "parsed": "WBF233145",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.992,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619495857,
+   "rectangle": {
+    "x0": 685.9712349551025,
+    "y0": 120.28661834792467,
+    "x1": 765.0848656389893,
+    "y1": 139.8633987235438,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 685.9712349551025,
+     "y0": 120.28661834792467,
+     "x1": 765.0848656389893,
+     "y1": 139.8633987235438,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "06/10/2026",
+   "parsed": "2026-10-06",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.977,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": null,
+  "consignee": {
+   "id": 2619495856,
+   "rectangle": {
+    "x0": 516.8811415354705,
+    "y0": 211.28381124939023,
+    "x1": 694.3738983215015,
+    "y1": 232.37853806528489,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 516.8811415354705,
+     "y0": 211.28381124939023,
+     "x1": 694.3738983215015,
+     "y1": 232.37853806528489,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "TIDEWATER CATERING",
+   "parsed": "TIDEWATER CATERING",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.987,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619495861,
+   "rectangle": {
+    "x0": 154.65987881064535,
+    "y0": 401.21995310741124,
+    "x1": 198.73211993046317,
+    "y1": 418.2331798205205,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 154.65987881064535,
+     "y0": 401.21995310741124,
+     "x1": 198.73211993046317,
+     "y1": 418.2331798205205,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "Cairns",
+   "parsed": "Cairns",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.588,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619495855,
+   "rectangle": {
+    "x0": 755.2391177063136,
+    "y0": 378.58961424116023,
+    "x1": 872.8806597313396,
+    "y1": 398.40399437860196,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 755.2391177063136,
+     "y0": 378.58961424116023,
+     "x1": 872.8806597313396,
+     "y1": 398.40399437860196,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "Wattlebird Freight",
+   "parsed": "Wattlebird Freight",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.891,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619495870,
+   "rectangle": {
+    "x0": 442.57489385625445,
+    "y0": 381.3321210663726,
+    "x1": 508.24921321711366,
+    "y1": 398.9740056244439,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 442.57489385625445,
+     "y0": 381.3321210663726,
+     "x1": 508.24921321711366,
+     "y1": 398.9740056244439,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "TRL-4688",
+   "parsed": "TRL-4688",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.962,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619495867,
+   "rectangle": {
+    "x0": 431.60390726899857,
+    "y0": 398.93116333084686,
+    "x1": 499.0152060501392,
+    "y1": 417.6079446086535,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 431.60390726899857,
+     "y0": 398.93116333084686,
+     "x1": 499.0152060501392,
+     "y1": 417.6079446086535,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "SL198275",
+   "parsed": "SL198275",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.991,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619495863,
+   "rectangle": {
+    "x0": 786.9153997561601,
+    "y0": 584.5744748936771,
+    "x1": 842.9250789169682,
+    "y1": 601.3854455921452,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 786.9153997561601,
+     "y0": 584.5744748936771,
+     "x1": 842.9250789169682,
+     "y1": 601.3854455921452,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "2,546.4",
+   "parsed": 2546.4,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.992,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619495866,
+   "rectangle": {
+    "x0": 76.26086878834741,
+    "y0": 589.1381060833829,
+    "x1": 103.25275873566983,
+    "y1": 602.6938890061879,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 76.26086878834741,
+     "y0": 589.1381060833829,
+     "x1": 103.25275873566983,
+     "y1": 602.6938890061879,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "160",
+   "parsed": 160.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.998,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619495858,
+    "rectangle": {
+     "x0": 204.4293530725554,
+     "y0": 488.168728174079,
+     "x1": 329.03471304601857,
+     "y1": 508.6310406811108,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 204.4293530725554,
+      "y0": 488.168728174079,
+      "x1": 329.03471304601857,
+      "y1": 508.6310406811108,
+      "pageIndex": 0
+     }
+    ],
+    "document": "BkeyiWHd",
+    "pageIndex": 0,
+    "raw": "Dry pet food 15kg",
+    "parsed": "Dry pet food 15 kg",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 0.97,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619495859,
+    "rectangle": {
+     "x0": 203.59629452152979,
+     "y0": 513.2520980669631,
+     "x1": 339.89991785400605,
+     "y1": 533.4398653804238,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 203.59629452152979,
+      "y0": 513.2520980669631,
+      "x1": 339.89991785400605,
+      "y1": 533.4398653804238,
+      "pageIndex": 0
+     }
+    ],
+    "document": "BkeyiWHd",
+    "pageIndex": 0,
+    "raw": "Malting barley 25kg",
+    "parsed": "Malting barley 25 kg",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 0.97,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619495860,
+    "rectangle": {
+     "x0": 205.25182735537436,
+     "y0": 537.1406822086265,
+     "x1": 399.9931419813523,
+     "y1": 559.3231003492147,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 205.25182735537436,
+      "y0": 537.1406822086265,
+      "x1": 399.9931419813523,
+      "y1": 559.3231003492147,
+      "pageIndex": 0
+     }
+    ],
+    "document": "BkeyiWHd",
+    "pageIndex": 0,
+    "raw": "Canned tomatoes 24 x 400g",
+    "parsed": "Canned tomatoes 24 x 400g",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 0.632,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619495862,
+   "rectangle": {
+    "x0": 99.44341260487744,
+    "y0": 671.7112138280683,
+    "x1": 149.34858568878332,
+    "y1": 687.3846044159508,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 99.44341260487744,
+     "y0": 671.7112138280683,
+     "x1": 149.34858568878332,
+     "y1": 687.3846044159508,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "Prepaid",
+   "parsed": "Prepaid",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.961,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619495869,
+   "rectangle": {
+    "x0": 521.3545320491595,
+    "y0": 657.5049767209097,
+    "x1": 828.0298971794964,
+    "y1": 677.4015390951846,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 521.3545320491595,
+     "y0": 657.5049767209097,
+     "x1": 828.0298971794964,
+     "y1": 677.4015390951846,
+     "pageIndex": 0
+    }
+   ],
+   "document": "BkeyiWHd",
+   "pageIndex": 0,
+   "raw": "Deliver between 7AM and 3PM weekdays only.",
+   "parsed": "Deliver between 7AM and 3PM weekdays only.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 0.89,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "WATTLEBIRD FREIGHT Road Transport | ABN 00 000 000 000 (demo) | Fictional company for testing BILL OF LADING BOL No: WBF233145 Date: 06/10/2026 Con Note (Pro) No: 4593434 SHIPPER (PICK UP FROM) KOOKABURRA KITCHENWARE 17 Enterprise Way Laverton North VIC 3026 CONSIGNEE (DELIVER TO) TIDEWATER CATERING 77 Marina Drive Cairns QLD 4870 TRANSPORT DETAILS Origin: Laverton Nonh Destination: Cairns Trailer No: TRL-4688 Seal No: SL198275 Carrier: Wattlebird Freight Vehicle: SEMI QTY TY\u03a1\u0395 DESCRIPTION OF GOODS WEIGHT (KG) 12 CTN Dry pet food 15kg 187.2 23 BAG Malting barley 25kg 584.2 125 CTN Canned tomatoes 24 x 400g 1,775.0 160 TOTALS 2,546.4 FREIGHT CHARGES Prepaid Collect Third Party SPECIAL INSTRUCTIONS Deliver between 7AM and 3PM weekdays only. Received in apparent good order and condition. Shipper signature: Driver signature: Date:"
+ },
+ "meta": {
+  "identifier": "BkeyiWHd",
+  "customIdentifier": "uat-baseline-A01S",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:41:43.531477Z",
+  "fileName": "A01S_domestic_scan.jpg",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": 0.960968992248062,
+  "createdDt": "2026-10-09T10:41:33.552521Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}

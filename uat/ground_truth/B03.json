@@ -1,0 +1,26 @@
+{
+  "billOfLadingNumber": "2026-69882",
+  "date": "2026-10-02",
+  "sidNumber": "SID-378288",
+  "proNumber": null,
+  "shipper": "PRAIRIE HOLLOW TOOLWORKS INC.",
+  "origin": "Tulsa, OK 74107",
+  "consignee": "SOUTHERLY HOME STORES",
+  "destination": "Geelong",
+  "carrier": "Silver Creek Haulers",
+  "trailerNumber": [
+    "1153"
+  ],
+  "sealNumber": [
+    "69357"
+  ],
+  "grossWeight": 21232,
+  "quantity": 113,
+  "descriptionOfGoods": [
+    "Bottled sparkling water",
+    "Malting barley 25kg"
+  ],
+  "freightTerms": "Collect",
+  "specialInstructions": "Tail-lift required at delivery.",
+  "_notes": "weights printed in LBS"
+}

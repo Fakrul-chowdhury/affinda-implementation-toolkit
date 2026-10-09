@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UAT report - {{ s.label }}</title>
+<style>
+  :root { --ink:#1d2330; --muted:#5d6678; --line:#dfe3ea; --bg:#f6f7f9; --card:#fff;
+          --ok:#1f7a4d; --okbg:#e3f4ea; --warn:#8a5a00; --warnbg:#fdf1d8; --bad:#b42318; --badbg:#fde7e4; --accent:#0e6e8c; }
+  * { box-sizing:border-box }
+  body { margin:0; font:14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg) }
+  main { max-width:1150px; margin:0 auto; padding:24px 16px 60px }
+  h1 { font-size:22px; margin:0 0 4px } h2 { font-size:16px; margin:28px 0 10px }
+  .sub { color:var(--muted); margin:0 0 16px }
+  .banner { padding:10px 14px; border-radius:8px; margin:12px 0 18px; font-weight:600 }
+  .banner.real { background:var(--okbg); color:var(--ok) } .banner.sim { background:var(--warnbg); color:var(--warn) }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:10px }
+  .kpi { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px }
+  .kpi b { display:block; font-size:24px } .kpi span { color:var(--muted); font-size:12.5px }
+  table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden }
+  th, td { text-align:left; padding:7px 10px; border-bottom:1px solid var(--line); vertical-align:top; font-size:13px }
+  th { background:#eef1f5; font-weight:600 }
+  .bar { height:8px; background:#e8ebf0; border-radius:4px; min-width:90px } .bar i { display:block; height:100%; border-radius:4px; background:var(--accent) }
+  .pill { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; font-weight:600 }
+  .PASS,.correct,.empty_ok { background:var(--okbg); color:var(--ok) } .REVIEW { background:var(--warnbg); color:var(--warn) }
+  .FAIL,.wrong,.missed,.spurious { background:var(--badbg); color:var(--bad) }
+  details { background:var(--card); border:1px solid var(--line); border-radius:10px; margin:8px 0; padding:8px 12px }
+  summary { cursor:pointer; font-weight:600 } .muted { color:var(--muted) } code { font-size:12px }
+  .wrap { overflow-x:auto }
+</style>
+</head>
+<body><main>
+<h1>UAT report: Bill of Lading extraction</h1>
+<p class="sub">Run <b>{{ s.label }}</b>, {{ s.run_at }}. Customer: Wattlebird Freight (fictional). Mode: {{ s.mode }}.</p>
+
+{% if s.is_real_affinda_result %}
+<div class="banner real">Real Affinda results: every response came from the live Affinda API ({{ s.sources }}).</div>
+{% else %}
+<div class="banner sim">Contains SIMULATED responses ({{ s.sources }}). These numbers show the pipeline only, not Affinda accuracy.</div>
+{% endif %}
+
+<div class="kpis">
+  <div class="kpi"><b>{{ '%.1f' % (s.field_accuracy * 100) }}%</b><span>field accuracy ({{ s.fields_scored }} fields scored)</span></div>
+  <div class="kpi"><b>{{ s.docs_fully_correct }}/{{ s.documents }}</b><span>documents 100% correct</span></div>
+  <div class="kpi"><b>{{ s.errors_caught_by_validation }}/{{ s.fields_wrong }}</b><span>extraction errors flagged by validation</span></div>
+  <div class="kpi"><b>{{ s.passed_with_errors }}</b><span>documents auto-approved with an error (target 0)</span></div>
+  <div class="kpi"><b>{{ s.status_counts.get('PASS',0) }} / {{ s.status_counts.get('REVIEW',0) }} / {{ s.status_counts.get('FAIL',0) }}</b><span>validation PASS / REVIEW / FAIL</span></div>
+  <div class="kpi"><b>{{ s.credits_used if s.credits_used is not none else '-' }}</b><span>Affinda credits used</span></div>
+</div>
+
+<h2>Accuracy by field</h2>
+<div class="wrap"><table>
+<tr><th>Field</th><th>Accuracy</th><th></th><th>Correct</th><th>Wrong</th><th>Missed</th><th>Spurious</th></tr>
+{% for key, f in s.per_field.items() if f.n %}
+<tr><td>{{ f.label }}</td><td>{{ '%.0f' % (f.accuracy * 100) }}%</td>
+<td><div class="bar"><i style="width:{{ (f.accuracy * 100)|round }}%"></i></div></td>
+<td>{{ f.get('correct',0) }}</td><td>{{ f.get('wrong',0) }}</td><td>{{ f.get('missed',0) }}</td><td>{{ f.get('spurious',0) }}</td></tr>
+{% endfor %}
+</table></div>
+
+<h2>Accuracy by document layout</h2>
+<div class="wrap"><table><tr><th>Layout</th><th>Field accuracy</th><th></th></tr>
+{% for layout, acc in s.per_layout.items() %}
+<tr><td>{{ layout }}</td><td>{{ '%.0f' % (acc * 100) }}%</td><td><div class="bar"><i style="width:{{ (acc * 100)|round }}%"></i></div></td></tr>
+{% endfor %}</table></div>
+
+<h2>Documents</h2>
+{% for d in docs %}
+<details>
+<summary><span class="pill {{ d.status }}">{{ d.status }}</span> {{ d.doc_id }}: {{ d.layout }}, {{ d.scenario }}
+  <span class="muted">({{ d.errors }} field error{{ '' if d.errors == 1 else 's' }}, source: {{ d.source }})</span></summary>
+{% if d.notes %}<p class="muted">Note: {{ d.notes }}</p>{% endif %}
+<div class="wrap"><table>
+<tr><th>Field</th><th>Result</th><th>Expected</th><th>Extracted</th><th>Validation</th></tr>
+{% for f in d.fields %}
+<tr><td>{{ labels[f.field] }}</td><td><span class="pill {{ f.outcome }}">{{ f.outcome }}</span></td>
+<td><code>{{ f.expected if f.expected is not none else '' }}</code></td>
+<td><code>{{ f.actual if f.actual is not none else '' }}</code>{% if f.raw and f.raw != (f.actual|string) %}<br><span class="muted">raw: {{ f.raw }}</span>{% endif %}</td>
+<td>{{ f.findings }}</td></tr>
+{% endfor %}
+</table></div>
+</details>
+{% endfor %}
+</main></body></html>

@@ -1,0 +1,14 @@
+doc_id,file,layout,scenario,source,validation_status,field_errors
+A01,A01_domestic.pdf,domestic,clean,live,PASS,0
+A01S,A01S_domestic_scan.jpg,domestic,clean phone-scan,live,PASS,1
+A04,A04_domestic.pdf,domestic,bdouble,live,REVIEW,0
+A05,A05_domestic.pdf,domestic,bdouble collect,live,REVIEW,0
+B01,B01_vics.pdf,vics,clean lbs,live,PASS,0
+B01S,B01S_vics_scan.jpg,vics,clean lbs phone-scan,live,PASS,1
+B02,B02_vics.pdf,vics,lbs thirdparty,live,PASS,0
+B03,B03_vics.pdf,vics,lbs nopro,live,PASS,0
+C01,C01_ocean.pdf,ocean,words,live,PASS,1
+C02,C02_ocean.pdf,ocean,multi words,live,FAIL,2
+C02S,C02S_ocean_scan.jpg,ocean,multi words phone-scan,live,FAIL,3
+R01,samples/BillOfLading.pdf,ocean,"ocean (real sample, 2 pages)",live,FAIL,5
+R02,samples/Bill_of_Lading_final_sample.pdf,vics,vics (real sample),live,REVIEW,0

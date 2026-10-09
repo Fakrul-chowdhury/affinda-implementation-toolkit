@@ -1,0 +1,25 @@
+{
+  "billOfLadingNumber": "ZE854839910654",
+  "date": "2026-08-30",
+  "sidNumber": null,
+  "proNumber": null,
+  "shipper": "SALTBUSH HARDWARE PTY LTD",
+  "origin": "LAEM CHABANG, THAILAND",
+  "consignee": "INLAND RURAL SUPPLIES",
+  "destination": "PORT OF BRISBANE",
+  "carrier": "ZEPHYR OCEAN LINES",
+  "trailerNumber": [
+    "TGHU480691-7"
+  ],
+  "sealNumber": [
+    "324828"
+  ],
+  "grossWeight": 891.8,
+  "quantity": 91,
+  "descriptionOfGoods": [
+    "Stainless cookware sets"
+  ],
+  "freightTerms": "Collect",
+  "specialInstructions": null,
+  "_notes": "total packages only printed in words; weights printed per container, no total"
+}

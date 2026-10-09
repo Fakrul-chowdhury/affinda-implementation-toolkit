@@ -1,0 +1,26 @@
+{
+  "billOfLadingNumber": "2026-66193",
+  "date": "2026-09-27",
+  "sidNumber": "SID-556264",
+  "proNumber": "352713",
+  "shipper": "PRAIRIE HOLLOW TOOLWORKS INC.",
+  "origin": "Tulsa, OK 74107",
+  "consignee": "RED GUM CO-OPERATIVE",
+  "destination": "Mildura",
+  "carrier": "Prairie Line Trucking LLC",
+  "trailerNumber": [
+    "5101"
+  ],
+  "sealNumber": [
+    "80157"
+  ],
+  "grossWeight": 10440,
+  "quantity": 168,
+  "descriptionOfGoods": [
+    "Flat-pack bookshelves",
+    "Dry pet food 15kg"
+  ],
+  "freightTerms": "Collect",
+  "specialInstructions": "Tail-lift required at delivery.",
+  "_notes": "weights printed in LBS"
+}

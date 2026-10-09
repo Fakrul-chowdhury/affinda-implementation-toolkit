@@ -1,0 +1,666 @@
+{
+ "data": {
+  "proNumber": {
+   "id": 2619497514,
+   "rectangle": {
+    "x0": 343.9720153808594,
+    "y0": 154.10272216796875,
+    "x1": 370.6529846191406,
+    "y1": 160.45623779296875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 343.9720153808594,
+     "y0": 154.10272216796875,
+     "x1": 370.6529846191406,
+     "y1": 160.45623779296875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "994421",
+   "parsed": "994421",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xvxyzNTx",
+   "contentType": "text",
+   "parent": null
+  },
+  "shipper": {
+   "id": 2619497517,
+   "rectangle": {
+    "x0": 52.84228515625,
+    "y0": 73.82012939453125,
+    "x1": 261.4685363769531,
+    "y1": 80.86920166015625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 52.84228515625,
+     "y0": 73.82012939453125,
+     "x1": 261.4685363769531,
+     "y1": 80.86920166015625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "Blue Ridge Auto Parts Co., 142 Industrial Ave, Dallas, TX 75201",
+   "parsed": "Blue Ridge Auto Parts Co., 142 Industrial Ave, Dallas, TX 75201",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "wirfKINI",
+   "contentType": "text",
+   "parent": null
+  },
+  "origin": {
+   "id": 2619497513,
+   "rectangle": {
+    "x0": 52.84228515625,
+    "y0": 73.82012939453125,
+    "x1": 261.4685363769531,
+    "y1": 80.86920166015625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 52.84228515625,
+     "y0": 73.82012939453125,
+     "x1": 261.4685363769531,
+     "y1": 80.86920166015625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "Blue Ridge Auto Parts Co., 142 Industrial Ave, Dallas, TX 75201",
+   "parsed": "Blue Ridge Auto Parts Co., 142 Industrial Ave, Dallas, TX 75201",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "lEUkHtco",
+   "contentType": "text",
+   "parent": null
+  },
+  "billOfLadingNumber": {
+   "id": 2619497503,
+   "rectangle": {
+    "x0": 384.6754455566406,
+    "y0": 64.0506591796875,
+    "x1": 428.62884521484375,
+    "y1": 70.4041748046875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 384.6754455566406,
+     "y0": 64.0506591796875,
+     "x1": 428.62884521484375,
+     "y1": 70.4041748046875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "2026-00471",
+   "parsed": "2026-00471",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "RYWPEpJh",
+   "contentType": "text",
+   "parent": null
+  },
+  "date": {
+   "id": 2619497506,
+   "rectangle": {
+    "x0": 334.2633056640625,
+    "y0": 47.32672119140625,
+    "x1": 380.21356201171875,
+    "y1": 55.28363037109375,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 334.2633056640625,
+     "y0": 47.32672119140625,
+     "x1": 380.21356201171875,
+     "y1": 55.28363037109375,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "9-April-2026",
+   "parsed": "2026-04-09",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "LYZPYjgn",
+   "contentType": "date",
+   "parent": null
+  },
+  "sidNumber": {
+   "id": 2619497518,
+   "rectangle": {
+    "x0": 79.43309020996094,
+    "y0": 109.719970703125,
+    "x1": 123.38653564453125,
+    "y1": 116.073486328125,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 79.43309020996094,
+     "y0": 109.719970703125,
+     "x1": 123.38653564453125,
+     "y1": 116.073486328125,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "2026-00471",
+   "parsed": "2026-00471",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "hHioMYFI",
+   "contentType": "text",
+   "parent": null
+  },
+  "consignee": {
+   "id": 2619497505,
+   "rectangle": {
+    "x0": 52.97306442260742,
+    "y0": 146.82171630859375,
+    "x1": 298.6925964355469,
+    "y1": 155.11475250626995,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 52.97306442260742,
+     "y0": 146.82171630859375,
+     "x1": 298.6925964355469,
+     "y1": 155.11475250626995,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "Pacific Distribution Ltd., 88 Harbor Blvd, Los Angeles, CA 90001",
+   "parsed": "Pacific Distribution Ltd., 88 Harbor Blvd, Los Angeles, CA 90001",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "upjpZUEt",
+   "contentType": "text",
+   "parent": null
+  },
+  "destination": {
+   "id": 2619497510,
+   "rectangle": {
+    "x0": 52.97306442260742,
+    "y0": 146.82171630859375,
+    "x1": 298.6925964355469,
+    "y1": 155.11475250626995,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 52.97306442260742,
+     "y0": 146.82171630859375,
+     "x1": 298.6925964355469,
+     "y1": 155.11475250626995,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "Pacific Distribution Ltd., 88 Harbor Blvd, Los Angeles, CA 90001",
+   "parsed": "Pacific Distribution Ltd., 88 Harbor Blvd, Los Angeles, CA 90001",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "AXVmSqfI",
+   "contentType": "text",
+   "parent": null
+  },
+  "carrier": {
+   "id": 2619497504,
+   "rectangle": {
+    "x0": 370.091064453125,
+    "y0": 105.783447265625,
+    "x1": 475.5008239746094,
+    "y1": 113.91180419921875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 370.091064453125,
+     "y0": 105.783447265625,
+     "x1": 475.5008239746094,
+     "y1": 113.91180419921875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "TransAmerica Trucking LLC",
+   "parsed": "TransAmerica Trucking LLC",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "mEghoYkM",
+   "contentType": "text",
+   "parent": null
+  },
+  "trailerNumber": {
+   "id": 2619497520,
+   "rectangle": {
+    "x0": 355.64208984375,
+    "y0": 116.79547119140625,
+    "x1": 373.9091491699219,
+    "y1": 123.14898681640625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 355.64208984375,
+     "y0": 116.79547119140625,
+     "x1": 373.9091491699219,
+     "y1": 123.14898681640625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "8842",
+   "parsed": "8842",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "NnJRyeYF",
+   "contentType": "text",
+   "parent": null
+  },
+  "sealNumber": {
+   "id": 2619497516,
+   "rectangle": {
+    "x0": 379.2215881347656,
+    "y0": 127.08709716796875,
+    "x1": 401.38262939453125,
+    "y1": 133.44061279296875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 379.2215881347656,
+     "y0": 127.08709716796875,
+     "x1": 401.38262939453125,
+     "y1": 133.44061279296875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "44921",
+   "parsed": "44921",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "WOdqJzCm",
+   "contentType": "text",
+   "parent": null
+  },
+  "grossWeight": {
+   "id": 2619497512,
+   "rectangle": {
+    "x0": 170.7421417236328,
+    "y0": 389.022216796875,
+    "x1": 203.03671264648438,
+    "y1": 395.8857421875,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 170.7421417236328,
+     "y0": 389.022216796875,
+     "x1": 203.03671264648438,
+     "y1": 395.8857421875,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "1240.00",
+   "parsed": 1240.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "uEBijfcE",
+   "contentType": "float",
+   "parent": null
+  },
+  "quantity": {
+   "id": 2619497515,
+   "rectangle": {
+    "x0": 139.3114013671875,
+    "y0": 389.022216796875,
+    "x1": 149.01991271972656,
+    "y1": 395.8949890136719,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 139.3114013671875,
+     "y0": 389.022216796875,
+     "x1": 149.01991271972656,
+     "y1": 395.8949890136719,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "48",
+   "parsed": 48.0,
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "xoDevuRd",
+   "contentType": "float",
+   "parent": null
+  },
+  "descriptionOfGoods": [
+   {
+    "id": 2619497507,
+    "rectangle": {
+     "x0": 240.16258239746094,
+     "y0": 439.7221984863281,
+     "x1": 362.530517578125,
+     "y1": 447.7477111816406,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 240.16258239746094,
+      "y0": 439.7221984863281,
+      "x1": 362.530517578125,
+      "y1": 447.7477111816406,
+      "pageIndex": 0
+     }
+    ],
+    "document": "iulbDPMR",
+    "pageIndex": 0,
+    "raw": "Auto engine components, boxed",
+    "parsed": "Auto engine components, boxed",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619497508,
+    "rectangle": {
+     "x0": 240.7884979248047,
+     "y0": 450.6571044921875,
+     "x1": 362.98272705078125,
+     "y1": 458.6826171875,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 240.7884979248047,
+      "y0": 450.6571044921875,
+      "x1": 362.98272705078125,
+      "y1": 458.6826171875,
+      "pageIndex": 0
+     }
+    ],
+    "document": "iulbDPMR",
+    "pageIndex": 0,
+    "raw": "Brake assembly units, packaged",
+    "parsed": "Brake assembly units, packaged",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   },
+   {
+    "id": 2619497509,
+    "rectangle": {
+     "x0": 240.5484161376953,
+     "y0": 462.1323547363281,
+     "x1": 343.4520568847656,
+     "y1": 470.1664123535156,
+     "pageIndex": 0
+    },
+    "rectangles": [
+     {
+      "x0": 240.5484161376953,
+      "y0": 462.1323547363281,
+      "x1": 343.4520568847656,
+      "y1": 470.1664123535156,
+      "pageIndex": 0
+     }
+    ],
+    "document": "iulbDPMR",
+    "pageIndex": 0,
+    "raw": "Suspension parts, wrapped",
+    "parsed": "Suspension parts, wrapped",
+    "confidence": null,
+    "classificationConfidence": null,
+    "textExtractionConfidence": 1.0,
+    "isVerified": false,
+    "isClientVerified": false,
+    "isAutoVerified": false,
+    "verifiedBy": null,
+    "dataPoint": null,
+    "field": "bWGnUsTE",
+    "contentType": "text",
+    "parent": null
+   }
+  ],
+  "freightTerms": {
+   "id": 2619497511,
+   "rectangle": {
+    "x0": 321.02215576171875,
+    "y0": 210.60638427734375,
+    "x1": 351.912109375,
+    "y1": 218.68072509765625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 321.02215576171875,
+     "y0": 210.60638427734375,
+     "x1": 351.912109375,
+     "y1": 218.68072509765625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "Prepaid",
+   "parsed": "Prepaid",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "tgVPclOt",
+   "contentType": "text",
+   "parent": null
+  },
+  "specialInstructions": {
+   "id": 2619497519,
+   "rectangle": {
+    "x0": 52.985416412353516,
+    "y0": 254.44647216796875,
+    "x1": 284.4407958984375,
+    "y1": 262.4976806640625,
+    "pageIndex": 0
+   },
+   "rectangles": [
+    {
+     "x0": 52.985416412353516,
+     "y0": 254.44647216796875,
+     "x1": 284.4407958984375,
+     "y1": 262.4976806640625,
+     "pageIndex": 0
+    }
+   ],
+   "document": "iulbDPMR",
+   "pageIndex": 0,
+   "raw": "Handle with care. Deliver between 8AM\u20134PM weekdays only.",
+   "parsed": "Handle with care. Deliver between 8AM \u2013 4PM weekdays only.",
+   "confidence": null,
+   "classificationConfidence": null,
+   "textExtractionConfidence": 1.0,
+   "isVerified": false,
+   "isClientVerified": false,
+   "isAutoVerified": false,
+   "verifiedBy": null,
+   "dataPoint": null,
+   "field": "ccMBzhjH",
+   "contentType": "text",
+   "parent": null
+  },
+  "rawText": "Bill of Lading Date: 9-April-2026 Ship From: Blue Ridge Auto Parts Co., 142 Industrial Ave, Dallas, TX 75201 SID#: 2026-00471 FOB Ship To: Location No:2291 Pacific Distribution Ltd., 88 Harbor Blvd, Los Angeles, CA 90001 CID#: 2026-00881 FOB Third Party Freight Charges - Bill To: Bill of Lading No: 2026-00471 BARCODE SPACE Carrier Name: TransAmerica Trucking LLC Trailer No: 8842 Seal Number(s): 44921 SCAC: TATL Pro No: 994421 BARCODE SPACE Freight Charge Terms (prepaid unless marked otherwise) Prepaid Collect 3rd Party Master BOL: w/attached underlying BOLs Special Instructions: Handle with care. Deliver between 8AM\u20134PM weekdays only. Customer Order Information Customer Order No. # Pkgs. Weight Pallet/Slip (Y/N) Additional Shipper Info 2026-1142 24 620 Y Auto engine components 2026-1143 12 310 Y Brake assembly units 2026-1144 12 310 N Suspension parts Totals 48 1240.00 Carrier Information Handling Unit Package Commodity Description LTL Only QTY TYPE QTY TYPE Weight H.M. (X) Commodities requiring special or additional care or attention in handling or stowing must be so marked and packaged as to ensure safe transportation with ordinary care. See Section 2(e) of MNMFC Item 360 NMFC No. Class 3 PLT 24 CTN 620 Auto engine components, boxed 12000 85 2 PLT 12 CTN 310 Brake assembly units, packaged 34600 85 2 PLT 12 CTN 310 Suspension parts, wrapped 34600 92.5 7 48 1240.00 Totals Where the rate is dependent on value, shippers are required to state specifically in writing the agreed or declared value of the property as follows: \"The agreed or declared value of the property is specifically stated by the shipper to be not exceeding FOB48,500 . \" COD Amt. $ Fee Terms: Collect Prepaid Customer Check Acceptable NOTE: Liability Limitation for loss or damage in this shipment may be applicable. See 49 U.S.C. - 14706(c)(1)(A) and (B). RECEIVED, subject to individually determined rates or contracts that have been agreed upon in writing between the carrier and shipper, if applicable, otherwise to the rates, classifications and rules that have been established by the carrier and are available to the shipper, on request, and to all applicable state and federal regulations. The carrier shall not make delivery of this shipment without payment of freight and all other lawful charges. Shipper Signature This is to certify that the above named materials are properly classified, packaged, marked and labeled, and are in proper condition for transportation according to the applicable regulations of the DOT. Shipper Signature Date Trailer Loaded By Shipper By Driver Freight Counted By Shipper By Driver/pallets said to contain By Driver/Pieces Carrier acknowledges receipt of packages and required placards. Carrier certifies emergency response information was made available and/or carrier has the DOT emergency response guidebook or equivalent documentation in the vehicle. Property described above is received in good order, except as noted. Carrier Signature Pickup Date"
+ },
+ "meta": {
+  "identifier": "iulbDPMR",
+  "customIdentifier": "uat-baseline-R02",
+  "ready": true,
+  "failed": false,
+  "readyDt": "2026-10-09T10:42:29.558228Z",
+  "fileName": "Bill_of_Lading_final_sample.pdf",
+  "expiryTime": null,
+  "language": "en",
+  "parentDocument": null,
+  "childDocuments": [],
+  "referenceDocument": null,
+  "ocrConfidence": null,
+  "createdDt": "2026-10-09T10:42:22.360035Z",
+  "errorDetail": null,
+  "collection": {
+   "identifier": "lAetQdJs",
+   "name": "Bill of Lading",
+   "extractor": null,
+   "validationRules": [],
+   "autoRefreshValidationResults": true
+  },
+  "documentType": "lAetQdJs",
+  "workspace": {
+   "identifier": "pQoYaMtu",
+   "name": "FreightRead - Wattlebird Freight (demo)"
+  },
+  "tags": [],
+  "isOcrd": false,
+  "isConfirmed": false,
+  "confirmedDt": null,
+  "isRejected": false,
+  "rejectedDt": null,
+  "isArchived": false,
+  "archivedDt": null,
+  "errorCode": null,
+  "regionBias": null,
+  "warningMessages": [],
+  "llmHint": null,
+  "source": "live"
+ },
+ "error": {
+  "errorCode": null,
+  "errorDetail": null
+ },
+ "warnings": [],
+ "extractor": ""
+}
